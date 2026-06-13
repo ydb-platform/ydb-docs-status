@@ -1,25 +1,26 @@
-Сводка по версиям YDB docs
-================================
+YDB docs sync — cross-version summary
+========================================
 
-Источник: ydb-platform/ydb
-Для деталей по конкретной версии — versions/<v>/report.txt или report.html
+Source: ydb-platform/ydb
+Generated: 2026-06-01
+For per-version detail: docs/<v>/report.txt or report.html
 
-Итоги по версиям:
-  Версия    Pages    Avg  Score=1  Score=10  One-lang
+Totals by version:
+  Version   Pages    Avg  Score=1  Score=10  One-lang
   25.3        706   8.70       64       445         8
   25.4        730   8.65       73       468         8
   26.1        753   9.02       44       503         8
   main        770   9.16       34       523         9
 
-Распределение оценок (число страниц):
+Score distribution (page counts):
               1     2     3     4     5     6     7     8     9    10
   25.3       64     .     .     4     3    10    17    49   114   445
   25.4       73     .     .     1     3    11    18    50   106   468
   26.1       44     .     1     1     3    10    18    49   124   503
   main       34     .     .     2     4     7    14    51   135   523
 
-Средняя оценка по разделам:
-  Раздел                         25.3    25.4    26.1    main
+Average score by section:
+  Section                        25.3    25.4    26.1    main
   analyst                        7.19    9.44   10.00   10.00
   changelog-cli.md              10.00   10.00   10.00   10.00
   changelog-enterprise.md       10.00    9.00   10.00   10.00

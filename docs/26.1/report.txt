@@ -1,57 +1,57 @@
-Сравнение русской и английской документации YDB, версия 26.1
-Источник: ydb-platform/ydb @ stable-26-1
-Сгенерировано: 2026-06-13
-Шкала: 1 — страница отсутствует либо смысл сильно расходится; 10 — смысл очень близок.
-Оценка получена по структурной близости (заголовки, длина, кодовые блоки, ссылки, картинки)
-после раскрытия include-директив. Это прокси семантического совпадения: при идентичной
-структуре отдельные формулировки всё ещё могут отличаться. Подробнее — documentation/scoring.md.
+YDB ru/en docs comparison, version 26.1
+Source: ydb-platform/ydb @ stable-26-1
+Generated: 2026-06-13
+Scale: 1 — page missing or content significantly differs; 10 — content is very close.
+Score is based on structural similarity (headings, length, code blocks, links, images)
+after include directives are expanded. This is a proxy for semantic match: with identical
+structure, wording can still differ. See documentation/scoring.md for details.
 
-Оценка  URL
-------  ---
-     1  https://ydb.tech/docs/ru/concepts/column-table?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/concepts/secondary_indexes?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/contributor/documentation/_templates/cli-command-template?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/contributor/documentation/cli-command-documentation?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/contributor/documentation/guide-to-public-material?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/backup-and-recovery/system-tablet-backup?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v1?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v2?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-preparation?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/observability/alerting?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/integrations/gui/dbeaver-plugin?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/change_actorsystem_configs?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/cluster_expansion?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/cms?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/config-overview?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-selectors?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-volatile-config?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/replacing_nodes?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/connect?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/docker-connect?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/interoperability?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/mechanisms/locks?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/hive?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/hive_config?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/kafka?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/kafka_proxy_config?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/monitoring_config?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/system_tablet_backup_config?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydb-cli/auth-get-token?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats/format-arrow?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats/format-protobuf?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydbops/reference?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/alter-secret?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/analyze?version=v26.1  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-external-data-source?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-secret?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-secret?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/join?version=v26.1  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/udf/list/postgres?version=v26.1  [нет EN-страницы]
+ Score  URL
+ -----  ---
+     1  https://ydb.tech/docs/ru/concepts/column-table?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/concepts/secondary_indexes?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/contributor/documentation/_templates/cli-command-template?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/contributor/documentation/cli-command-documentation?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/contributor/documentation/guide-to-public-material?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/backup-and-recovery/system-tablet-backup?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v1?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v2?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-preparation?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/observability/alerting?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/integrations/gui/dbeaver-plugin?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/change_actorsystem_configs?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/cluster_expansion?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/cms?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/config-overview?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-selectors?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-volatile-config?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/replacing_nodes?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/postgresql/connect?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/postgresql/docker-connect?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/postgresql/interoperability?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/postgresql/mechanisms/locks?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/hive?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/reference/configuration/hive_config?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/kafka?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/reference/configuration/kafka_proxy_config?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/monitoring_config?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/system_tablet_backup_config?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydb-cli/auth-get-token?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats/format-arrow?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats/format-protobuf?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydbops/reference?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/alter-secret?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/analyze?version=v26.1  [no RU page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-external-data-source?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-secret?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-secret?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/join?version=v26.1  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/udf/list/postgres?version=v26.1  [no EN page]
      3  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-otel?version=v26.1
      4  https://ydb.tech/docs/ru/public-materials/publications/2024?version=v26.1
      5  https://ydb.tech/docs/ru/public-materials/publications/2023?version=v26.1
@@ -762,18 +762,18 @@
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/url?version=v26.1
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/yson?version=v26.1
 
-Распределение оценок (страниц: 753):
-   1: 44 стр.
-   3: 1 стр.
-   4: 1 стр.
-   5: 3 стр.
-   6: 10 стр.
-   7: 18 стр.
-   8: 49 стр.
-   9: 124 стр.
-  10: 503 стр.
+Score distribution (pages: 753):
+   1: 44 pages
+   3: 1 pages
+   4: 1 pages
+   5: 3 pages
+   6: 10 pages
+   7: 18 pages
+   8: 49 pages
+   9: 124 pages
+  10: 503 pages
 
-По разделам (средняя оценка / число страниц):
+By section (average score / page count):
   analyst                      avg=10.00  n=16
   changelog-cli.md             avg=10.00  n=1
   changelog-enterprise.md      avg=10.00  n=1
@@ -796,8 +796,8 @@
   troubleshooting              avg= 9.92  n=24
   yql                          avg= 9.06  n=160
 
-Ожидаемо одноязычные страницы (по single_language_patterns, всего: 8)
-В основной таблице не участвуют. Изменить набор паттернов: config.json.
+Expected single-language pages (per single_language_patterns, total: 8)
+Excluded from the main table. Edit the pattern list in config.json.
   [RU-only]  https://ydb.tech/docs/ru/public-materials/podcasts?version=v26.1
   [RU-only]  https://ydb.tech/docs/ru/public-materials/publications/2021?version=v26.1
   [RU-only]  https://ydb.tech/docs/ru/public-materials/publications/2025?version=v26.1

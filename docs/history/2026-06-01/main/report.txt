@@ -1,46 +1,47 @@
-Сравнение русской и английской документации YDB, версия main
-Источник: ydb-platform/ydb @ main
-Шкала: 1 — страница отсутствует либо смысл сильно расходится; 10 — смысл очень близок.
-Оценка получена по структурной близости (заголовки, длина, кодовые блоки, ссылки, картинки)
-после раскрытия include-директив. Это прокси семантического совпадения: при идентичной
-структуре отдельные формулировки всё ещё могут отличаться. Подробнее — documentation/scoring.md.
+YDB ru/en docs comparison, version main
+Source: ydb-platform/ydb @ main
+Generated: 2026-06-01
+Scale: 1 — page missing or content significantly differs; 10 — content is very close.
+Score is based on structural similarity (headings, length, code blocks, links, images)
+after include directives are expanded. This is a proxy for semantic match: with identical
+structure, wording can still differ. See documentation/scoring.md for details.
 
-Оценка  URL
-------  ---
-     1  https://ydb.tech/docs/ru/concepts/secondary_indexes?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/contributor/documentation/_templates/cli-command-template?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/contributor/documentation/cli-command-documentation?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/contributor/documentation/guide-to-public-material?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/dev/streaming-query/local-and-external-topics?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/backup-and-recovery/system-tablet-backup?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v1/state-storage-reconfiguration?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v2/state-storage-reconfiguration?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/change_actorsystem_configs?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/cluster_expansion?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/cms?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/config-overview?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-selectors?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-volatile-config?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/replacing_nodes?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/connect?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/docker-connect?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/interoperability?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/mechanisms/locks?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/hive?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/hive_config?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/kafka?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/kafka_proxy_config?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/monitoring_config?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/system_tablet_backup_config?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydb-cli/auth-get-token?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydbops/reference?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/troubleshooting/examples/schemas/overloaded-shard-insufficient-cpu?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/analyze?version=main  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/join?version=main  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/udf/list/postgres?version=main  [нет EN-страницы]
+ Score  URL
+ -----  ---
+     1  https://ydb.tech/docs/ru/concepts/secondary_indexes?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/contributor/documentation/_templates/cli-command-template?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/contributor/documentation/cli-command-documentation?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/contributor/documentation/guide-to-public-material?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/dev/streaming-query/local-and-external-topics?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/backup-and-recovery/system-tablet-backup?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v1/state-storage-reconfiguration?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v2/state-storage-reconfiguration?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/change_actorsystem_configs?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/cluster_expansion?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/cms?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/config-overview?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-selectors?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-volatile-config?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/replacing_nodes?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/postgresql/connect?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/postgresql/docker-connect?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/postgresql/interoperability?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/postgresql/mechanisms/locks?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/hive?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/reference/configuration/hive_config?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/kafka?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/reference/configuration/kafka_proxy_config?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/monitoring_config?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/system_tablet_backup_config?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydb-cli/auth-get-token?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydbops/reference?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/troubleshooting/examples/schemas/overloaded-shard-insufficient-cpu?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/analyze?version=main  [no RU page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/join?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/udf/list/postgres?version=main  [no EN page]
      4  https://ydb.tech/docs/ru/public-materials/publications/2024?version=main
      4  https://ydb.tech/docs/ru/yql/reference/syntax/drop-group?version=main
      5  https://ydb.tech/docs/ru/public-materials/publications/2023?version=main
@@ -778,17 +779,17 @@
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/url?version=main
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/yson?version=main
 
-Распределение оценок (страниц: 770):
-   1: 34 стр.
-   4: 2 стр.
-   5: 4 стр.
-   6: 7 стр.
-   7: 14 стр.
-   8: 51 стр.
-   9: 135 стр.
-  10: 523 стр.
+Score distribution (pages: 770):
+   1: 34 pages
+   4: 2 pages
+   5: 4 pages
+   6: 7 pages
+   7: 14 pages
+   8: 51 pages
+   9: 135 pages
+  10: 523 pages
 
-По разделам (средняя оценка / число страниц):
+By section (average score / page count):
   analyst                      avg=10.00  n=16
   changelog-cli.md             avg=10.00  n=1
   changelog-enterprise.md      avg=10.00  n=1
@@ -811,8 +812,8 @@
   troubleshooting              avg= 9.42  n=26
   yql                          avg= 9.28  n=163
 
-Ожидаемо одноязычные страницы (по single_language_patterns, всего: 9)
-В основной таблице не участвуют. Изменить набор паттернов: config.json.
+Expected single-language pages (per single_language_patterns, total: 9)
+Excluded from the main table. Edit the pattern list in config.json.
   [RU-only]  https://ydb.tech/docs/ru/public-materials/podcasts?version=main
   [RU-only]  https://ydb.tech/docs/ru/public-materials/publications/2021?version=main
   [RU-only]  https://ydb.tech/docs/ru/public-materials/publications/2025?version=main

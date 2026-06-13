@@ -1,141 +1,142 @@
 # ydb_ru_eng_sync
 
-Сравнение русской и английской версий документации [YDB](https://ydb.tech)
-по нескольким версиям продукта. Для каждой страницы вычисляется оценка
-1..10, где 1 — страница отсутствует в одном из языков или сильно
-расходится, 10 — версии практически идентичны.
+Compares the Russian and English versions of the [YDB](https://ydb.tech)
+documentation across multiple product versions. Each page gets a score
+from 1 to 10: 1 means the page is missing on one side or differs sharply,
+10 means the two versions are nearly identical.
 
-Готовые отчёты публикуются на GitHub Pages (см. ниже).
+Generated reports are published to GitHub Pages (see below).
 
-## Зависимости
+## Requirements
 
 - Python 3.10+
-- `git` 2.25+ (нужен `sparse-checkout` и `--filter=blob:none`)
-- Доступ в интернет до `github.com`
+- `git` 2.25+ (needs `sparse-checkout` and `--filter=blob:none`)
+- Outbound internet access to `github.com`
 
-## Быстрый старт
-
-```bash
-./download.py     # скачать docs всех версий из ydb-platform/ydb в cache/
-./analyze.py      # сравнить ru/en, собрать отчёты в docs/
-```
-
-Открыть результат локально:
+## Quick start
 
 ```bash
-open docs/index.html             # лендинг: ссылки на сводку и историю
-open docs/summary.html           # удобная точка входа: все версии
-open docs/main/report.html       # детально по конкретной версии
+./download.py     # fetch docs for every version from ydb-platform/ydb into cache/
+./analyze.py      # compare ru/en, build reports under docs/
 ```
 
-Если меняешь методологию (веса, паттерны), сеть не нужна:
+Open the result locally:
 
 ```bash
-./analyze.py      # пересчёт по уже скачанным docs (cache/)
+open docs/index.html             # landing: links to summary and history
+open docs/summary.html           # convenient entry point: all versions
+open docs/main/report.html       # per-version detail
 ```
 
-## Что лежит в репозитории
+If you change the methodology (weights, patterns), no network is needed:
+
+```bash
+./analyze.py      # recompute against the docs already in cache/
+```
+
+## What's in the repository
 
 ```
 ydb_ru_eng_sync/
 ├── README.md
 ├── CLAUDE.md
-├── config.json                 # реестр версий и общие настройки
-├── download.py                 # entry point: скачать docs в cache/
+├── config.json                 # version registry and shared settings
+├── download.py                 # entry point: fetch docs into cache/
 ├── analyze.py                  # entry point: archive → compare → report → summary → index
-├── scripts/                    # реализация (fetch, compare, report, summary, archive, index, lib)
-├── documentation/              # внутренние md по самому проекту (для разработчиков)
-├── cache/                      # (gitignored) скачанные docs YDB
-└── docs/                       # КОММИТИТСЯ — корень GH Pages сайта
-    ├── index.html              # лендинг
-    ├── summary.{html,txt}      # актуальная сводка
-    ├── <v>/                    # актуальный отчёт по версии
-    └── history/<YYYY-MM-DD>/   # архив прошлых снимков
+├── scripts/                    # implementation (fetch, compare, report, summary, archive, index, lib)
+├── documentation/              # internal project docs (for developers)
+├── cache/                      # (gitignored) fetched YDB docs
+└── docs/                       # COMMITTED — root of the GH Pages site
+    ├── index.html              # landing
+    ├── summary.{html,txt}      # current cross-version summary
+    ├── <v>/                    # current per-version report
+    └── history/<YYYY-MM-DD>/   # archive of previous snapshots
 ```
 
-Два «docs» в корне репозитория — это не дубль:
+Two "docs" folders at the root — they are not duplicates:
 
-| Каталог | Что внутри |
+| Folder | Contents |
 | --- | --- |
-| `docs/` | Сгенерированный HTML-сайт, корень GitHub Pages. **Коммитится.** |
-| `documentation/` | Внутренние md по проекту (архитектура, рецепты, справочник модулей) — читаем глазами, не публикуем. |
+| `docs/` | Generated HTML site, root of GitHub Pages. **Committed.** |
+| `documentation/` | Internal Markdown about the project (architecture, recipes, module reference) — read by humans, not published. |
 
-Тяжёлые скачанные `cache/<v>/docs/` (~100 МБ × N версий) исключены
-`.gitignore` и восстанавливаются командой `./download.py`.
+The heavy fetched `cache/<v>/docs/` (~100 MB × N versions) is excluded
+by `.gitignore` and rebuilt by `./download.py`.
 
-## История отчётов
+## Report history
 
-В `docs/meta.json` хранится дата последнего прогона. На каждом запуске
-`./analyze.py`:
+`docs/meta.json` stores the date of the last run. On every
+`./analyze.py` run:
 
-1. Если дата в `meta.json` отличается от сегодняшней, текущий снимок
-   `docs/` (без `history/` и `index.html`) копируется в
+1. If the date in `meta.json` differs from today, the current snapshot
+   under `docs/` (excluding `history/` and `index.html`) is copied into
    `docs/history/<old_date>/`.
-2. Регенерируются `docs/<v>/...`, `docs/summary.*`, `docs/index.html`.
-3. `docs/meta.json` обновляется новой датой.
+2. `docs/<v>/...`, `docs/summary.*`, and `docs/index.html` are
+   regenerated.
+3. `docs/meta.json` is rewritten with the new date.
 
-Несколько прогонов в один день перезаписывают папку текущего дня — в
-истории сохраняется последний снимок дня. Внутри каждого отчёта
-(`summary.html`, `<v>/report.html`) есть строка «Сгенерировано: …».
+Multiple runs in the same day overwrite that day's folder — only the
+last snapshot of the day is kept. Every report (`summary.html`,
+`<v>/report.html`) carries a "Generated: …" line in its header.
 
-## Командный workflow
+## Team workflow
 
-Любой член команды:
+For any team member:
 
 ```bash
 git pull
-./download.py            # подкачать обновления (главное — main и stable-*)
-./analyze.py             # обновить отчёты
-git add docs             # docs/ коммитится; cache/ — нет
+./download.py            # pull updates (mainly main and stable-*)
+./analyze.py             # rebuild reports
+git add docs             # docs/ is committed; cache/ is not
 git commit -m "docs: snapshot $(date +%Y-%m-%d)"
 git push
 ```
 
-После пуша GitHub Pages автоматически обновляет сайт (см. ниже).
+After the push, GitHub Pages refreshes the site automatically (see below).
 
-Чтобы посмотреть, что именно изменилось в отчётах:
+To see exactly what changed in the reports:
 
 ```bash
 git diff --stat docs/
-git diff docs/summary.txt    # txt-варианты удобно ревьюить в git diff
+git diff docs/summary.txt    # the txt variants are easy to review via git diff
 ```
 
 ## GitHub Pages
 
-Одноразовая настройка для владельца репозитория:
+One-time setup for the repository owner:
 
 1. **Settings → Pages**.
 2. **Source**: *Deploy from a branch*.
 3. **Branch**: `main`, **Folder**: `/docs`.
-4. Сохранить.
+4. Save.
 
-Никаких GitHub Actions не нужно — Pages раздаёт содержимое `docs/`
-напрямую из ветки `main`. URL сайта появится в той же странице
-настроек.
+No GitHub Actions involved — Pages serves the contents of `docs/`
+directly from the `main` branch. The site URL appears in the same
+settings page.
 
-## Добавить новую версию YDB
+## Add a new YDB version
 
-1. Открыть [`config.json`](config.json), добавить запись в `"versions"`:
+1. Open [`config.json`](config.json) and add an entry under `"versions"`:
    ```json
    "26.2": {"ref": "stable-26-2", "url_version": "v26.2"}
    ```
-2. Запустить:
+2. Run:
    ```bash
    ./download.py 26.2
    ./analyze.py
    ```
 
-## Тонкая настройка
+## Fine-tuning
 
-- `./download.py <v>...` / `./analyze.py <v>...` — работа с подмножеством версий.
-- `./download.py --refresh <v>` — принудительная перекачка (нужно при сдвиге `main` или хотфиксе в `stable-*`).
-- Отдельные шаги можно вызывать напрямую через `scripts/fetch.py`,
+- `./download.py <v>...` / `./analyze.py <v>...` — work on a subset of versions.
+- `./download.py --refresh <v>` — force re-fetch (needed when `main` moves or `stable-*` gets a hotfix).
+- The individual stages can be called directly via `scripts/fetch.py`,
   `scripts/compare.py`, `scripts/report.py`, `scripts/summary.py`,
-  `scripts/archive.py`, `scripts/index.py` — у каждого есть `--help`.
+  `scripts/archive.py`, `scripts/index.py` — each has `--help`.
 
-## Документация по проекту
+## Project documentation
 
-- [documentation/architecture.md](documentation/architecture.md) — устройство системы, поток данных.
-- [documentation/scoring.md](documentation/scoring.md) — методология оценки, веса, ограничения.
-- [documentation/howto.md](documentation/howto.md) — типовые рецепты.
-- [documentation/modules.md](documentation/modules.md) — справочник функций и модулей.
+- [documentation/architecture.md](documentation/architecture.md) — system layout, data flow.
+- [documentation/scoring.md](documentation/scoring.md) — scoring methodology, weights, limitations.
+- [documentation/howto.md](documentation/howto.md) — common recipes.
+- [documentation/modules.md](documentation/modules.md) — function- and module-level reference.

@@ -82,8 +82,8 @@ def _collect(config: dict) -> dict[str, dict]:
 def render(*, generated_at: str | None = None) -> tuple[Path, Path]:
     """Produce ``docs/summary.{txt,html}``. Returns both paths.
 
-    ``generated_at`` (``YYYY-MM-DD``) попадает в шапку обоих файлов.
-    Если не задан — берётся ``lib.today_iso()``.
+    ``generated_at`` (``YYYY-MM-DD``) is stamped in the header of both files.
+    Defaults to ``lib.today_iso()``.
     """
     config = lib.load_config()
     per_version = _collect(config)
@@ -117,17 +117,17 @@ def render(*, generated_at: str | None = None) -> tuple[Path, Path]:
 def _render_text(per_version: dict[str, dict], config: dict, generated_at: str) -> str:
     versions = list(per_version.keys())
     lines: list[str] = []
-    lines.append("Сводка по версиям YDB docs")
-    lines.append("=" * 32)
+    lines.append("YDB docs sync — cross-version summary")
+    lines.append("=" * 40)
     lines.append("")
-    lines.append("Источник: ydb-platform/ydb")
-    lines.append(f"Сгенерировано: {generated_at}")
-    lines.append("Для деталей по конкретной версии — docs/<v>/report.txt или report.html")
+    lines.append("Source: ydb-platform/ydb")
+    lines.append(f"Generated: {generated_at}")
+    lines.append("For per-version detail: docs/<v>/report.txt or report.html")
     lines.append("")
 
     # Overview table
-    lines.append("Итоги по версиям:")
-    header = f"  {'Версия':<8} {'Pages':>6} {'Avg':>6} {'Score=1':>8} {'Score=10':>9} {'One-lang':>9}"
+    lines.append("Totals by version:")
+    header = f"  {'Version':<8} {'Pages':>6} {'Avg':>6} {'Score=1':>8} {'Score=10':>9} {'One-lang':>9}"
     lines.append(header)
     for v in versions:
         s = per_version[v]
@@ -138,7 +138,7 @@ def _render_text(per_version: dict[str, dict], config: dict, generated_at: str) 
     lines.append("")
 
     # Distribution matrix
-    lines.append("Распределение оценок (число страниц):")
+    lines.append("Score distribution (page counts):")
     bucket_header = "  " + " " * 8 + " ".join(f"{b:>5}" for b in range(1, 11))
     lines.append(bucket_header)
     for v in versions:
@@ -152,9 +152,9 @@ def _render_text(per_version: dict[str, dict], config: dict, generated_at: str) 
 
     # Section heatmap
     all_sections = sorted({sec for s in per_version.values() for sec in s["by_section"]})
-    lines.append("Средняя оценка по разделам:")
+    lines.append("Average score by section:")
     width = max(28, max((len(s) for s in all_sections), default=0) + 2)
-    sec_header = "  " + "Раздел".ljust(width) + " ".join(f"{v:>7}" for v in versions)
+    sec_header = "  " + "Section".ljust(width) + " ".join(f"{v:>7}" for v in versions)
     lines.append(sec_header)
     for sec in all_sections:
         cells = []
@@ -180,20 +180,20 @@ def _render_html(per_version: dict[str, dict], config: dict, generated_at: str) 
     all_sections = sorted({sec for s in per_version.values() for sec in s["by_section"]})
 
     parts = [
-        "<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n",
+        "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n",
         "<meta charset=\"utf-8\">\n",
-        "<title>YDB docs sync — сводка по версиям</title>\n",
+        "<title>YDB docs sync — cross-version summary</title>\n",
         f"<style>{css}</style>\n",
         "</head>\n<body>\n",
         "<header class=\"page-header\">\n",
-        "  <h1>YDB docs sync — сводка по версиям</h1>\n",
-        "  <p class=\"src\">Источник: <code>ydb-platform/ydb</code>. ",
-        "Детальные отчёты — по ссылке в названии версии.</p>\n",
-        f"  <p class=\"src\">Сгенерировано: <code>{html.escape(generated_at)}</code></p>\n",
-        "  <p class=\"legend\">Шкала: <span class=\"badge\" style=\"",
-        lib.score_badge_style(1), "\">1</span> — отсутствует или сильно расходится, ",
+        "  <h1>YDB docs sync — cross-version summary</h1>\n",
+        "  <p class=\"src\">Source: <code>ydb-platform/ydb</code>. ",
+        "Detailed reports are linked from the version name.</p>\n",
+        f"  <p class=\"src\">Generated: <code>{html.escape(generated_at)}</code></p>\n",
+        "  <p class=\"legend\">Scale: <span class=\"badge\" style=\"",
+        lib.score_badge_style(1), "\">1</span> — missing or significantly different, ",
         "<span class=\"badge\" style=\"", lib.score_badge_style(10),
-        "\">10</span> — практически идентично.</p>\n",
+        "\">10</span> — nearly identical.</p>\n",
         "</header>\n",
     ]
 
@@ -226,10 +226,10 @@ def _render_overview_block(per_version: dict[str, dict], versions: list[str]) ->
         )
     return (
         "<section class=\"card\">\n"
-        "  <h2>Итоги</h2>\n"
+        "  <h2>Totals</h2>\n"
         "  <table class=\"overview\">\n"
         "    <thead><tr>"
-        "<th>Версия</th><th class=\"num\">Pages</th><th>Avg</th>"
+        "<th>Version</th><th class=\"num\">Pages</th><th>Avg</th>"
         "<th class=\"num\">Score=1</th><th class=\"num\">Score=10</th>"
         "<th class=\"num\">One-lang</th>"
         "</tr></thead>\n"
@@ -262,8 +262,8 @@ def _render_distribution_block(per_version: dict[str, dict], versions: list[str]
         )
     return (
         "<section class=\"card\">\n"
-        "  <h2>Распределение оценок</h2>\n"
-        "  <p class=\"hint\">Число страниц с конкретным баллом в каждой версии.</p>\n"
+        "  <h2>Score distribution</h2>\n"
+        "  <p class=\"hint\">Number of pages at each score, per version.</p>\n"
         "  <table class=\"matrix\">\n"
         f"    <thead><tr><th></th>{head_cells}</tr></thead>\n"
         f"    <tbody>{''.join(body_rows)}</tbody>\n"
@@ -287,7 +287,7 @@ def _render_sections_block(per_version: dict[str, dict], versions: list[str], se
             else:
                 avg, n = entry
                 cells.append(
-                    f"<td class=\"avg\" style=\"{lib.score_badge_style(avg)}\" title=\"{n} стр.\">"
+                    f"<td class=\"avg\" style=\"{lib.score_badge_style(avg)}\" title=\"{n} pages\">"
                     f"{avg:.2f}</td>"
                 )
         body_rows.append(
@@ -295,11 +295,11 @@ def _render_sections_block(per_version: dict[str, dict], versions: list[str], se
         )
     return (
         "<section class=\"card\">\n"
-        "  <h2>Средняя оценка по разделам</h2>\n"
-        "  <p class=\"hint\">Hover над ячейкой — число страниц в разделе для этой версии. "
-        "«—» означает, что раздела в версии нет.</p>\n"
+        "  <h2>Average score by section</h2>\n"
+        "  <p class=\"hint\">Hover over a cell to see the page count for that section / version. "
+        "An em-dash means the section is absent from that version.</p>\n"
         "  <table class=\"matrix sections\">\n"
-        f"    <thead><tr><th>Раздел</th>{head_cells}</tr></thead>\n"
+        f"    <thead><tr><th>Section</th>{head_cells}</tr></thead>\n"
         f"    <tbody>{''.join(body_rows)}</tbody>\n"
         "  </table>\n"
         "</section>\n"

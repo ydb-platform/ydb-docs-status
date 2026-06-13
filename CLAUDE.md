@@ -13,7 +13,7 @@ identical) and rendered as per-version reports plus a cross-version summary.
 Generated reports are published as a GitHub Pages site served from the
 `docs/` directory of the repo.
 
-Note: user-facing strings (CLI output, error messages, project documentation) are in Russian. Match this convention when editing existing messages; new internal code/comments don't need to be Russian.
+Note: all user-facing strings (CLI output, report templates, error messages, project documentation) are in English. Keep new messages and docs in English too.
 
 ## Commands
 

@@ -23,13 +23,13 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-#: Скачанные YDB docs всех версий. Gitignored, ~100 МБ × N версий.
+#: Fetched YDB docs for every version. Gitignored, ~100 MB × N versions.
 CACHE_ROOT = PROJECT_ROOT / "cache"
 
-#: Корень публикуемого сайта GH Pages. Коммитится в репозиторий.
+#: Root of the published GitHub Pages site. Committed to the repo.
 SITE_ROOT = PROJECT_ROOT / "docs"
 
-#: Архив прошлых снимков сайта (по дате генерации).
+#: Archive of previous site snapshots (keyed by generation date).
 HISTORY_ROOT = SITE_ROOT / "history"
 
 
@@ -39,22 +39,22 @@ def load_config(root: Path = PROJECT_ROOT) -> dict:
 
 
 def cache_version_dir(version: str) -> Path:
-    """Return ``cache/<version>/`` — где живут скачанные docs YDB для версии."""
+    """Return ``cache/<version>/`` — where the fetched YDB docs for the version live."""
     return CACHE_ROOT / version
 
 
 def site_version_dir(version: str) -> Path:
-    """Return ``docs/<version>/`` — корень сгенерированных отчётов версии."""
+    """Return ``docs/<version>/`` — root of generated reports for the version."""
     return SITE_ROOT / version
 
 
 def history_dir(date_str: str) -> Path:
-    """Return ``docs/history/<date>/`` — снимок сайта от данной даты."""
+    """Return ``docs/history/<date>/`` — site snapshot for the given date."""
     return HISTORY_ROOT / date_str
 
 
 def docs_root(version: str) -> Path:
-    """Return ``cache/<version>/docs/`` — поддерево ``ydb/docs`` версии."""
+    """Return ``cache/<version>/docs/`` — the ``ydb/docs`` subtree for the version."""
     return cache_version_dir(version) / "docs"
 
 

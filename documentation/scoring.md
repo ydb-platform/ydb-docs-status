@@ -1,44 +1,45 @@
-# Методология оценки
+# Scoring methodology
 
-## Шкала
+## Scale
 
-| Балл | Что значит                                                              |
-| ---- | ----------------------------------------------------------------------- |
-| 1    | Страница отсутствует на одном из языков, либо смысл сильно расходится.  |
-| 5    | Структурно схожи, но заметные различия в объёме / разделах / примерах.  |
-| 8–9  | Близки по структуре и содержанию, мелкие расхождения.                   |
-| 10   | Структура совпадает по всем метрикам.                                   |
+| Score | Meaning                                                              |
+| ----- | -------------------------------------------------------------------- |
+| 1     | The page is missing on one side, or the content differs sharply.     |
+| 5     | Structurally similar but with noticeable differences in length, sections, or examples. |
+| 8–9   | Close in structure and content, minor mismatches.                    |
+| 10    | Structurally identical across all metrics.                           |
 
-## Что измеряется
+## What is measured
 
-Метрика — структурный прокси семантического совпадения. Для каждой
-страницы (после удаления YAML-фронтматтера и раскрытия
-`{% include ... %}`) собираются:
+The score is a structural proxy for semantic similarity. For each
+page (after stripping the YAML frontmatter and expanding
+`{% include ... %}` directives) we collect:
 
-| Признак          | Что считается              |
+| Feature          | What it counts             |
 | ---------------- | -------------------------- |
-| `lines`          | Число строк (диагностика). |
-| `headings_total` | Все заголовки `#`..`######`. |
-| `h1`, `h2`, `h3` | Раздельно для отладки.      |
-| `code_blocks`    | Количество троичных fence-блоков. |
-| `links`          | Markdown-ссылки `](...`.   |
-| `images`         | Картинки `![...]`.         |
-| `chars`          | Длина без пробелов.        |
-| `words`          | Число «слов» (`\S+`).      |
+| `lines`          | Line count (diagnostic).   |
+| `headings_total` | All headings `#`..`######`. |
+| `h1`, `h2`, `h3` | Broken out for debugging.  |
+| `code_blocks`    | Number of triple-backtick fence blocks. |
+| `links`          | Markdown links `](...`.    |
+| `images`         | Images `![...]`.           |
+| `chars`          | Length excluding whitespace. |
+| `words`          | "Word" count (`\S+`).      |
 
-`lines`, `h1`, `h2`, `h3` сохраняются в `results.json`, но в финальную
-оценку не идут (избыточно с `headings_total`).
+`lines`, `h1`, `h2`, `h3` are kept in `results.json` for inspection
+but don't feed into the final score (they would double-count with
+`headings_total`).
 
-## Формула
+## Formula
 
 ```
 score = 1 + 9 * Σ weight_i * ratio_i
 ```
 
-где `ratio(a, b) = min(a,b) / max(a,b)` (или 1 если оба нуля),
-`Σ weight_i = 1`. Текущие веса:
+with `ratio(a, b) = min(a,b) / max(a,b)` (or 1 if both are zero) and
+`Σ weight_i = 1`. Current weights:
 
-| Признак          | Вес |
+| Feature          | Weight |
 | ---------------- | --- |
 | `headings_total` | 0.25 |
 | `words`          | 0.20 |
@@ -47,54 +48,53 @@ score = 1 + 9 * Σ weight_i * ratio_i
 | `links`          | 0.15 |
 | `images`         | 0.10 |
 
-Если страница отсутствует с одной стороны, `score` сразу 1.0 без
-вычислений.
+If a page is missing on one side, `score` is set to 1.0 directly
+without computation.
 
-## Страницы вне оценки
+## Pages outside scoring
 
-Некоторые страницы существуют только на одном языке **по дизайну**:
-например, материалы из `public-materials/` — это анонсы выступлений,
-которые сделаны на конкретном языке и не переводятся. Такие страницы
-не должны портить нижнюю часть распределения как «отсутствующие
-переводы».
+Some pages exist on only one language **by design**: for example,
+materials under `public-materials/` are announcements of talks given
+in a specific language and aren't translated. Such pages shouldn't
+drag the bottom of the distribution as "missing translations".
 
-Механизм: в `config.json` есть поле `single_language_patterns` —
-список fnmatch-глобов относительных путей. Если путь страницы матчит
-хоть один паттерн **и** страница существует только на одной стороне,
-то она:
+Mechanism: `config.json` has a `single_language_patterns` field — a
+list of fnmatch globs over relative page paths. If a page path
+matches any pattern **and** the page exists in only one language,
+then it:
 
-- помечается в `results.json` флагом `single_language_expected: true`;
-- не попадает в основную таблицу `report.txt` и в гистограмму;
-- выводится отдельной секцией в конце отчёта с указанием стороны
-  (`[RU-only]` / `[EN-only]`).
+- gets the `single_language_expected: true` flag in `results.json`;
+- is excluded from the main `report.txt` table and the histogram;
+- shows up in a dedicated section at the end of the report with a
+  side marker (`[RU-only]` / `[EN-only]`).
 
-Если такая страница вдруг появилась на обоих языках — она оценивается
-обычным образом и попадает в основную таблицу.
+If the same page later appears in both languages, it is scored
+normally and joins the main table.
 
-Как добавить или поправить паттерны — [howto.md](howto.md#одноязычные-страницы).
+How to add or edit the patterns — [howto.md](howto.md#single-language-pages).
 
-## Чем НЕ является оценка
+## What the score is NOT
 
-- Это **не** настоящее семантическое сравнение. Две страницы могут
-  иметь одинаковую структуру, но разные формулировки или
-  фактологические утверждения, и всё равно получить 10.
-- Локализованные ссылки (например, en/ru-вики) могут немного занижать
-  ratio по `links`, хотя смысл одинаков.
-- Веса выбраны эмпирически на v25.3/concepts; при сильном дрейфе
-  средних оценок их стоит пересмотреть в `lib.SCORE_WEIGHTS`.
+- This is **not** real semantic comparison. Two pages can be
+  structurally identical but use different wording or even state
+  different facts, and still score 10.
+- Localized links (e.g. wiki en/ru) may slightly lower the `links`
+  ratio even when the meaning is the same.
+- The weights were chosen empirically on v25.3/concepts; if average
+  scores drift significantly, revisit them in `lib.SCORE_WEIGHTS`.
 
-## Как читать `report.txt`
+## Reading `report.txt`
 
-1. Смотри сначала на 1 — отсутствующие страницы.
-2. 6–8 — структурно отличаются, имеет смысл взглянуть глазами.
-3. 9–10 — структурно близки, но могут расходиться по формулировкам.
-4. В конце отчёта — гистограмма и разрез по разделам (средняя оценка
-   по первому сегменту пути).
+1. Start with the 1s — missing pages.
+2. 6–8 — structurally different, worth a manual look.
+3. 9–10 — structurally close, but wording may still differ.
+4. The end of the report has the histogram and the by-section
+   breakdown (average score by the first path segment).
 
-## Изменение методологии
+## Changing the methodology
 
-- Веса и список признаков — `scripts/lib.py`: константа `SCORE_WEIGHTS`
-  и функция `metrics`.
-- Округление в отчёте — `scripts/report.py`: `_to_int_score`.
-- После изменения формулы зафиксируй новый baseline (распределение
-  оценок на v25.3) в [howto.md](howto.md) и в коммите.
+- Weights and feature set — `scripts/lib.py`: the `SCORE_WEIGHTS`
+  constant and the `metrics` function.
+- Rounding in the report — `scripts/report.py`: `_to_int_score`.
+- After changing the formula, lock the new baseline (the v25.3 score
+  distribution) into [howto.md](howto.md) and the commit message.

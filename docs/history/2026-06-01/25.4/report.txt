@@ -1,85 +1,86 @@
-Сравнение русской и английской документации YDB, версия 25.4
-Источник: ydb-platform/ydb @ stable-25-4
-Шкала: 1 — страница отсутствует либо смысл сильно расходится; 10 — смысл очень близок.
-Оценка получена по структурной близости (заголовки, длина, кодовые блоки, ссылки, картинки)
-после раскрытия include-директив. Это прокси семантического совпадения: при идентичной
-структуре отдельные формулировки всё ещё могут отличаться. Подробнее — documentation/scoring.md.
+YDB ru/en docs comparison, version 25.4
+Source: ydb-platform/ydb @ stable-25-4
+Generated: 2026-06-01
+Scale: 1 — page missing or content significantly differs; 10 — content is very close.
+Score is based on structural similarity (headings, length, code blocks, links, images)
+after include directives are expanded. This is a proxy for semantic match: with identical
+structure, wording can still differ. See documentation/scoring.md for details.
 
-Оценка  URL
-------  ---
-     1  https://ydb.tech/docs/ru/analyst/olap_quickstart?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/concepts/analytics/concepts/bi?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/concepts/analytics/concepts/etl?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/concepts/analytics/concepts/ml?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/concepts/analytics?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/concepts/column-table?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/concepts/secondary_indexes?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/contributor/documentation/_templates/cli-command-template?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/contributor/documentation/cli-command-documentation?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/contributor/documentation/guide-to-public-material?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/dev/resource-consumption-management?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/dev/streaming-query/S3-enrichment?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/dev/streaming-query/enrichment?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/backup-and-recovery/system-tablet-backup?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v1?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v2?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-preparation?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/manual/bridge-management?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-configuration-v1?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-configuration-v2?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/integrations/gui/dbeaver-plugin?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/change_actorsystem_configs?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/cluster_expansion?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/cms?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/config-overview?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-selectors?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-volatile-config?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/replacing_nodes?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/maintenance/manual/virtual_storage_groups_decommit?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/connect?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/docker-connect?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/interoperability?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/postgresql/mechanisms/locks?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/recipes/vector-search/vector-index-with-prepared-dataset?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/cms_config?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/hive?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/hive_config?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/kafka?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/kafka_proxy_config?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/configuration/system_tablet_backup_config?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydb-cli/auth-get-token?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydb-cli/workload-query?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats/format-arrow?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats/format-protobuf?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/reference/ydbops/reference?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/alter-resource-pool-classifier?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/alter-resource-pool?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/alter-secret?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/analyze?version=v25.4  [нет RU-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-external-data-source?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-external-table?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-object-type-secret-access?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-resource-pool-classifier?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-resource-pool?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-secret?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/create_table/as_select?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-external-data-source?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-external-table?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-object-type-secret-access?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-object-type-secret?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-resource-pool-classifier?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-resource-pool?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-secret?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/join?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/syntax/upsert-object-type-secret?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/types/serial?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/types/yson?version=v25.4  [нет EN-страницы]
-     1  https://ydb.tech/docs/ru/yql/reference/udf/list/postgres?version=v25.4  [нет EN-страницы]
+ Score  URL
+ -----  ---
+     1  https://ydb.tech/docs/ru/analyst/olap_quickstart?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/concepts/analytics/concepts/bi?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/concepts/analytics/concepts/etl?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/concepts/analytics/concepts/ml?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/concepts/analytics?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/concepts/column-table?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/concepts/secondary_indexes?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/contributor/documentation/_templates/cli-command-template?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/contributor/documentation/cli-command-documentation?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/contributor/documentation/guide-to-public-material?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/dev/resource-consumption-management?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/dev/streaming-query/S3-enrichment?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/dev/streaming-query/enrichment?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/backup-and-recovery/system-tablet-backup?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v1?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v2?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-preparation?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/manual/bridge-management?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-configuration-v1?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-configuration-v2?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/integrations/gui/dbeaver-plugin?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/change_actorsystem_configs?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/cluster_expansion?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/cms?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/config-overview?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-selectors?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/dynamic-config-volatile-config?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/replacing_nodes?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/maintenance/manual/virtual_storage_groups_decommit?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/postgresql/connect?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/postgresql/docker-connect?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/postgresql/interoperability?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/postgresql/mechanisms/locks?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/recipes/vector-search/vector-index-with-prepared-dataset?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/cms_config?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/reference/configuration/hive?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/reference/configuration/hive_config?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/kafka?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/reference/configuration/kafka_proxy_config?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/configuration/system_tablet_backup_config?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydb-cli/auth-get-token?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydb-cli/workload-query?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats/format-arrow?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats/format-protobuf?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/reference/ydbops/reference?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/alter-resource-pool-classifier?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/alter-resource-pool?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/alter-secret?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/analyze?version=v25.4  [no RU page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-external-data-source?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-external-table?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-object-type-secret-access?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-resource-pool-classifier?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-resource-pool?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/create-secret?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/create_table/as_select?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-external-data-source?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-external-table?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-object-type-secret-access?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-object-type-secret?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-resource-pool-classifier?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-resource-pool?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-secret?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/join?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/upsert-object-type-secret?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/types/serial?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/types/yson?version=v25.4  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/udf/list/postgres?version=v25.4  [no EN page]
      4  https://ydb.tech/docs/ru/public-materials/publications/2024?version=v25.4
      5  https://ydb.tech/docs/ru/public-materials/publications/2023?version=v25.4
      5  https://ydb.tech/docs/ru/public-materials/videos/2022?version=v25.4
@@ -738,17 +739,17 @@
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/url?version=v25.4
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/yson?version=v25.4
 
-Распределение оценок (страниц: 730):
-   1: 73 стр.
-   4: 1 стр.
-   5: 3 стр.
-   6: 11 стр.
-   7: 18 стр.
-   8: 50 стр.
-   9: 106 стр.
-  10: 468 стр.
+Score distribution (pages: 730):
+   1: 73 pages
+   4: 1 pages
+   5: 3 pages
+   6: 11 pages
+   7: 18 pages
+   8: 50 pages
+   9: 106 pages
+  10: 468 pages
 
-По разделам (средняя оценка / число страниц):
+By section (average score / page count):
   analyst                      avg= 9.44  n=16
   changelog-cli.md             avg=10.00  n=1
   changelog-enterprise.md      avg= 9.00  n=1
@@ -771,8 +772,8 @@
   troubleshooting              avg= 9.91  n=23
   yql                          avg= 8.03  n=153
 
-Ожидаемо одноязычные страницы (по single_language_patterns, всего: 8)
-В основной таблице не участвуют. Изменить набор паттернов: config.json.
+Expected single-language pages (per single_language_patterns, total: 8)
+Excluded from the main table. Edit the pattern list in config.json.
   [RU-only]  https://ydb.tech/docs/ru/public-materials/podcasts?version=v25.4
   [RU-only]  https://ydb.tech/docs/ru/public-materials/publications/2021?version=v25.4
   [RU-only]  https://ydb.tech/docs/ru/public-materials/publications/2025?version=v25.4

@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
-"""Лендинг и индекс истории для GH Pages сайта в ``docs/``.
+"""Landing page and history index for the GitHub Pages site in ``docs/``.
 
-Использование::
+Usage::
 
     ./scripts/index.py [<generated_at>]
 
-Без аргументов — берётся ``lib.today_iso()`` и текущий список дат из
-``docs/history/``. Производит два файла:
+Without arguments, ``lib.today_iso()`` is used along with the current
+list of dates from ``docs/history/``. Produces two files:
 
-* ``docs/index.html`` — главная страница сайта (точка входа GH Pages):
-  заголовок, дата последнего прогона, ссылка на свежую сводку, ссылки
-  на 5 последних исторических снимков и на полный список истории.
-* ``docs/history/index.html`` — обратный хронологический список всех
-  снимков (``<date>/summary.html``).
+* ``docs/index.html`` — site landing page (the GH Pages entry point):
+  title, latest-run date, link to the current summary, links to up to
+  5 most recent historical snapshots, and a link to the full history.
+* ``docs/history/index.html`` — reverse-chronological list of all
+  snapshots (each one linking to ``<date>/summary.html``).
 
-Стиль и подход — те же, что в ``report.py``/``summary.py``: один
-self-contained HTML, CSS встроен, никаких внешних ресурсов.
+Style and approach mirror ``report.py``/``summary.py``: a single
+self-contained HTML file, inline CSS, no external resources.
 """
 
 from __future__ import annotations
@@ -28,14 +28,14 @@ import lib  # type: ignore[import-not-found]
 
 
 # ---------------------------------------------------------------------------
-# Сбор списка снимков
+# Snapshot list
 # ---------------------------------------------------------------------------
 
 def history_dates() -> list[str]:
-    """Имена подпапок ``docs/history/`` в обратном хронологическом порядке.
+    """Subdirectory names of ``docs/history/`` in reverse chronological order.
 
-    Подпапки именуются ``YYYY-MM-DD``, поэтому лексикографическая
-    сортировка совпадает с хронологической.
+    Folders are named ``YYYY-MM-DD``, so lexicographic sort matches
+    chronological sort.
     """
     if not lib.HISTORY_ROOT.exists():
         return []
@@ -44,11 +44,11 @@ def history_dates() -> list[str]:
 
 
 # ---------------------------------------------------------------------------
-# Лендинг
+# Landing
 # ---------------------------------------------------------------------------
 
 def render_landing(generated_at: str | None = None, dates: list[str] | None = None) -> Path:
-    """Сгенерировать ``docs/index.html``. Возвращает путь."""
+    """Render ``docs/index.html``. Returns the path."""
     when = generated_at or lib.today_iso()
     if dates is None:
         dates = history_dates()
@@ -63,13 +63,13 @@ def render_landing(generated_at: str | None = None, dates: list[str] | None = No
             for d in recent
         )
         more = (
-            f" <a class=\"more\" href=\"history/index.html\">все снимки ({len(dates)}) →</a>"
+            f" <a class=\"more\" href=\"history/index.html\">all snapshots ({len(dates)}) →</a>"
             if rest
-            else " <a class=\"more\" href=\"history/index.html\">полный список →</a>"
+            else " <a class=\"more\" href=\"history/index.html\">full list →</a>"
         )
         history_block = (
             "<section class=\"card\">\n"
-            "  <h2>История</h2>\n"
+            "  <h2>History</h2>\n"
             f"  <ul class=\"recent\">{items}</ul>\n"
             f"  <p class=\"more-line\">{more}</p>\n"
             "</section>\n"
@@ -77,29 +77,29 @@ def render_landing(generated_at: str | None = None, dates: list[str] | None = No
     else:
         history_block = (
             "<section class=\"card\">\n"
-            "  <h2>История</h2>\n"
-            "  <p class=\"muted\">Пока нет архивных снимков. Они появятся "
-            "после следующего прогона <code>./analyze.py</code>.</p>\n"
+            "  <h2>History</h2>\n"
+            "  <p class=\"muted\">No archived snapshots yet. They appear after "
+            "the next <code>./analyze.py</code> run.</p>\n"
             "</section>\n"
         )
 
     body = (
-        "<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n"
+        "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
         "<meta charset=\"utf-8\">\n"
         "<title>YDB docs sync</title>\n"
         f"<style>{_css()}</style>\n"
         "</head>\n<body>\n"
         "<header class=\"page-header\">\n"
         "  <h1>YDB docs sync</h1>\n"
-        "  <p class=\"src\">Сравнение русской и английской документации "
-        "<code>ydb-platform/ydb</code> по продуктовым версиям.</p>\n"
-        f"  <p class=\"src\">Последний прогон: <code>{html.escape(when)}</code></p>\n"
+        "  <p class=\"src\">Compares the Russian and English documentation in "
+        "<code>ydb-platform/ydb</code> across product versions.</p>\n"
+        f"  <p class=\"src\">Last run: <code>{html.escape(when)}</code></p>\n"
         "</header>\n"
         "<section class=\"card primary\">\n"
-        "  <h2>Актуальный отчёт</h2>\n"
-        "  <p><a class=\"big-link\" href=\"summary.html\">Сводка по версиям →</a></p>\n"
-        "  <p class=\"muted\">Из сводки кликабельны имена версий — там "
-        "пер-страничные таблицы с оценками.</p>\n"
+        "  <h2>Latest report</h2>\n"
+        "  <p><a class=\"big-link\" href=\"summary.html\">Cross-version summary →</a></p>\n"
+        "  <p class=\"muted\">Version names in the summary are clickable — "
+        "they lead to per-page score tables.</p>\n"
         "</section>\n"
         f"{history_block}"
         "</body>\n</html>\n"
@@ -113,11 +113,11 @@ def render_landing(generated_at: str | None = None, dates: list[str] | None = No
 
 
 # ---------------------------------------------------------------------------
-# Полный список снимков
+# Full snapshot list
 # ---------------------------------------------------------------------------
 
 def render_history_index(dates: list[str] | None = None) -> Path:
-    """Сгенерировать ``docs/history/index.html``. Возвращает путь."""
+    """Render ``docs/history/index.html``. Returns the path."""
     if dates is None:
         dates = history_dates()
 
@@ -129,21 +129,21 @@ def render_history_index(dates: list[str] | None = None) -> Path:
         list_block = f"<ul class=\"history\">{items}</ul>"
     else:
         list_block = (
-            "<p class=\"muted\">Архив пуст — снимки появляются после прогонов "
-            "<code>./analyze.py</code>.</p>"
+            "<p class=\"muted\">Archive is empty — snapshots appear after "
+            "<code>./analyze.py</code> runs.</p>"
         )
 
     body = (
-        "<!DOCTYPE html>\n<html lang=\"ru\">\n<head>\n"
+        "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
         "<meta charset=\"utf-8\">\n"
-        "<title>YDB docs sync — история</title>\n"
+        "<title>YDB docs sync — history</title>\n"
         f"<style>{_css()}</style>\n"
         "</head>\n<body>\n"
         "<header class=\"page-header\">\n"
-        "  <p class=\"crumbs\"><a href=\"../index.html\">← на главную</a></p>\n"
-        "  <h1>История снимков</h1>\n"
-        "  <p class=\"src\">Сохранённые состояния отчётов по датам. "
-        "Каждый снимок открывается как самостоятельная сводка.</p>\n"
+        "  <p class=\"crumbs\"><a href=\"../index.html\">← back to home</a></p>\n"
+        "  <h1>Snapshot history</h1>\n"
+        "  <p class=\"src\">Report states saved by date. "
+        "Each snapshot opens as a self-contained summary.</p>\n"
         "</header>\n"
         f"<section class=\"card\">\n  {list_block}\n</section>\n"
         "</body>\n</html>\n"
@@ -200,7 +200,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "generated_at",
         nargs="?",
-        help="дата прогона YYYY-MM-DD (по умолчанию — сегодня)",
+        help="run date YYYY-MM-DD (default: today)",
     )
     args = parser.parse_args(argv)
     dates = history_dates()

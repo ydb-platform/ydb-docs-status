@@ -13,7 +13,7 @@ Two artefacts are produced side by side:
   badges and clickable RU + EN links. Open it in a browser.
 
 Both reports split pages into the main table and a separate
-«ожидаемо одноязычные страницы» section (rules from
+"expected single-language pages" section (rules from
 ``single_language_patterns`` in config.json).
 """
 
@@ -31,8 +31,8 @@ import lib  # type: ignore[import-not-found]
 def render(version: str, *, generated_at: str | None = None) -> tuple[Path, Path]:
     """Render text + HTML reports for ``version``.
 
-    ``generated_at`` (``YYYY-MM-DD``) попадает в шапку обоих файлов. Если
-    не задан — берётся ``lib.today_iso()``.
+    ``generated_at`` (``YYYY-MM-DD``) is stamped in the header of both files.
+    Defaults to ``lib.today_iso()``.
 
     Returns ``(txt_path, html_path)``.
     """
@@ -134,22 +134,22 @@ def _render_text(
     by_section: dict[str, list[int]],
 ) -> str:
     lines: list[str] = []
-    lines.append(f"Сравнение русской и английской документации YDB, версия {version}")
-    lines.append(f"Источник: ydb-platform/ydb @ {entry['ref']}")
-    lines.append(f"Сгенерировано: {generated_at}")
-    lines.append("Шкала: 1 — страница отсутствует либо смысл сильно расходится; 10 — смысл очень близок.")
+    lines.append(f"YDB ru/en docs comparison, version {version}")
+    lines.append(f"Source: ydb-platform/ydb @ {entry['ref']}")
+    lines.append(f"Generated: {generated_at}")
+    lines.append("Scale: 1 — page missing or content significantly differs; 10 — content is very close.")
     lines.append(
-        "Оценка получена по структурной близости (заголовки, длина, кодовые блоки, ссылки, картинки)"
+        "Score is based on structural similarity (headings, length, code blocks, links, images)"
     )
     lines.append(
-        "после раскрытия include-директив. Это прокси семантического совпадения: при идентичной"
+        "after include directives are expanded. This is a proxy for semantic match: with identical"
     )
     lines.append(
-        "структуре отдельные формулировки всё ещё могут отличаться. Подробнее — documentation/scoring.md."
+        "structure, wording can still differ. See documentation/scoring.md for details."
     )
     lines.append("")
-    lines.append(f"{'Оценка':>6}  URL")
-    lines.append(f"{'------':>6}  ---")
+    lines.append(f"{'Score':>6}  URL")
+    lines.append(f"{'-----':>6}  ---")
     for r in main_rows:
         note = _text_note(r)
         line = f"{r['score']:>6}  {r['ru_url']}"
@@ -158,12 +158,12 @@ def _render_text(
         lines.append(line)
 
     lines.append("")
-    lines.append(f"Распределение оценок (страниц: {len(main_rows)}):")
+    lines.append(f"Score distribution (pages: {len(main_rows)}):")
     for s in sorted(hist):
-        lines.append(f"  {s:>2}: {hist[s]} стр.")
+        lines.append(f"  {s:>2}: {hist[s]} pages")
 
     lines.append("")
-    lines.append("По разделам (средняя оценка / число страниц):")
+    lines.append("By section (average score / page count):")
     for section in sorted(by_section):
         scores = by_section[section]
         avg = sum(scores) / len(scores)
@@ -172,10 +172,10 @@ def _render_text(
     if single_rows:
         lines.append("")
         lines.append(
-            f"Ожидаемо одноязычные страницы (по single_language_patterns, "
-            f"всего: {len(single_rows)})"
+            f"Expected single-language pages (per single_language_patterns, "
+            f"total: {len(single_rows)})"
         )
-        lines.append("В основной таблице не участвуют. Изменить набор паттернов: config.json.")
+        lines.append("Excluded from the main table. Edit the pattern list in config.json.")
         for r in single_rows:
             lang = "RU" if r["ru_exists"] else "EN"
             url = r["ru_url"] if r["ru_exists"] else r["en_url"]
@@ -186,9 +186,9 @@ def _render_text(
 
 def _text_note(r: dict) -> str:
     if not r["ru_exists"]:
-        return "[нет RU-страницы]"
+        return "[no RU page]"
     if not r["en_exists"]:
-        return "[нет EN-страницы]"
+        return "[no EN page]"
     return ""
 
 
@@ -209,7 +209,7 @@ def _render_html(
     css = _build_css()
     head = (
         "<!DOCTYPE html>\n"
-        "<html lang=\"ru\">\n<head>\n"
+        "<html lang=\"en\">\n<head>\n"
         "<meta charset=\"utf-8\">\n"
         f"<title>YDB docs sync — {html.escape(version)}</title>\n"
         f"<style>{css}</style>\n"
@@ -218,12 +218,12 @@ def _render_html(
 
     header = (
         "<header class=\"page-header\">\n"
-        f"  <h1>YDB docs sync — версия <span class=\"ver\">{html.escape(version)}</span></h1>\n"
-        f"  <p class=\"src\">Источник: <code>ydb-platform/ydb @ {html.escape(entry['ref'])}</code></p>\n"
-        f"  <p class=\"src\">Сгенерировано: <code>{html.escape(generated_at)}</code></p>\n"
-        "  <p class=\"legend\">Шкала: <span class=\"badge score-1\">1</span> — страница отсутствует или сильно расходится; "
-        "<span class=\"badge score-10\">10</span> — версии практически идентичны. "
-        "Подробнее о методологии — <code>documentation/scoring.md</code>.</p>\n"
+        f"  <h1>YDB docs sync — version <span class=\"ver\">{html.escape(version)}</span></h1>\n"
+        f"  <p class=\"src\">Source: <code>ydb-platform/ydb @ {html.escape(entry['ref'])}</code></p>\n"
+        f"  <p class=\"src\">Generated: <code>{html.escape(generated_at)}</code></p>\n"
+        "  <p class=\"legend\">Scale: <span class=\"badge score-1\">1</span> — page missing or significantly different; "
+        "<span class=\"badge score-10\">10</span> — versions are nearly identical. "
+        "Methodology details: <code>documentation/scoring.md</code>.</p>\n"
         "</header>\n"
     )
 
@@ -248,9 +248,9 @@ def _render_stats_block(main_rows: list[dict], hist: Counter, by_section: dict[s
         )
     hist_html = (
         "<div class=\"card\">\n"
-        f"  <h2>Распределение оценок <span class=\"muted\">({total})</span></h2>\n"
+        f"  <h2>Score distribution <span class=\"muted\">({total})</span></h2>\n"
         "  <table class=\"compact\">\n"
-        "    <thead><tr><th>Балл</th><th class=\"num\">Страниц</th><th class=\"num\">Доля</th></tr></thead>\n"
+        "    <thead><tr><th>Score</th><th class=\"num\">Pages</th><th class=\"num\">Share</th></tr></thead>\n"
         f"    <tbody>{''.join(hist_rows)}</tbody>\n"
         "  </table>\n"
         "</div>\n"
@@ -269,9 +269,9 @@ def _render_stats_block(main_rows: list[dict], hist: Counter, by_section: dict[s
         )
     sections_html = (
         "<div class=\"card\">\n"
-        f"  <h2>По разделам <span class=\"muted\">({len(by_section)})</span></h2>\n"
+        f"  <h2>By section <span class=\"muted\">({len(by_section)})</span></h2>\n"
         "  <table class=\"compact\">\n"
-        "    <thead><tr><th>Раздел</th><th>Средняя</th><th class=\"num\">Страниц</th></tr></thead>\n"
+        "    <thead><tr><th>Section</th><th>Average</th><th class=\"num\">Pages</th></tr></thead>\n"
         f"    <tbody>{''.join(section_rows)}</tbody>\n"
         "  </table>\n"
         "</div>\n"
@@ -305,10 +305,10 @@ def _render_main_table(main_rows: list[dict]) -> str:
         )
     return (
         "<section class=\"main\">\n"
-        f"  <h2>Страницы <span class=\"muted\">({len(main_rows)})</span></h2>\n"
+        f"  <h2>Pages <span class=\"muted\">({len(main_rows)})</span></h2>\n"
         "  <table class=\"pages\">\n"
         "    <thead><tr>"
-        "<th>Оценка</th><th>Страница</th><th>RU</th><th>EN</th>"
+        "<th>Score</th><th>Page</th><th>RU</th><th>EN</th>"
         "</tr></thead>\n"
         f"    <tbody>{''.join(body)}</tbody>\n"
         "  </table>\n"
@@ -336,9 +336,9 @@ def _render_single_block(single_rows: list[dict], config: dict) -> str:
         )
     return (
         "<section class=\"single\">\n"
-        f"  <h2>Ожидаемо одноязычные страницы <span class=\"muted\">({len(single_rows)})</span></h2>\n"
-        f"  <p class=\"hint\">В основной таблице не участвуют. Паттерны: {pattern_chips}. "
-        "Изменить — <code>config.json → single_language_patterns</code>.</p>\n"
+        f"  <h2>Expected single-language pages <span class=\"muted\">({len(single_rows)})</span></h2>\n"
+        f"  <p class=\"hint\">Excluded from the main table. Patterns: {pattern_chips}. "
+        "Edit in <code>config.json → single_language_patterns</code>.</p>\n"
         f"  <ul class=\"single-list\">{''.join(items)}</ul>\n"
         "</section>\n"
     )

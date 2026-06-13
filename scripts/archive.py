@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
-"""Архив прошлых снимков сайта в ``docs/history/<old_date>/``.
+"""Archive previous site snapshots into ``docs/history/<old_date>/``.
 
-Использование::
+Usage::
 
     ./scripts/archive.py [<today>]
 
-``today`` — дата сегодняшнего прогона в формате ``YYYY-MM-DD``;
-если не задана, берётся ``lib.today_iso()``. Если в ``docs/meta.json``
-есть запись с другой датой, текущий снимок сайта (всё содержимое
-``docs/``, кроме самой папки ``history/`` и лендинга ``index.html``)
-копируется в ``docs/history/<old_date>/``.
+``today`` is today's date in ``YYYY-MM-DD``; defaults to
+``lib.today_iso()``. If ``docs/meta.json`` records a different date,
+the current site snapshot (everything under ``docs/`` except the
+``history/`` folder and the ``index.html`` landing page) is copied
+into ``docs/history/<old_date>/``.
 
-Идемпотентность:
+Idempotency:
 
-* Если ``docs/meta.json`` нет — нечего архивировать, выход.
-* Если ``old_date == today`` — повторный прогон в тот же день,
-  ничего не делаем (текущая запись перезапишется аналогично).
-* Если ``docs/history/<old_date>/`` уже существует — она целиком
-  заменяется текущим снимком (последний прогон того дня выигрывает).
+* No ``docs/meta.json`` → nothing to archive, exit.
+* ``old_date == today`` → re-run on the same day, no-op (the current
+  files will simply be overwritten).
+* ``docs/history/<old_date>/`` already exists → replaced wholesale by
+  the current snapshot (last run of the day wins).
 """
 
 from __future__ import annotations
@@ -30,17 +30,18 @@ from pathlib import Path
 import lib  # type: ignore[import-not-found]
 
 
-#: Файлы/каталоги в ``docs/``, которые не входят в исторический снимок.
-#: ``history`` — сам архив. ``index.html`` — лендинг сайта, в каждом
-#: снимке не нужен (внутри истории своя навигация).
+#: Entries under ``docs/`` that are NOT part of a historical snapshot.
+#: ``history`` is the archive itself. ``index.html`` is the site landing
+#: page and is not needed inside each snapshot (history has its own
+#: navigation).
 _SNAPSHOT_EXCLUDE = {"history", "index.html"}
 
 
 def archive_previous(today: str | None = None) -> str | None:
-    """Скопировать текущий снимок ``docs/`` в ``docs/history/<old_date>/``.
+    """Copy the current ``docs/`` snapshot into ``docs/history/<old_date>/``.
 
-    Возвращает дату старого снимка (``YYYY-MM-DD``) или ``None``, если
-    архивировать нечего (нет ``meta.json``) либо ``old_date == today``.
+    Returns the old snapshot date (``YYYY-MM-DD``) or ``None`` if there
+    is nothing to archive (no ``meta.json``) or ``old_date == today``.
     """
     today = today or lib.today_iso()
     meta_path = lib.SITE_ROOT / "meta.json"
@@ -77,7 +78,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "today",
         nargs="?",
-        help="дата сегодняшнего прогона YYYY-MM-DD (по умолчанию — сегодня)",
+        help="today's date YYYY-MM-DD (default: today)",
     )
     args = parser.parse_args(argv)
     archive_previous(args.today)

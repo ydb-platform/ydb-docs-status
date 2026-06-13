@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""Скачать документацию YDB для всех версий из ``config.json`` в ``cache/``.
+"""Fetch YDB documentation for every version in ``config.json`` into ``cache/``.
 
-Использование::
+Usage::
 
-    ./download.py                  # все версии из конфига
-    ./download.py 25.3 25.4        # только указанные версии
-    ./download.py --refresh main   # принудительно перекачать
+    ./download.py                  # all versions from the config
+    ./download.py 25.3 25.4        # subset
+    ./download.py --refresh main   # force re-fetch
 
-Каждая версия идёт через sparse-checkout (только ``ydb/docs/``), так что
-на диск ложится ~100 МБ на версию, а не полный клон. Без ``--refresh``
-уже скачанные версии пропускаются. Папка ``cache/`` целиком в
-``.gitignore`` — это исходники, не часть публикуемого сайта.
+Each version is sparse-checked-out (only ``ydb/docs/``), so the disk
+footprint is ~100 MB per version rather than a full clone. Without
+``--refresh`` already-fetched versions are skipped. The ``cache/``
+directory is fully gitignored — it holds input data, not part of the
+published site.
 """
 
 from __future__ import annotations
@@ -19,7 +20,7 @@ import argparse
 import sys
 from pathlib import Path
 
-# Подключаем scripts/ к sys.path, чтобы импортировать утилиты.
+# Put scripts/ on sys.path so helper modules can be imported by short name.
 _SCRIPTS = Path(__file__).resolve().parent / "scripts"
 sys.path.insert(0, str(_SCRIPTS))
 
@@ -31,8 +32,8 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    parser.add_argument("versions", nargs="*", help="версии (по умолчанию: все из config.json)")
-    parser.add_argument("--refresh", action="store_true", help="перекачать, даже если папка уже есть")
+    parser.add_argument("versions", nargs="*", help="versions (default: all from config.json)")
+    parser.add_argument("--refresh", action="store_true", help="re-fetch even if the folder already exists")
     args = parser.parse_args(argv)
 
     config = lib.load_config()

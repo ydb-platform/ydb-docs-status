@@ -1,25 +1,25 @@
 #!/usr/bin/env python3
-"""Сравнить ru/en версии документации YDB и собрать отчёты.
+"""Compare the ru/en YDB docs and build reports.
 
-Использование::
+Usage::
 
-    ./analyze.py                  # все версии из конфига
-    ./analyze.py 25.3 main        # только указанные
+    ./analyze.py                  # all versions from the config
+    ./analyze.py 25.3 main        # subset
 
-Шаги:
+Steps:
 
-1. ``archive``  — если в ``docs/meta.json`` уже стоит прошлая дата,
-   копируем текущий снимок сайта в ``docs/history/<old_date>/``.
-2. ``compare`` / ``report`` — для каждой запрошенной версии: попарные
-   метрики (``docs/<v>/results.json``) и пользовательский отчёт
+1. ``archive`` — if ``docs/meta.json`` records a previous date, copy
+   the current site snapshot into ``docs/history/<old_date>/``.
+2. ``compare`` / ``report`` — for each requested version: pairwise
+   metrics (``docs/<v>/results.json``) and the user-facing report
    (``docs/<v>/report.{txt,html}``).
-3. ``summary`` — кросс-версионная сводка ``docs/summary.{txt,html}``
-   (по всем версиям, у которых на диске есть ``results.json``).
-4. ``index`` — обновляем лендинг ``docs/index.html`` и
+3. ``summary`` — cross-version overview ``docs/summary.{txt,html}``
+   (every version with a ``results.json`` on disk).
+4. ``index`` — refresh the landing page ``docs/index.html`` and
    ``docs/history/index.html``.
-5. Пишем ``docs/meta.json`` с датой прогона.
+5. Write ``docs/meta.json`` with the run date.
 
-Перед первым прогоном нужны исходники: ``./download.py``.
+Source docs must be fetched first via ``./download.py``.
 """
 
 from __future__ import annotations
@@ -44,7 +44,7 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    parser.add_argument("versions", nargs="*", help="версии (по умолчанию: все из config.json)")
+    parser.add_argument("versions", nargs="*", help="versions (default: all from config.json)")
     args = parser.parse_args(argv)
 
     config = lib.load_config()
