@@ -1,0 +1,17 @@
+# Скачанная документация YDB. Восстанавливается командой ./download.py.
+# Тяжёлая (≈100 МБ на версию), к публикуемому сайту отношения не имеет.
+cache/
+
+# Содержимое docs/ — это корень GH Pages сайта (см. README → GitHub Pages).
+# Папка КОММИТИТСЯ; коммитим вместе с правкой кода или после ./analyze.py.
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Claude Code: локальные настройки сессии
+.claude/settings.local.json

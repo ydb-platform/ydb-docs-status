@@ -1,0 +1,19 @@
+{
+  "repo": "https://github.com/ydb-platform/ydb.git",
+  "sparse_paths": ["ydb/docs"],
+  "languages": {
+    "ru": "ru/core",
+    "en": "en/core"
+  },
+  "exclude_dirs": ["_includes", "_assets"],
+  "single_language_patterns": [
+    "public-materials/*"
+  ],
+  "url_base": "https://ydb.tech/docs",
+  "versions": {
+    "25.3": {"ref": "stable-25-3", "url_version": "v25.3"},
+    "25.4": {"ref": "stable-25-4", "url_version": "v25.4"},
+    "26.1": {"ref": "stable-26-1", "url_version": "v26.1"},
+    "main": {"ref": "main",         "url_version": "main"}
+  }
+}
