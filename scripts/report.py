@@ -211,14 +211,18 @@ def _render_html(
         "<!DOCTYPE html>\n"
         "<html lang=\"en\">\n<head>\n"
         "<meta charset=\"utf-8\">\n"
-        f"<title>YDB docs sync — {html.escape(version)}</title>\n"
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
+        f"<title>YDB Documentation Status — {html.escape(version)}</title>\n"
+        f"{lib.portal_head_links()}"
         f"<style>{css}</style>\n"
         "</head>\n<body>\n"
+        "<main class=\"subsite-page\">\n"
+        f"{lib.portal_crumbs(f'Version {version}')}"
     )
 
     header = (
         "<header class=\"page-header\">\n"
-        f"  <h1>YDB docs sync — version <span class=\"ver\">{html.escape(version)}</span></h1>\n"
+        f"  <h1>Version <span class=\"ver\">{html.escape(version)}</span></h1>\n"
         f"  <p class=\"src\">Source: <code>ydb-platform/ydb @ {html.escape(entry['ref'])}</code></p>\n"
         f"  <p class=\"src\">Generated: <code>{html.escape(generated_at)}</code></p>\n"
         "  <p class=\"legend\">Scale: <span class=\"badge score-1\">1</span> — page missing or significantly different; "
@@ -231,7 +235,7 @@ def _render_html(
     main_table = _render_main_table(main_rows)
     single_block = _render_single_block(single_rows, config)
 
-    return head + header + stats + main_table + single_block + "</body>\n</html>\n"
+    return head + header + stats + main_table + single_block + "</main>\n</body>\n</html>\n"
 
 
 def _render_stats_block(main_rows: list[dict], hist: Counter, by_section: dict[str, list[int]]) -> str:
@@ -345,39 +349,39 @@ def _render_single_block(single_rows: list[dict], config: dict) -> str:
 
 
 def _build_css() -> str:
+    """Page-specific CSS layered on top of the portal stylesheet."""
     return (
-        "body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;"
-        "color:#1d1d1f;background:#f6f7f9;margin:0;padding:24px 32px;line-height:1.45;}"
+        ".subsite-page{max-width:1200px;margin:0 auto;padding:32px 24px 56px;}"
         "h1{margin:0 0 8px 0;font-size:22px;}"
         "h2{margin:0 0 12px 0;font-size:16px;color:#444;}"
-        ".page-header{margin-bottom:20px;}"
+        ".page-header{margin-bottom:24px;}"
         ".page-header .ver{color:#1a9850;}"
         ".page-header .src{margin:4px 0;color:#555;font-size:13px;}"
         ".page-header .legend{margin:8px 0 0 0;color:#555;font-size:13px;}"
         ".muted{color:#888;font-weight:400;font-size:0.9em;}"
         ".stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));"
         "gap:16px;margin-bottom:24px;}"
-        ".card{background:#fff;border:1px solid #e1e4e8;border-radius:8px;padding:16px;}"
+        ".card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px;}"
         ".card table.compact{width:100%;border-collapse:collapse;font-size:13px;}"
         ".card table.compact th{text-align:left;color:#666;font-weight:500;"
-        "padding:4px 8px;border-bottom:1px solid #e1e4e8;}"
+        "padding:4px 8px;border-bottom:1px solid #e5e7eb;}"
         ".card table.compact td{padding:4px 8px;border-bottom:1px solid #f0f0f0;}"
         ".card table.compact tr:last-child td{border-bottom:none;}"
         ".num{text-align:right;font-variant-numeric:tabular-nums;}"
         ".badge{display:inline-block;min-width:24px;padding:2px 8px;border-radius:4px;"
         "font-weight:600;font-size:12px;text-align:center;}"
-        "section.main,section.single{background:#fff;border:1px solid #e1e4e8;"
+        "section.main,section.single{background:#fff;border:1px solid #e5e7eb;"
         "border-radius:8px;padding:16px;margin-bottom:24px;}"
         "table.pages{width:100%;border-collapse:collapse;font-size:13px;}"
         "table.pages th{text-align:left;color:#666;font-weight:500;padding:8px 12px;"
-        "border-bottom:1px solid #e1e4e8;position:sticky;top:0;background:#fff;}"
+        "border-bottom:1px solid #e5e7eb;position:sticky;top:0;background:#fff;}"
         "table.pages td{padding:6px 12px;border-bottom:1px solid #f4f5f7;}"
         "table.pages tr:hover td{background:#f9fafb;}"
         "table.pages .score-cell{width:60px;}"
         "table.pages .rel{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,monospace;"
         "color:#333;}"
         "table.pages .lang{width:48px;text-align:center;}"
-        "table.pages .lang a{color:#0969da;text-decoration:none;font-weight:600;}"
+        "table.pages .lang a{text-decoration:none;font-weight:600;}"
         "table.pages .lang a:hover{text-decoration:underline;}"
         "table.pages .missing{color:#999;}"
         ".tag{display:inline-block;padding:1px 8px;border-radius:10px;"
@@ -389,10 +393,9 @@ def _build_css() -> str:
         "font-size:13px;}"
         "section.single ul.single-list li{padding:4px 0;border-bottom:1px solid #f4f5f7;}"
         "section.single ul.single-list li:last-child{border-bottom:none;}"
-        "section.single ul.single-list a{color:#0969da;text-decoration:none;"
+        "section.single ul.single-list a{text-decoration:none;"
         "font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,monospace;}"
         "section.single ul.single-list a:hover{text-decoration:underline;}"
-        "code{background:#f4f5f7;padding:1px 5px;border-radius:3px;font-size:12px;}"
     )
 
 

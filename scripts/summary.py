@@ -182,11 +182,15 @@ def _render_html(per_version: dict[str, dict], config: dict, generated_at: str) 
     parts = [
         "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n",
         "<meta charset=\"utf-8\">\n",
-        "<title>YDB docs sync — cross-version summary</title>\n",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n",
+        "<title>YDB Documentation Status — cross-version summary</title>\n",
+        lib.portal_head_links(),
         f"<style>{css}</style>\n",
         "</head>\n<body>\n",
+        "<main class=\"subsite-page\">\n",
+        lib.portal_crumbs("Cross-version summary"),
         "<header class=\"page-header\">\n",
-        "  <h1>YDB docs sync — cross-version summary</h1>\n",
+        "  <h1>Cross-version summary</h1>\n",
         "  <p class=\"src\">Source: <code>ydb-platform/ydb</code>. ",
         "Detailed reports are linked from the version name.</p>\n",
         f"  <p class=\"src\">Generated: <code>{html.escape(generated_at)}</code></p>\n",
@@ -201,7 +205,7 @@ def _render_html(per_version: dict[str, dict], config: dict, generated_at: str) 
     parts.append(_render_distribution_block(per_version, versions))
     parts.append(_render_sections_block(per_version, versions, all_sections))
 
-    parts.append("</body>\n</html>\n")
+    parts.append("</main>\n</body>\n</html>\n")
     return "".join(parts)
 
 
@@ -307,16 +311,16 @@ def _render_sections_block(per_version: dict[str, dict], versions: list[str], se
 
 
 def _build_css() -> str:
+    """Page-specific CSS layered on top of the portal stylesheet."""
     return (
-        "body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;"
-        "color:#1d1d1f;background:#f6f7f9;margin:0;padding:24px 32px;line-height:1.45;}"
+        ".subsite-page{max-width:1200px;margin:0 auto;padding:32px 24px 56px;}"
         "h1{margin:0 0 8px 0;font-size:22px;}"
         "h2{margin:0 0 12px 0;font-size:16px;color:#444;}"
-        ".page-header{margin-bottom:20px;}"
+        ".page-header{margin-bottom:24px;}"
         ".page-header .src{margin:4px 0;color:#555;font-size:13px;}"
         ".page-header .legend{margin:8px 0 0 0;color:#555;font-size:13px;}"
         ".muted{color:#888;}"
-        ".card{background:#fff;border:1px solid #e1e4e8;border-radius:8px;"
+        ".card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;"
         "padding:16px;margin-bottom:20px;}"
         ".card .hint{color:#666;font-size:12px;margin:0 0 12px 0;}"
         ".badge{display:inline-block;min-width:24px;padding:2px 8px;border-radius:4px;"
@@ -324,11 +328,11 @@ def _build_css() -> str:
         "table{border-collapse:separate;border-spacing:0;font-size:13px;}"
         "table.overview{width:100%;}"
         "table.overview th{text-align:left;color:#666;font-weight:500;"
-        "padding:6px 10px;border-bottom:1px solid #e1e4e8;}"
+        "padding:6px 10px;border-bottom:1px solid #e5e7eb;}"
         "table.overview td{padding:6px 10px;border-bottom:1px solid #f4f5f7;}"
         "table.overview tr:last-child td{border-bottom:none;}"
         ".num{text-align:right;font-variant-numeric:tabular-nums;}"
-        ".ver-name a{color:#0969da;text-decoration:none;font-weight:600;}"
+        ".ver-name a{text-decoration:none;font-weight:600;}"
         ".ver-name a:hover{text-decoration:underline;}"
         "table.matrix{margin:0;}"
         "table.matrix th{padding:6px 10px;color:#666;font-weight:500;font-size:12px;}"
@@ -340,9 +344,8 @@ def _build_css() -> str:
         "table.matrix td.empty{color:#bbb;font-weight:400;background:#fafafa;}"
         "table.matrix.sections th.sec-name{font-family:ui-monospace,SFMono-Regular,"
         "'SF Mono',Menlo,monospace;font-weight:500;color:#333;padding-right:14px;}"
-        "table.matrix.sections th a{color:#0969da;text-decoration:none;}"
+        "table.matrix.sections th a{text-decoration:none;}"
         "table.matrix.sections th a:hover{text-decoration:underline;}"
-        "code{background:#f4f5f7;padding:1px 5px;border-radius:3px;font-size:12px;}"
     )
 
 

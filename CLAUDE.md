@@ -81,6 +81,33 @@ Cross-cutting constants live in `lib.py` and are imported by both `report.py` an
 - `expand_includes()` — recursively expands `{% include %}` directives (depth-limited to 4) before metrics are collected.
 - `is_single_language_expected()` — fnmatch check against `single_language_patterns`.
 - `today_iso()` — `YYYY-MM-DD` stamp used for `generated_at` and `history/<date>/`.
+- `PORTAL_URL` / `PORTAL_CSS` / `PORTAL_FAVICON` / `SUBSITE_LABEL` — constants pointing at the YDB Developer Portal at `ydb-platform.github.io`. The subsite shares its look by linking the portal's CSS.
+- `portal_head_links()` — `<link>` tags every generated page drops into `<head>` to pull in the portal favicon and shared stylesheet.
+- `portal_crumbs(*trail)` — renders the `.portal-crumbs` breadcrumb back to the portal. Pass the trail after «Portal → Subsite» (e.g. `portal_crumbs("Version 25.3")`). No args = subsite landing.
+
+### Developer-portal integration
+
+The site is published as a subsite of the YDB Developer Portal at
+`https://ydb-platform.github.io/` (source: separate repo `ydb-platform/ydb-platform.github.io`).
+Every generated page links the portal's canonical stylesheet at
+`https://ydb-platform.github.io/assets/portal.css` and starts with a
+`.portal-crumbs` breadcrumb back to the portal. Page-specific CSS (tables,
+score badges, the `.subsite-page` wrapper) sits in a local `<style>` block
+*after* the portal `<link>`, so it can override but does not duplicate base
+typography or link colour.
+
+Practical consequences when editing the renderers:
+
+- Don't put `body{font-family:…}`, `body{background:…}`, `code{…}`, or
+  explicit link colours (`#0969da` etc.) into local CSS. The portal stylesheet
+  already covers them — adding them locally undoes the unification.
+- Do keep page-specific styles (tables, badges, `.tag-ru/.tag-en`, etc.) local.
+- Every generated `<body>` wraps content in `<main class="subsite-page">` and
+  leads with `lib.portal_crumbs(...)`. Match this when adding a new generated
+  page.
+- Archived historical snapshots under `docs/history/<date>/` intentionally
+  retain their original inline styling — they're a frozen record, not part of
+  the unified styling contract.
 
 ### History
 

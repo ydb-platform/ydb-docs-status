@@ -86,11 +86,15 @@ def render_landing(generated_at: str | None = None, dates: list[str] | None = No
     body = (
         "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
         "<meta charset=\"utf-8\">\n"
-        "<title>YDB docs sync</title>\n"
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
+        "<title>YDB Documentation Status</title>\n"
+        f"{lib.portal_head_links()}"
         f"<style>{_css()}</style>\n"
         "</head>\n<body>\n"
+        "<main class=\"subsite-page\">\n"
+        f"{lib.portal_crumbs()}"
         "<header class=\"page-header\">\n"
-        "  <h1>YDB docs sync</h1>\n"
+        "  <h1>YDB Documentation Status</h1>\n"
         "  <p class=\"src\">Compares the Russian and English documentation in "
         "<code>ydb-platform/ydb</code> across product versions.</p>\n"
         f"  <p class=\"src\">Last run: <code>{html.escape(when)}</code></p>\n"
@@ -102,6 +106,7 @@ def render_landing(generated_at: str | None = None, dates: list[str] | None = No
         "they lead to per-page score tables.</p>\n"
         "</section>\n"
         f"{history_block}"
+        "</main>\n"
         "</body>\n</html>\n"
     )
 
@@ -136,16 +141,20 @@ def render_history_index(dates: list[str] | None = None) -> Path:
     body = (
         "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
         "<meta charset=\"utf-8\">\n"
-        "<title>YDB docs sync — history</title>\n"
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
+        "<title>YDB Documentation Status — history</title>\n"
+        f"{lib.portal_head_links()}"
         f"<style>{_css()}</style>\n"
         "</head>\n<body>\n"
+        "<main class=\"subsite-page\">\n"
+        f"{lib.portal_crumbs('History')}"
         "<header class=\"page-header\">\n"
-        "  <p class=\"crumbs\"><a href=\"../index.html\">← back to home</a></p>\n"
         "  <h1>Snapshot history</h1>\n"
         "  <p class=\"src\">Report states saved by date. "
         "Each snapshot opens as a self-contained summary.</p>\n"
         "</header>\n"
         f"<section class=\"card\">\n  {list_block}\n</section>\n"
+        "</main>\n"
         "</body>\n</html>\n"
     )
 
@@ -161,31 +170,30 @@ def render_history_index(dates: list[str] | None = None) -> Path:
 # ---------------------------------------------------------------------------
 
 def _css() -> str:
+    """Page-specific CSS that sits on top of the portal stylesheet.
+
+    Anything covered by ``portal.css`` (body, typography, ``code``, link
+    colour, ``.portal-crumbs``) is intentionally not redefined here.
+    """
     return (
-        "body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;"
-        "color:#1d1d1f;background:#f6f7f9;margin:0;padding:24px 32px;line-height:1.45;"
-        "max-width:760px;}"
+        ".subsite-page{max-width:760px;margin:0 auto;padding:32px 24px 56px;}"
         "h1{margin:0 0 8px 0;font-size:26px;}"
         "h2{margin:0 0 12px 0;font-size:16px;color:#444;}"
-        ".page-header{margin-bottom:20px;}"
+        ".page-header{margin-bottom:24px;}"
         ".page-header .src{margin:4px 0;color:#555;font-size:13px;}"
-        ".page-header .crumbs{margin:0 0 8px 0;font-size:13px;}"
-        ".page-header .crumbs a{color:#0969da;text-decoration:none;}"
-        ".page-header .crumbs a:hover{text-decoration:underline;}"
-        ".card{background:#fff;border:1px solid #e1e4e8;border-radius:8px;"
+        ".card{background:#fff;border:1px solid #e5e7eb;border-radius:8px;"
         "padding:16px 20px;margin-bottom:20px;}"
-        ".card.primary{border-color:#a6d96a;}"
-        ".big-link{font-size:18px;font-weight:600;color:#0969da;text-decoration:none;}"
+        ".card.primary{border-color:#2399ff;}"
+        ".big-link{font-size:18px;font-weight:600;text-decoration:none;}"
         ".big-link:hover{text-decoration:underline;}"
         ".muted{color:#888;font-size:13px;margin:6px 0 0 0;}"
         "ul.recent,ul.history{margin:0;padding-left:20px;font-size:14px;}"
         "ul.recent li,ul.history li{padding:3px 0;}"
-        "ul.recent a,ul.history a{color:#0969da;text-decoration:none;}"
+        "ul.recent a,ul.history a{text-decoration:none;}"
         "ul.recent a:hover,ul.history a:hover{text-decoration:underline;}"
         ".more-line{margin:10px 0 0 0;font-size:13px;}"
-        ".more-line .more{color:#0969da;text-decoration:none;}"
+        ".more-line .more{text-decoration:none;}"
         ".more-line .more:hover{text-decoration:underline;}"
-        "code{background:#f4f5f7;padding:1px 5px;border-radius:3px;font-size:12px;}"
     )
 
 

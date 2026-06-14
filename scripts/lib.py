@@ -9,6 +9,7 @@ The pipeline never modifies the cloned YDB docs; it only reads them.
 
 from __future__ import annotations
 
+import html
 import json
 import re
 from collections.abc import Iterable
@@ -313,6 +314,71 @@ def score_badge_style(score_value: int | float) -> str:
     key = max(1, min(10, round(score_value)))
     bg, fg = SCORE_COLORS[key]
     return f"background:{bg};color:{fg};"
+
+
+# ---------------------------------------------------------------------------
+# YDB Developer Portal integration
+# ---------------------------------------------------------------------------
+
+#: Root of the YDB Developer Portal. Subsites live under the same origin,
+#: so absolute URLs are fine and the breadcrumb works from any depth.
+PORTAL_URL = "https://ydb-platform.github.io"
+
+#: URL of the portal's canonical shared stylesheet. Every page on this
+#: subsite links to it directly so brand colour, typography and the
+#: ``.portal-crumbs`` class stay in sync with the portal automatically.
+PORTAL_CSS = f"{PORTAL_URL}/assets/portal.css"
+
+#: SVG favicon shared with the portal (the YDB icon, no wordmark).
+PORTAL_FAVICON = f"{PORTAL_URL}/assets/favicon.svg"
+
+#: Label this subsite uses in the breadcrumb. Single source of truth so
+#: every page reads the same and a rename is one diff.
+SUBSITE_LABEL = "YDB Documentation Status"
+
+#: Subsite root, relative to the same GitHub Pages origin.
+SUBSITE_HOME = f"{PORTAL_URL}/ydb-docs-status/"
+
+
+def portal_head_links() -> str:
+    """Return ``<link>`` tags for portal favicon + shared stylesheet.
+
+    Drop these into the ``<head>`` of every generated page. They give the
+    page the YDB brand colour, system-font typography, and the
+    ``.portal-crumbs`` breadcrumb styling. Page-specific CSS still goes
+    in a local ``<style>`` block after these links so it can override.
+    """
+    return (
+        f'<link rel="icon" type="image/svg+xml" href="{PORTAL_FAVICON}">\n'
+        f'<link rel="stylesheet" href="{PORTAL_CSS}">\n'
+    )
+
+
+def portal_crumbs(*trail: str) -> str:
+    """Render a ``.portal-crumbs`` breadcrumb back to the portal.
+
+    ``trail`` is the sequence of labels after «Portal → Subsite». The
+    last item is rendered as plain text (current page); earlier items
+    link back to the subsite root. Examples:
+
+    * ``portal_crumbs()`` → Portal / Subsite *(use on the subsite landing)*
+    * ``portal_crumbs("History")`` → Portal / Subsite / History
+    * ``portal_crumbs("Version 25.3")`` → Portal / Subsite / Version 25.3
+    """
+    parts = [
+        f'<a href="{PORTAL_URL}/">YDB Developer Portal</a>',
+        '<span class="sep">/</span>',
+    ]
+    if trail:
+        parts.append(f'<a href="{SUBSITE_HOME}">{html.escape(SUBSITE_LABEL)}</a>')
+        for label in trail[:-1]:
+            parts.append('<span class="sep">/</span>')
+            parts.append(f'<a href="{SUBSITE_HOME}">{html.escape(label)}</a>')
+        parts.append('<span class="sep">/</span>')
+        parts.append(f"<span>{html.escape(trail[-1])}</span>")
+    else:
+        parts.append(f"<span>{html.escape(SUBSITE_LABEL)}</span>")
+    return '<nav class="portal-crumbs">' + "".join(parts) + "</nav>\n"
 
 
 # ---------------------------------------------------------------------------
