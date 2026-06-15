@@ -12,7 +12,7 @@ CLI: `./download.py [<version>...] [--refresh]`.
 
 Adds `scripts/` to `sys.path`, reads `config.json`, calls
 `fetch.fetch(v, refresh=...)` for each requested version (or for all
-of them). Fetched content lands at `cache/<v>/docs/`.
+of them). Fetched content lands at `cache/<v>/ydb/docs/`.
 
 ### `analyze.py`
 
@@ -23,7 +23,7 @@ version, calls `compare.compare(v)` and
 `report.render(v, generated_at=today)`; then unconditionally calls
 `summary.render(generated_at=today)`, `index.render_landing(today, ...)`,
 `index.render_history_index(...)`, and writes `docs/meta.json` with
-today's date. No network — all input comes from `cache/<v>/docs/`.
+today's date. No network — all input comes from `cache/<v>/ydb/docs/`.
 If the docs aren't fetched yet for some version, `compare` fails with
 a clear message asking you to run `./download.py <v>` first.
 
@@ -41,7 +41,7 @@ a clear message asking you to run `./download.py <v>` first.
 | `cache_version_dir(v)` | `cache/<v>/`. |
 | `site_version_dir(v)` | `docs/<v>/` — current per-version report. |
 | `history_dir(date)` | `docs/history/<date>/`. |
-| `docs_root(v)` | `cache/<v>/docs/` — `ydb/docs` subtree for the version. |
+| `docs_root(v)` | `cache/<v>/ydb/docs/` — `ydb/docs` subtree for the version (the clone's `.git/` lives at `cache/<v>/`). |
 | `lang_root(v, lang, cfg)` | Language root inside `docs/` (e.g. `.../ru/core`). |
 | `require_version(v, cfg)` | Raises `SystemExit` with a clear message if the version is unknown. |
 | `today_iso()` | `YYYY-MM-DD` for `generated_at` and snapshot folder names. |
@@ -111,8 +111,15 @@ CLI: `./scripts/fetch.py <version> [--refresh]`.
 
 Public function: `fetch(version: str, *, refresh: bool=False) -> Path`.
 
-Sparse-checks-out `sparse_paths` from branch `versions[version].ref`
-into a temp directory, then moves `ydb/docs` into `cache/<v>/docs/`.
+Sparse-clones `sparse_paths` from branch `versions[version].ref` into
+`cache/<v>/`, leaving the docs at `cache/<v>/ydb/docs/` and `.git/` at
+the cache directory's root. On subsequent runs it reuses the clone and
+runs `git fetch --depth=1 origin <ref> && git reset --hard FETCH_HEAD`
+to pick up new commits (useful for `main` and for hotfixes on
+`stable-*`). With `--refresh`, the cache directory is wiped and
+re-cloned. If `cache/<v>/` exists without a valid `.git/` (left over
+from the old layout) or its `origin` no longer matches `repo`, it is
+treated as unusable and replaced by a fresh clone.
 
 ## `scripts/compare.py`
 

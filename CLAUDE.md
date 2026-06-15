@@ -119,7 +119,7 @@ Everything under `cache/` is gitignored. The repository is reproducible from `./
 
 ### Idempotency
 
-- `fetch.py` skips already-downloaded versions unless `--refresh` (which wipes `cache/<v>/docs/` and re-fetches).
+- `fetch.py` updates already-downloaded versions incrementally: `git fetch --depth=1 origin <ref> && git reset --hard FETCH_HEAD` on the existing clone at `cache/<v>/`. With `--refresh` the cache directory is wiped and re-cloned from scratch. The docs live at `cache/<v>/ydb/docs/` (same layout as in the upstream repo), with `.git/` at `cache/<v>/`.
 - `compare.py` and `report.py` always overwrite their outputs.
 - `archive.py` is a no-op when `meta.json` is missing or its date already matches today.
 - No state outside `cache/<v>/`, `docs/`, and `config.json`.

@@ -1,6 +1,6 @@
 YDB ru/en docs comparison, version main
 Source: ydb-platform/ydb @ main
-Generated: 2026-06-15
+Generated: 2026-06-13
 Scale: 1 — page missing or content significantly differs; 10 — content is very close.
 Score is based on structural similarity (headings, length, code blocks, links, images)
 after include directives are expanded. This is a proxy for semantic match: with identical
@@ -30,9 +30,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
      1  https://ydb.tech/docs/ru/postgresql/docker-connect?version=main  [no RU page]
      1  https://ydb.tech/docs/ru/postgresql/interoperability?version=main  [no EN page]
      1  https://ydb.tech/docs/ru/postgresql/mechanisms/locks?version=main  [no EN page]
-     1  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-otel-metrics?version=main  [no EN page]
-     1  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-otel-tracing?version=main  [no EN page]
-     1  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-otel?version=main  [no RU page]
      1  https://ydb.tech/docs/ru/reference/configuration/hive?version=main  [no RU page]
      1  https://ydb.tech/docs/ru/reference/configuration/hive_config?version=main  [no EN page]
      1  https://ydb.tech/docs/ru/reference/configuration/kafka?version=main  [no RU page]
@@ -42,6 +39,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      1  https://ydb.tech/docs/ru/reference/ydb-cli/auth-get-token?version=main  [no EN page]
      1  https://ydb.tech/docs/ru/reference/ydbops/reference?version=main  [no RU page]
      1  https://ydb.tech/docs/ru/troubleshooting/examples/schemas/overloaded-shard-insufficient-cpu?version=main  [no EN page]
+     1  https://ydb.tech/docs/ru/yql/reference/syntax/analyze?version=main  [no RU page]
      1  https://ydb.tech/docs/ru/yql/reference/syntax/join?version=main  [no EN page]
      1  https://ydb.tech/docs/ru/yql/reference/udf/list/postgres?version=main  [no EN page]
      4  https://ydb.tech/docs/ru/public-materials/publications/2024?version=main
@@ -79,13 +77,13 @@ structure, wording can still differ. See documentation/scoring.md for details.
      8  https://ydb.tech/docs/ru/contributor/manage-releases?version=main
      8  https://ydb.tech/docs/ru/contributor/suggest-change?version=main
      8  https://ydb.tech/docs/ru/dev/primary-key/row-oriented?version=main
+     8  https://ydb.tech/docs/ru/dev/resource-consumption-management?version=main
      8  https://ydb.tech/docs/ru/dev/system-views?version=main
      8  https://ydb.tech/docs/ru/dev/timeouts?version=main
      8  https://ydb.tech/docs/ru/dev/yql-tutorial/insert_into?version=main
      8  https://ydb.tech/docs/ru/dev/yql-tutorial/replace_into?version=main
      8  https://ydb.tech/docs/ru/devops/deployment-options/manual?version=main
-     8  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-configuration-v1?version=main
-     8  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-configuration-v2?version=main
+     8  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment?version=main
      8  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-preparation?version=main
      8  https://ydb.tech/docs/ru/integrations/orm/django?version=main
      8  https://ydb.tech/docs/ru/integrations/orm/sqlalchemy?version=main
@@ -104,6 +102,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      8  https://ydb.tech/docs/ru/reference/ydb-cli/export-import/file-structure?version=main
      8  https://ydb.tech/docs/ru/reference/ydb-sdk/coordination?version=main
      8  https://ydb.tech/docs/ru/reference/ydb-sdk/data-formats/format-protobuf?version=main
+     8  https://ydb.tech/docs/ru/reference/ydb-sdk/parameterized_queries?version=main
      8  https://ydb.tech/docs/ru/troubleshooting/performance/queries/overloaded-errors?version=main
      8  https://ydb.tech/docs/ru/troubleshooting/performance/queries/retry-cascade?version=main
      8  https://ydb.tech/docs/ru/yql/reference/builtins/aggregation?version=main
@@ -126,12 +125,13 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/concepts/architecture?version=main
      9  https://ydb.tech/docs/ru/concepts/backup?version=main
      9  https://ydb.tech/docs/ru/concepts/datamodel/secrets?version=main
+     9  https://ydb.tech/docs/ru/concepts/datamodel/topic?version=main
      9  https://ydb.tech/docs/ru/concepts/datamodel/view?version=main
      9  https://ydb.tech/docs/ru/concepts/query_execution/federated_query/s3/external_table?version=main
-     9  https://ydb.tech/docs/ru/concepts/query_execution/federated_query/s3/formats?version=main
      9  https://ydb.tech/docs/ru/concepts/query_execution/federated_query/s3/partitioning?version=main
      9  https://ydb.tech/docs/ru/concepts/query_execution/fulltext_search?version=main
      9  https://ydb.tech/docs/ru/concepts/query_execution/mvcc?version=main
+     9  https://ydb.tech/docs/ru/concepts/query_execution/optimizer?version=main
      9  https://ydb.tech/docs/ru/concepts/query_execution/vector_search?version=main
      9  https://ydb.tech/docs/ru/concepts/transactions?version=main
      9  https://ydb.tech/docs/ru/contributor/bridge?version=main
@@ -150,6 +150,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/dev/custom-attributes?version=main
      9  https://ydb.tech/docs/ru/dev/getting-started?version=main
      9  https://ydb.tech/docs/ru/dev/streaming-query/enrichment?version=main
+     9  https://ydb.tech/docs/ru/dev/streaming-query?version=main
      9  https://ydb.tech/docs/ru/devops/concepts/system-requirements?version=main
      9  https://ydb.tech/docs/ru/devops/configuration-management/compare-configs?version=main
      9  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v1/change_actorsystem_configs?version=main
@@ -157,6 +158,8 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v1?version=main
      9  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v2/dynamic-config-selectors?version=main
      9  https://ydb.tech/docs/ru/devops/deployment-options/manual/federated-queries?version=main
+     9  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-configuration-v1?version=main
+     9  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-configuration-v2?version=main
      9  https://ydb.tech/docs/ru/downloads?version=main
      9  https://ydb.tech/docs/ru/integrations/gui/dbeaver-plugin?version=main
      9  https://ydb.tech/docs/ru/integrations/gui?version=main
@@ -190,11 +193,11 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/balancing-prefer-pile?version=main
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/balancing-random-choice?version=main
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/bulk-upsert?version=main
-     9  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-logs-otel?version=main
-     9  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug?version=main
+     9  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-otel?version=main
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/init?version=main
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/retry?version=main
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/tx-control?version=main
+     9  https://ydb.tech/docs/ru/reference/configuration/auth_config?version=main
      9  https://ydb.tech/docs/ru/reference/configuration/blob_storage_config?version=main
      9  https://ydb.tech/docs/ru/reference/configuration/bridge_config?version=main
      9  https://ydb.tech/docs/ru/reference/configuration/security_config?version=main
@@ -213,7 +216,9 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/reference/ydb-cli/export-import/export-s3?version=main
      9  https://ydb.tech/docs/ru/reference/ydb-cli/interactive-cli?version=main
      9  https://ydb.tech/docs/ru/reference/ydb-cli/parameterized-queries-cli?version=main
+     9  https://ydb.tech/docs/ru/reference/ydb-cli/parameterized-query-execution?version=main
      9  https://ydb.tech/docs/ru/reference/ydb-cli/profile/activate?version=main
+     9  https://ydb.tech/docs/ru/reference/ydb-cli/sql?version=main
      9  https://ydb.tech/docs/ru/reference/ydb-cli/workload-fulltext?version=main
      9  https://ydb.tech/docs/ru/reference/ydb-cli/workload-transfer?version=main
      9  https://ydb.tech/docs/ru/reference/ydb-sdk/auth?version=main
@@ -230,6 +235,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/yql/reference/syntax/alter-secret?version=main
      9  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table/changefeed?version=main
      9  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table/columns?version=main
+     9  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table?version=main
      9  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table/set?version=main
      9  https://ydb.tech/docs/ru/yql/reference/syntax/create-secret?version=main
      9  https://ydb.tech/docs/ru/yql/reference/syntax/create_table?version=main
@@ -286,7 +292,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/concepts/datamodel/external_data_source?version=main
     10  https://ydb.tech/docs/ru/concepts/datamodel/external_table?version=main
     10  https://ydb.tech/docs/ru/concepts/datamodel?version=main
-    10  https://ydb.tech/docs/ru/concepts/datamodel/topic?version=main
     10  https://ydb.tech/docs/ru/concepts/glossary?version=main
     10  https://ydb.tech/docs/ru/concepts?version=main
     10  https://ydb.tech/docs/ru/concepts/limits-ydb?version=main
@@ -300,10 +305,10 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/concepts/query_execution/federated_query/postgresql?version=main
     10  https://ydb.tech/docs/ru/concepts/query_execution/federated_query/s3/arrow_types_mapping?version=main
     10  https://ydb.tech/docs/ru/concepts/query_execution/federated_query/s3/external_data_source?version=main
+    10  https://ydb.tech/docs/ru/concepts/query_execution/federated_query/s3/formats?version=main
     10  https://ydb.tech/docs/ru/concepts/query_execution/federated_query/s3/partition_projection?version=main
     10  https://ydb.tech/docs/ru/concepts/query_execution/federated_query/ydb?version=main
     10  https://ydb.tech/docs/ru/concepts/query_execution?version=main
-    10  https://ydb.tech/docs/ru/concepts/query_execution/optimizer?version=main
     10  https://ydb.tech/docs/ru/concepts/query_execution/secondary_indexes?version=main
     10  https://ydb.tech/docs/ru/concepts/query_execution/spilling?version=main
     10  https://ydb.tech/docs/ru/concepts/scan_query?version=main
@@ -339,10 +344,8 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/dev/query-execution-optimization?version=main
     10  https://ydb.tech/docs/ru/dev/query-execution-optimization/query-hints?version=main
     10  https://ydb.tech/docs/ru/dev/query-execution-optimization/query-plans-optimization?version=main
-    10  https://ydb.tech/docs/ru/dev/resource-consumption-management?version=main
     10  https://ydb.tech/docs/ru/dev/streaming-query/checkpoints?version=main
     10  https://ydb.tech/docs/ru/dev/streaming-query/guarantees?version=main
-    10  https://ydb.tech/docs/ru/dev/streaming-query?version=main
     10  https://ydb.tech/docs/ru/dev/streaming-query/patterns?version=main
     10  https://ydb.tech/docs/ru/dev/streaming-query/streaming-query-formats?version=main
     10  https://ydb.tech/docs/ru/dev/streaming-query/table-writing?version=main
@@ -414,7 +417,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/devops/observability/alerting?version=main
     10  https://ydb.tech/docs/ru/devops/observability?version=main
     10  https://ydb.tech/docs/ru/devops/observability/logging?version=main
-    10  https://ydb.tech/docs/ru/devops/observability/minidumps?version=main
     10  https://ydb.tech/docs/ru/devops/observability/monitoring?version=main
     10  https://ydb.tech/docs/ru/devops/observability/system-views?version=main
     10  https://ydb.tech/docs/ru/downloads/yandex-enterprise-database?version=main
@@ -446,7 +448,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/integrations/migration/liquibase?version=main
     10  https://ydb.tech/docs/ru/integrations/orchestration?version=main
     10  https://ydb.tech/docs/ru/integrations/orm/entity-framework?version=main
-    10  https://ydb.tech/docs/ru/integrations/orm/exposed?version=main
     10  https://ydb.tech/docs/ru/integrations/orm/hibernate?version=main
     10  https://ydb.tech/docs/ru/integrations/orm?version=main
     10  https://ydb.tech/docs/ru/integrations/orm/jooq?version=main
@@ -493,13 +494,13 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/config-publication?version=main
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-jaeger?version=main
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-prometheus?version=main
+    10  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug?version=main
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk?version=main
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/leader-election?version=main
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/service-discovery?version=main
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/ttl?version=main
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/vector-search?version=main
     10  https://ydb.tech/docs/ru/reference/configuration/actor_system_config?version=main
-    10  https://ydb.tech/docs/ru/reference/configuration/auth_config?version=main
     10  https://ydb.tech/docs/ru/reference/configuration/aws_client_config?version=main
     10  https://ydb.tech/docs/ru/reference/configuration/client_certificate_authorization?version=main
     10  https://ydb.tech/docs/ru/reference/configuration/cms_config?version=main
@@ -590,13 +591,11 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/reference/ydb-cli/operation-forget?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/operation-get?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/operation-list?version=main
-    10  https://ydb.tech/docs/ru/reference/ydb-cli/parameterized-query-execution?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/profile/create?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/profile?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/profile/list-and-get?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/profile/use?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/scripting-yql?version=main
-    10  https://ydb.tech/docs/ru/reference/ydb-cli/sql?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/table-attribute-add?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/table-attribute-drop?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/table-drop?version=main
@@ -622,7 +621,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/reference/ydb-cli/workload-tpcc?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/workload-tpcds?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/workload-tpch?version=main
-    10  https://ydb.tech/docs/ru/reference/ydb-cli/workload-vector?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/yql-query-overview?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-cli/yql?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-dstool/device-list?version=main
@@ -636,7 +634,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/reference/ydb-sdk/health-check-api?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-sdk?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-sdk/overview-grpc-api?version=main
-    10  https://ydb.tech/docs/ru/reference/ydb-sdk/parameterized_queries?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-sdk/topic?version=main
     10  https://ydb.tech/docs/ru/reference/ydb-sdk/ydb-status-codes?version=main
     10  https://ydb.tech/docs/ru/reference/ydbops?version=main
@@ -690,12 +687,9 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/yql/reference/syntax/alter_database?version=main
     10  https://ydb.tech/docs/ru/yql/reference/syntax/alter_database/owner?version=main
     10  https://ydb.tech/docs/ru/yql/reference/syntax/alter_database/settings?version=main
-    10  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table/compact?version=main
     10  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table/family?version=main
-    10  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table?version=main
     10  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table/indexes?version=main
     10  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table/rename?version=main
-    10  https://ydb.tech/docs/ru/yql/reference/syntax/analyze?version=main
     10  https://ydb.tech/docs/ru/yql/reference/syntax/backup?version=main
     10  https://ydb.tech/docs/ru/yql/reference/syntax/batch-delete?version=main
     10  https://ydb.tech/docs/ru/yql/reference/syntax/batch-update?version=main
@@ -785,38 +779,38 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/url?version=main
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/yson?version=main
 
-Score distribution (pages: 776):
-   1: 36 pages
+Score distribution (pages: 770):
+   1: 34 pages
    4: 2 pages
    5: 4 pages
    6: 7 pages
    7: 14 pages
-   8: 50 pages
-   9: 128 pages
-  10: 535 pages
+   8: 51 pages
+   9: 135 pages
+  10: 523 pages
 
 By section (average score / page count):
   analyst                      avg=10.00  n=16
   changelog-cli.md             avg=10.00  n=1
   changelog-enterprise.md      avg=10.00  n=1
   changelog-server.md          avg=10.00  n=1
-  concepts                     avg= 9.56  n=59
+  concepts                     avg= 9.54  n=59
   contributor                  avg= 8.47  n=32
-  dev                          avg= 9.37  n=52
+  dev                          avg= 9.31  n=52
   devops                       avg= 8.91  n=76
   downloads                    avg= 9.86  n=7
   faq                          avg=10.00  n=7
-  integrations                 avg= 9.76  n=37
+  integrations                 avg= 9.75  n=36
   maintenance                  avg= 6.71  n=21
   postgresql                   avg= 6.36  n=14
   public-materials             avg= 6.50  n=8
   quickstart.md                avg=10.00  n=1
-  recipes                      avg= 8.90  n=58
-  reference                    avg= 9.37  n=185
+  recipes                      avg= 9.35  n=55
+  reference                    avg= 9.34  n=184
   security                     avg= 9.78  n=9
   security-changelog.md        avg=10.00  n=1
   troubleshooting              avg= 9.42  n=26
-  yql                          avg= 9.34  n=164
+  yql                          avg= 9.28  n=163
 
 Expected single-language pages (per single_language_patterns, total: 9)
 Excluded from the main table. Edit the pattern list in config.json.

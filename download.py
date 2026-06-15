@@ -5,13 +5,15 @@ Usage::
 
     ./download.py                  # all versions from the config
     ./download.py 25.3 25.4        # subset
-    ./download.py --refresh main   # force re-fetch
+    ./download.py --refresh main   # wipe and reclone instead of incremental update
 
 Each version is sparse-checked-out (only ``ydb/docs/``), so the disk
-footprint is ~100 MB per version rather than a full clone. Without
-``--refresh`` already-fetched versions are skipped. The ``cache/``
-directory is fully gitignored — it holds input data, not part of the
-published site.
+footprint is ~100 MB per version rather than a full clone. Already-fetched
+versions are updated incrementally via ``git fetch --depth=1 && git reset
+--hard FETCH_HEAD`` — this matters for ``main`` (which moves) and for
+``stable-*`` branches that occasionally get hotfixes. Pass ``--refresh``
+to wipe and reclone from scratch. The ``cache/`` directory is fully
+gitignored — it holds input data, not part of the published site.
 """
 
 from __future__ import annotations

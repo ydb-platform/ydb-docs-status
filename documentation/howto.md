@@ -26,19 +26,25 @@ the summary and landing for every available version.
 ## Refresh an already-added version
 
 `stable-*` branches occasionally get patches, and `main` moves all the
-time:
+time. Without flags, `download.py` runs `git fetch && git reset --hard`
+on the existing clone, pulling the latest commits incrementally:
 
 ```bash
-./download.py --refresh main
-./download.py --refresh 26.1
+./download.py main      # incremental — git fetch on the existing clone
+./download.py           # the same for every version in config.json
 ./analyze.py
 ```
 
-Without `--refresh`, `download.py` skips already-fetched folders.
+Pass `--refresh` to wipe `cache/<v>/` and reclone from scratch (useful
+if the clone is somehow corrupted):
+
+```bash
+./download.py --refresh main
+```
 
 ## Run only the comparison (no re-fetch)
 
-Once `cache/<v>/docs/` is in place:
+Once `cache/<v>/ydb/docs/` is in place:
 
 ```bash
 ./analyze.py 25.3

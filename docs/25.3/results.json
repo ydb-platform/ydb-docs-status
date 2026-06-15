@@ -520,16 +520,16 @@
       "words": 7469
     },
     "en_metrics": {
-      "lines": 738,
+      "lines": 741,
       "headings_total": 74,
       "h1": 1,
       "h2": 15,
       "h3": 33,
       "code_blocks": 0,
-      "links": 398,
+      "links": 402,
       "images": 0,
-      "chars": 66313,
-      "words": 8498
+      "chars": 66911,
+      "words": 8575
     },
     "score": 9.61
   },
@@ -6408,6 +6408,18 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
+      "lines": 12,
+      "headings_total": 1,
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 6,
+      "images": 0,
+      "chars": 289,
+      "words": 31
+    },
+    "en_metrics": {
       "lines": 11,
       "headings_total": 1,
       "h1": 1,
@@ -6417,21 +6429,9 @@
       "links": 5,
       "images": 0,
       "chars": 268,
-      "words": 29
+      "words": 28
     },
-    "en_metrics": {
-      "lines": 10,
-      "headings_total": 1,
-      "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 4,
-      "images": 0,
-      "chars": 247,
-      "words": 26
-    },
-    "score": 9.47
+    "score": 9.54
   },
   {
     "rel": "devops/observability/logging.md",
@@ -6463,6 +6463,37 @@
       "words": 127
     },
     "score": 9.9
+  },
+  {
+    "rel": "devops/observability/minidumps.md",
+    "ru_exists": true,
+    "en_exists": true,
+    "single_language_expected": false,
+    "ru_metrics": {
+      "lines": 89,
+      "headings_total": 8,
+      "h1": 2,
+      "h2": 4,
+      "h3": 2,
+      "code_blocks": 2,
+      "links": 7,
+      "images": 0,
+      "chars": 3398,
+      "words": 485
+    },
+    "en_metrics": {
+      "lines": 89,
+      "headings_total": 8,
+      "h1": 2,
+      "h2": 4,
+      "h3": 2,
+      "code_blocks": 2,
+      "links": 7,
+      "images": 0,
+      "chars": 3387,
+      "words": 568
+    },
+    "score": 9.73
   },
   {
     "rel": "devops/observability/monitoring.md",
@@ -7803,16 +7834,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 259,
+      "lines": 410,
       "headings_total": 12,
       "h1": 1,
       "h2": 4,
       "h3": 5,
-      "code_blocks": 17,
+      "code_blocks": 22,
       "links": 4,
       "images": 0,
-      "chars": 6608,
-      "words": 835
+      "chars": 9151,
+      "words": 1306
     },
     "en_metrics": {
       "lines": 259,
@@ -7826,7 +7857,7 @@
       "chars": 6406,
       "words": 884
     },
-    "score": 9.87
+    "score": 8.74
   },
   {
     "rel": "integrations/visualization/datalens.md",
@@ -10207,16 +10238,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 159,
-      "headings_total": 1,
+      "lines": 350,
+      "headings_total": 7,
       "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 2,
-      "links": 0,
+      "h2": 4,
+      "h3": 2,
+      "code_blocks": 14,
+      "links": 3,
       "images": 0,
-      "chars": 3279,
-      "words": 407
+      "chars": 11081,
+      "words": 1161
     },
     "en_metrics": {
       "lines": 131,
@@ -10230,7 +10261,7 @@
       "chars": 3057,
       "words": 395
     },
-    "score": 9.89
+    "score": 3.34
   },
   {
     "rel": "recipes/ydb-sdk/debug-prometheus.md",
@@ -10275,10 +10306,10 @@
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 3,
+      "links": 4,
       "images": 0,
-      "chars": 611,
-      "words": 83
+      "chars": 572,
+      "words": 75
     },
     "en_metrics": {
       "lines": 12,
@@ -10292,7 +10323,7 @@
       "chars": 611,
       "words": 96
     },
-    "score": 9.76
+    "score": 9.21
   },
   {
     "rel": "recipes/ydb-sdk/distributed-lock.md",
@@ -10312,18 +10343,18 @@
       "words": 622
     },
     "en_metrics": {
-      "lines": 78,
+      "lines": 128,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
-      "code_blocks": 3,
+      "code_blocks": 5,
       "links": 1,
       "images": 0,
-      "chars": 2346,
-      "words": 358
+      "chars": 3390,
+      "words": 483
     },
-    "score": 6.81
+    "score": 7.87
   },
   {
     "rel": "recipes/ydb-sdk/index.md",
@@ -10339,8 +10370,8 @@
       "code_blocks": 0,
       "links": 30,
       "images": 0,
-      "chars": 1502,
-      "words": 148
+      "chars": 1497,
+      "words": 147
     },
     "en_metrics": {
       "lines": 46,
@@ -10354,7 +10385,7 @@
       "chars": 1350,
       "words": 149
     },
-    "score": 9.85
+    "score": 9.84
   },
   {
     "rel": "recipes/ydb-sdk/init.md",
@@ -10529,18 +10560,18 @@
       "words": 695
     },
     "en_metrics": {
-      "lines": 245,
+      "lines": 337,
       "headings_total": 6,
       "h1": 1,
       "h2": 5,
       "h3": 0,
-      "code_blocks": 16,
+      "code_blocks": 21,
       "links": 4,
       "images": 0,
-      "chars": 4451,
-      "words": 538
+      "chars": 5829,
+      "words": 671
     },
-    "score": 8.89
+    "score": 9.86
   },
   {
     "rel": "recipes/ydb-sdk/tx-control.md",
@@ -12547,7 +12578,7 @@
       "code_blocks": 0,
       "links": 5,
       "images": 0,
-      "chars": 1385,
+      "chars": 1383,
       "words": 174
     },
     "en_metrics": {
@@ -12562,7 +12593,7 @@
       "chars": 1403,
       "words": 229
     },
-    "score": 9.56
+    "score": 9.55
   },
   {
     "rel": "reference/observability/tracing/setup.md",
@@ -14675,8 +14706,8 @@
       "code_blocks": 5,
       "links": 10,
       "images": 0,
-      "chars": 2303,
-      "words": 262
+      "chars": 2409,
+      "words": 274
     },
     "en_metrics": {
       "lines": 64,
@@ -14687,10 +14718,10 @@
       "code_blocks": 5,
       "links": 10,
       "images": 0,
-      "chars": 2637,
-      "words": 308
+      "chars": 2703,
+      "words": 320
     },
-    "score": 9.62
+    "score": 9.64
   },
   {
     "rel": "reference/ydb-cli/topic-consumer-add.md",
@@ -14799,8 +14830,8 @@
       "code_blocks": 5,
       "links": 8,
       "images": 0,
-      "chars": 2244,
-      "words": 262
+      "chars": 2350,
+      "words": 274
     },
     "en_metrics": {
       "lines": 63,
@@ -14811,10 +14842,10 @@
       "code_blocks": 5,
       "links": 8,
       "images": 0,
-      "chars": 2629,
-      "words": 304
+      "chars": 2695,
+      "words": 316
     },
-    "score": 9.62
+    "score": 9.65
   },
   {
     "rel": "reference/ydb-cli/topic-drop.md",
@@ -15474,18 +15505,18 @@
       "words": 3508
     },
     "en_metrics": {
-      "lines": 545,
+      "lines": 719,
       "headings_total": 13,
       "h1": 1,
       "h2": 5,
       "h3": 7,
-      "code_blocks": 29,
-      "links": 7,
+      "code_blocks": 42,
+      "links": 19,
       "images": 0,
-      "chars": 16130,
-      "words": 2600
+      "chars": 24035,
+      "words": 3385
     },
-    "score": 6.31
+    "score": 7.78
   },
   {
     "rel": "reference/ydb-sdk/data-formats/format-arrow.md",
@@ -15669,7 +15700,7 @@
       "words": 2961
     },
     "en_metrics": {
-      "lines": 864,
+      "lines": 872,
       "headings_total": 62,
       "h1": 1,
       "h2": 4,
@@ -15677,8 +15708,8 @@
       "code_blocks": 9,
       "links": 26,
       "images": 2,
-      "chars": 19850,
-      "words": 3295
+      "chars": 19922,
+      "words": 3303
     },
     "score": 9.62
   },
@@ -15824,18 +15855,18 @@
       "words": 11355
     },
     "en_metrics": {
-      "lines": 2936,
+      "lines": 2973,
       "headings_total": 33,
       "h1": 1,
       "h2": 5,
       "h3": 21,
       "code_blocks": 151,
-      "links": 76,
+      "links": 73,
       "images": 0,
-      "chars": 77756,
-      "words": 10429
+      "chars": 76572,
+      "words": 10278
     },
-    "score": 9.47
+    "score": 9.38
   },
   {
     "rel": "reference/ydb-sdk/ydb-status-codes.md",
@@ -17115,7 +17146,7 @@
       "words": 5726
     },
     "en_metrics": {
-      "lines": 1343,
+      "lines": 1342,
       "headings_total": 115,
       "h1": 1,
       "h2": 55,
@@ -17123,10 +17154,10 @@
       "code_blocks": 82,
       "links": 90,
       "images": 0,
-      "chars": 34813,
-      "words": 5636
+      "chars": 34835,
+      "words": 5639
     },
-    "score": 8.49
+    "score": 8.5
   },
   {
     "rel": "yql/reference/builtins/codegen.md",
@@ -17678,8 +17709,8 @@
       "code_blocks": 18,
       "links": 11,
       "images": 0,
-      "chars": 6776,
-      "words": 918
+      "chars": 6873,
+      "words": 928
     },
     "en_metrics": {
       "lines": 171,
@@ -17690,8 +17721,8 @@
       "code_blocks": 14,
       "links": 7,
       "images": 0,
-      "chars": 4923,
-      "words": 771
+      "chars": 4971,
+      "words": 780
     },
     "score": 7.96
   },
@@ -18325,8 +18356,8 @@
       "code_blocks": 3,
       "links": 9,
       "images": 0,
-      "chars": 4237,
-      "words": 557
+      "chars": 4334,
+      "words": 567
     },
     "en_metrics": {
       "lines": 73,
@@ -18337,8 +18368,8 @@
       "code_blocks": 4,
       "links": 5,
       "images": 0,
-      "chars": 2933,
-      "words": 484
+      "chars": 2981,
+      "words": 493
     },
     "score": 7.87
   },
@@ -19120,7 +19151,7 @@
       "words": 3238
     },
     "en_metrics": {
-      "lines": 610,
+      "lines": 609,
       "headings_total": 37,
       "h1": 1,
       "h2": 15,
@@ -19128,8 +19159,8 @@
       "code_blocks": 41,
       "links": 35,
       "images": 0,
-      "chars": 18621,
-      "words": 3601
+      "chars": 18600,
+      "words": 3595
     },
     "score": 9.69
   },
@@ -19686,30 +19717,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 16,
+      "lines": 38,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
       "h3": 0,
-      "code_blocks": 1,
-      "links": 0,
+      "code_blocks": 3,
+      "links": 2,
       "images": 0,
-      "chars": 396,
-      "words": 63
+      "chars": 960,
+      "words": 157
     },
     "en_metrics": {
-      "lines": 17,
+      "lines": 43,
       "headings_total": 2,
-      "h1": 0,
+      "h1": 1,
       "h2": 1,
-      "h3": 1,
-      "code_blocks": 1,
-      "links": 0,
+      "h3": 0,
+      "code_blocks": 3,
+      "links": 2,
       "images": 0,
-      "chars": 390,
-      "words": 69
+      "chars": 936,
+      "words": 165
     },
-    "score": 9.83
+    "score": 9.89
   },
   {
     "rel": "yql/reference/syntax/select/from_select.md",
@@ -20427,7 +20458,7 @@
   {
     "rel": "yql/reference/syntax/upsert-object-type-secret.md",
     "ru_exists": true,
-    "en_exists": false,
+    "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 26,
@@ -20441,8 +20472,19 @@
       "chars": 560,
       "words": 78
     },
-    "en_metrics": null,
-    "score": 1.0
+    "en_metrics": {
+      "lines": 26,
+      "headings_total": 2,
+      "h1": 1,
+      "h2": 1,
+      "h3": 0,
+      "code_blocks": 2,
+      "links": 1,
+      "images": 0,
+      "chars": 507,
+      "words": 83
+    },
+    "score": 9.81
   },
   {
     "rel": "yql/reference/syntax/upsert_into.md",
@@ -20617,18 +20659,18 @@
       "words": 52
     },
     "en_metrics": {
-      "lines": 12,
+      "lines": 13,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 7,
+      "links": 8,
       "images": 0,
-      "chars": 290,
-      "words": 38
+      "chars": 344,
+      "words": 46
     },
-    "score": 8.95
+    "score": 9.49
   },
   {
     "rel": "yql/reference/types/json.md",
@@ -20710,23 +20752,23 @@
       "words": 3945
     },
     "en_metrics": {
-      "lines": 438,
-      "headings_total": 15,
+      "lines": 506,
+      "headings_total": 17,
       "h1": 1,
       "h2": 4,
-      "h3": 4,
-      "code_blocks": 3,
-      "links": 15,
+      "h3": 5,
+      "code_blocks": 4,
+      "links": 17,
       "images": 0,
-      "chars": 13231,
-      "words": 2815
+      "chars": 18143,
+      "words": 4376
     },
-    "score": 8.38
+    "score": 9.81
   },
   {
     "rel": "yql/reference/types/serial.md",
     "ru_exists": true,
-    "en_exists": false,
+    "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 66,
@@ -20740,8 +20782,19 @@
       "chars": 2871,
       "words": 386
     },
-    "en_metrics": null,
-    "score": 1.0
+    "en_metrics": {
+      "lines": 72,
+      "headings_total": 3,
+      "h1": 1,
+      "h2": 2,
+      "h3": 0,
+      "code_blocks": 5,
+      "links": 8,
+      "images": 0,
+      "chars": 2764,
+      "words": 431
+    },
+    "score": 9.61
   },
   {
     "rel": "yql/reference/types/special.md",
@@ -20808,7 +20861,7 @@
   {
     "rel": "yql/reference/types/yson.md",
     "ru_exists": true,
-    "en_exists": false,
+    "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 457,
@@ -20822,8 +20875,19 @@
       "chars": 9546,
       "words": 1558
     },
-    "en_metrics": null,
-    "score": 1.0
+    "en_metrics": {
+      "lines": 449,
+      "headings_total": 20,
+      "h1": 1,
+      "h2": 6,
+      "h3": 13,
+      "code_blocks": 23,
+      "links": 13,
+      "images": 0,
+      "chars": 8338,
+      "words": 1480
+    },
+    "score": 9.69
   },
   {
     "rel": "yql/reference/udf/list/datetime.md",

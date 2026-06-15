@@ -71,7 +71,7 @@ Two top-level scripts:
 
 | Script          | What it does                                          |
 | --------------- | ----------------------------------------------------- |
-| `./download.py` | Sparse-checkout `ydb/docs` for every version in the config into `cache/<v>/docs/`. Network operation. |
+| `./download.py` | Sparse-checkout `ydb/docs` for every version in the config into `cache/<v>/ydb/docs/`. Network operation. Incrementally updates an existing clone via `git fetch`. |
 | `./analyze.py`  | Archive the previous snapshot → per version: `compare` → `report`; then `summary` + `index`; write `docs/meta.json`. No network. |
 
 Both accept an optional list of versions and `--help`. Real logic lives
@@ -96,7 +96,7 @@ fetch.py  ──── git clone --sparse ─── ydb-platform/ydb
     │                                         │
     │                                         └── ydb/docs/
     ▼
-cache/<v>/docs/
+cache/<v>/ydb/docs/   (`.git/` lives at cache/<v>/)
     │
     ▼
 compare.py
@@ -233,8 +233,12 @@ source of truth is `docs/meta.json`.
 
 ## Idempotency and caching
 
-- `fetch.py` without `--refresh` skips already-fetched versions. With
-  `--refresh`, the `cache/<v>/docs/` folder is deleted and rebuilt.
+- `fetch.py` updates already-fetched versions incrementally: it runs
+  `git fetch --depth=1 origin <ref> && git reset --hard FETCH_HEAD` on
+  the existing clone at `cache/<v>/`. With `--refresh`, the whole
+  `cache/<v>/` directory is wiped and re-cloned. A cache directory left
+  over from the old layout (no `.git/` inside) is detected and replaced
+  by a fresh clone on first run.
 - `compare.py`, `report.py`, `summary.py`, `index.py` always overwrite
   their outputs.
 - `archive.py` is a no-op when `docs/meta.json` is missing or its

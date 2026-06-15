@@ -55,15 +55,19 @@ def history_dir(date_str: str) -> Path:
 
 
 def docs_root(version: str) -> Path:
-    """Return ``cache/<version>/docs/`` — the ``ydb/docs`` subtree for the version."""
-    return cache_version_dir(version) / "docs"
+    """Return ``cache/<version>/ydb/docs/`` — the ``ydb/docs`` subtree for the version.
+
+    ``cache/<version>/`` is a sparse git clone (``.git/`` lives at its root),
+    so the docs sit at the same path they have in the upstream repo.
+    """
+    return cache_version_dir(version) / "ydb" / "docs"
 
 
 def lang_root(version: str, lang: str, config: dict) -> Path:
-    """Return ``cache/<version>/docs/<languages[lang]>/`` from config.
+    """Return ``cache/<version>/ydb/docs/<languages[lang]>/`` from config.
 
     Example: ``lang_root("25.3", "ru", cfg)`` →
-    ``cache/25.3/docs/ru/core``.
+    ``cache/25.3/ydb/docs/ru/core``.
     """
     sub = config["languages"][lang]
     return docs_root(version) / sub
