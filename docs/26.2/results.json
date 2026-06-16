@@ -7683,16 +7683,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 108,
+      "lines": 109,
       "headings_total": 17,
       "h1": 8,
       "h2": 8,
       "h3": 1,
       "code_blocks": 0,
-      "links": 68,
+      "links": 70,
       "images": 0,
-      "chars": 4475,
-      "words": 448
+      "chars": 4541,
+      "words": 453
     },
     "en_metrics": {
       "lines": 105,
@@ -7706,7 +7706,7 @@
       "chars": 4263,
       "words": 446
     },
-    "score": 9.78
+    "score": 9.71
   },
   {
     "rel": "integrations/ingestion/fluent-bit.md",
@@ -7771,21 +7771,41 @@
     "score": 9.67
   },
   {
+    "rel": "integrations/ingestion/import-mysql.md",
+    "ru_exists": true,
+    "en_exists": false,
+    "single_language_expected": false,
+    "ru_metrics": {
+      "lines": 264,
+      "headings_total": 17,
+      "h1": 1,
+      "h2": 9,
+      "h3": 7,
+      "code_blocks": 13,
+      "links": 12,
+      "images": 0,
+      "chars": 13879,
+      "words": 2214
+    },
+    "en_metrics": null,
+    "score": 1.0
+  },
+  {
     "rel": "integrations/ingestion/index.md",
     "ru_exists": true,
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 20,
+      "lines": 21,
       "headings_total": 4,
       "h1": 3,
       "h2": 1,
       "h3": 0,
       "code_blocks": 0,
-      "links": 14,
+      "links": 16,
       "images": 0,
-      "chars": 892,
-      "words": 82
+      "chars": 958,
+      "words": 87
     },
     "en_metrics": {
       "lines": 19,
@@ -7799,7 +7819,7 @@
       "chars": 755,
       "words": 76
     },
-    "score": 9.54
+    "score": 9.24
   },
   {
     "rel": "integrations/ingestion/logstash.md",

@@ -1,6 +1,6 @@
 YDB ru/en docs comparison, version main
 Source: ydb-platform/ydb @ main
-Generated: 2026-06-16
+Generated: 2026-06-15
 Scale: 1 — page missing or content significantly differs; 10 — content is very close.
 Score is based on structural similarity (headings, length, code blocks, links, images)
 after include directives are expanded. This is a proxy for semantic match: with identical
@@ -19,7 +19,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
      1  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v1/state-storage-reconfiguration?version=main  [no EN page]
      1  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v2/state-storage-reconfiguration?version=main  [no EN page]
      1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=main  [no RU page]
-     1  https://ydb.tech/docs/ru/integrations/ingestion/import-mysql?version=main  [no EN page]
      1  https://ydb.tech/docs/ru/maintenance/manual/change_actorsystem_configs?version=main  [no RU page]
      1  https://ydb.tech/docs/ru/maintenance/manual/cluster_expansion?version=main  [no RU page]
      1  https://ydb.tech/docs/ru/maintenance/manual/cms?version=main  [no RU page]
@@ -161,7 +160,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/downloads?version=main
      9  https://ydb.tech/docs/ru/integrations/gui/dbeaver-plugin?version=main
      9  https://ydb.tech/docs/ru/integrations/gui?version=main
-     9  https://ydb.tech/docs/ru/integrations/ingestion?version=main
      9  https://ydb.tech/docs/ru/integrations/migration/goose?version=main
      9  https://ydb.tech/docs/ru/integrations/orchestration/airflow?version=main
      9  https://ydb.tech/docs/ru/integrations/orm/dapper?version=main
@@ -439,6 +437,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/integrations?version=main
     10  https://ydb.tech/docs/ru/integrations/ingestion/fluent-bit?version=main
     10  https://ydb.tech/docs/ru/integrations/ingestion/import-jdbc?version=main
+    10  https://ydb.tech/docs/ru/integrations/ingestion?version=main
     10  https://ydb.tech/docs/ru/integrations/ingestion/logstash?version=main
     10  https://ydb.tech/docs/ru/integrations/ingestion/spark?version=main
     10  https://ydb.tech/docs/ru/integrations/migration/dbt?version=main
@@ -786,15 +785,15 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/url?version=main
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/yson?version=main
 
-Score distribution (pages: 777):
-   1: 37 pages
+Score distribution (pages: 776):
+   1: 36 pages
    4: 2 pages
    5: 4 pages
    6: 7 pages
    7: 14 pages
    8: 50 pages
-   9: 129 pages
-  10: 534 pages
+   9: 128 pages
+  10: 535 pages
 
 By section (average score / page count):
   analyst                      avg=10.00  n=16
@@ -807,7 +806,7 @@ By section (average score / page count):
   devops                       avg= 8.91  n=76
   downloads                    avg= 9.86  n=7
   faq                          avg=10.00  n=7
-  integrations                 avg= 9.50  n=38
+  integrations                 avg= 9.76  n=37
   maintenance                  avg= 6.71  n=21
   postgresql                   avg= 6.36  n=14
   public-materials             avg= 6.50  n=8

@@ -528,7 +528,7 @@
       "code_blocks": 0,
       "links": 402,
       "images": 0,
-      "chars": 66911,
+      "chars": 66945,
       "words": 8575
     },
     "score": 9.61
@@ -3994,12 +3994,12 @@
       "h2": 6,
       "h3": 4,
       "code_blocks": 6,
-      "links": 13,
+      "links": 14,
       "images": 0,
-      "chars": 6075,
-      "words": 943
+      "chars": 6178,
+      "words": 957
     },
-    "score": 9.3
+    "score": 9.37
   },
   {
     "rel": "dev/yql-tutorial/alter_table.md",
@@ -7121,16 +7121,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 108,
+      "lines": 109,
       "headings_total": 17,
       "h1": 8,
       "h2": 8,
       "h3": 1,
       "code_blocks": 0,
-      "links": 68,
+      "links": 70,
       "images": 0,
-      "chars": 4475,
-      "words": 448
+      "chars": 4541,
+      "words": 453
     },
     "en_metrics": {
       "lines": 105,
@@ -7144,7 +7144,7 @@
       "chars": 4263,
       "words": 446
     },
-    "score": 9.78
+    "score": 9.71
   },
   {
     "rel": "integrations/ingestion/fluent-bit.md",
@@ -7209,21 +7209,41 @@
     "score": 9.67
   },
   {
+    "rel": "integrations/ingestion/import-mysql.md",
+    "ru_exists": true,
+    "en_exists": false,
+    "single_language_expected": false,
+    "ru_metrics": {
+      "lines": 264,
+      "headings_total": 17,
+      "h1": 1,
+      "h2": 9,
+      "h3": 7,
+      "code_blocks": 13,
+      "links": 12,
+      "images": 0,
+      "chars": 13879,
+      "words": 2214
+    },
+    "en_metrics": null,
+    "score": 1.0
+  },
+  {
     "rel": "integrations/ingestion/index.md",
     "ru_exists": true,
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 20,
+      "lines": 21,
       "headings_total": 4,
       "h1": 3,
       "h2": 1,
       "h3": 0,
       "code_blocks": 0,
-      "links": 14,
+      "links": 16,
       "images": 0,
-      "chars": 892,
-      "words": 82
+      "chars": 958,
+      "words": 87
     },
     "en_metrics": {
       "lines": 19,
@@ -7237,7 +7257,7 @@
       "chars": 755,
       "words": 76
     },
-    "score": 9.54
+    "score": 9.24
   },
   {
     "rel": "integrations/ingestion/logstash.md",
@@ -9595,7 +9615,7 @@
   {
     "rel": "recipes/vector-search/vector-index-with-prepared-dataset.md",
     "ru_exists": true,
-    "en_exists": false,
+    "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 198,
@@ -9609,8 +9629,19 @@
       "chars": 25363,
       "words": 1084
     },
-    "en_metrics": null,
-    "score": 1.0
+    "en_metrics": {
+      "lines": 179,
+      "headings_total": 11,
+      "h1": 3,
+      "h2": 8,
+      "h3": 0,
+      "code_blocks": 10,
+      "links": 27,
+      "images": 0,
+      "chars": 6333,
+      "words": 957
+    },
+    "score": 8.81
   },
   {
     "rel": "recipes/ydb-cli/benchmarks.md",
@@ -10649,22 +10680,22 @@
       "code_blocks": 45,
       "links": 30,
       "images": 0,
-      "chars": 48640,
-      "words": 5454
+      "chars": 48424,
+      "words": 5448
     },
     "en_metrics": {
-      "lines": 2074,
+      "lines": 2125,
       "headings_total": 7,
       "h1": 1,
       "h2": 6,
       "h3": 0,
-      "code_blocks": 42,
+      "code_blocks": 45,
       "links": 28,
       "images": 0,
-      "chars": 44323,
-      "words": 5113
+      "chars": 45041,
+      "words": 5214
     },
-    "score": 9.6
+    "score": 9.77
   },
   {
     "rel": "reference/configuration/actor_system_config.md",
