@@ -519,12 +519,12 @@
       "h2": 31,
       "h3": 64,
       "code_blocks": 0,
-      "links": 227,
+      "links": 225,
       "images": 0,
-      "chars": 44148,
-      "words": 6402
+      "chars": 44075,
+      "words": 6405
     },
-    "score": 9.75
+    "score": 9.74
   },
   {
     "rel": "changelog-enterprise.md",
@@ -552,7 +552,7 @@
       "code_blocks": 0,
       "links": 367,
       "images": 0,
-      "chars": 57010,
+      "chars": 56878,
       "words": 7056
     },
     "score": 9.61
@@ -563,28 +563,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 771,
+      "lines": 770,
       "headings_total": 77,
       "h1": 2,
       "h2": 14,
       "h3": 34,
       "code_blocks": 0,
-      "links": 453,
+      "links": 449,
       "images": 0,
-      "chars": 77458,
-      "words": 8086
+      "chars": 76730,
+      "words": 7994
     },
     "en_metrics": {
-      "lines": 769,
+      "lines": 767,
       "headings_total": 78,
       "h1": 1,
       "h2": 16,
       "h3": 34,
       "code_blocks": 0,
-      "links": 430,
+      "links": 426,
       "images": 0,
-      "chars": 71185,
-      "words": 9154
+      "chars": 70448,
+      "words": 9044
     },
     "score": 9.62
   },
@@ -786,10 +786,10 @@
       "h2": 4,
       "h3": 0,
       "code_blocks": 0,
-      "links": 6,
+      "links": 5,
       "images": 1,
-      "chars": 2467,
-      "words": 306
+      "chars": 2180,
+      "words": 277
     },
     "en_metrics": {
       "lines": 30,
@@ -803,7 +803,7 @@
       "chars": 2053,
       "words": 314
     },
-    "score": 9.58
+    "score": 9.74
   },
   {
     "rel": "concepts/analytics/index.md",
@@ -997,30 +997,50 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 317,
+      "lines": 306,
       "headings_total": 15,
       "h1": 1,
       "h2": 11,
       "h3": 3,
       "code_blocks": 10,
-      "links": 47,
+      "links": 39,
       "images": 0,
-      "chars": 14258,
-      "words": 1851
+      "chars": 13035,
+      "words": 1727
     },
     "en_metrics": {
-      "lines": 316,
+      "lines": 305,
       "headings_total": 15,
       "h1": 1,
       "h2": 11,
       "h3": 3,
       "code_blocks": 10,
-      "links": 45,
+      "links": 37,
       "images": 0,
-      "chars": 12961,
-      "words": 2017
+      "chars": 11893,
+      "words": 1885
     },
-    "score": 9.71
+    "score": 9.7
+  },
+  {
+    "rel": "concepts/column-table.md",
+    "ru_exists": false,
+    "en_exists": true,
+    "single_language_expected": false,
+    "ru_metrics": null,
+    "en_metrics": {
+      "lines": 82,
+      "headings_total": 4,
+      "h1": 1,
+      "h2": 3,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 8,
+      "images": 0,
+      "chars": 3243,
+      "words": 628
+    },
+    "score": 1.0
   },
   {
     "rel": "concepts/connect.md",
@@ -1288,18 +1308,18 @@
       "words": 187
     },
     "en_metrics": {
-      "lines": 23,
-      "headings_total": 4,
+      "lines": 33,
+      "headings_total": 3,
       "h1": 1,
-      "h2": 3,
+      "h2": 2,
       "h3": 0,
-      "code_blocks": 0,
-      "links": 12,
+      "code_blocks": 2,
+      "links": 2,
       "images": 0,
-      "chars": 1322,
-      "words": 152
+      "chars": 1113,
+      "words": 177
     },
-    "score": 9.32
+    "score": 6.05
   },
   {
     "rel": "concepts/datamodel/table.md",
@@ -1313,10 +1333,10 @@
       "h2": 2,
       "h3": 9,
       "code_blocks": 2,
-      "links": 32,
+      "links": 31,
       "images": 0,
-      "chars": 25248,
-      "words": 3560
+      "chars": 25144,
+      "words": 3558
     },
     "en_metrics": {
       "lines": 267,
@@ -1330,7 +1350,7 @@
       "chars": 19695,
       "words": 3443
     },
-    "score": 8.45
+    "score": 8.49
   },
   {
     "rel": "concepts/datamodel/topic.md",
@@ -1338,30 +1358,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 213,
-      "headings_total": 28,
+      "lines": 197,
+      "headings_total": 27,
       "h1": 1,
       "h2": 10,
-      "h3": 14,
+      "h3": 13,
       "code_blocks": 0,
-      "links": 29,
+      "links": 28,
       "images": 2,
-      "chars": 15364,
-      "words": 2169
+      "chars": 14345,
+      "words": 2011
     },
     "en_metrics": {
-      "lines": 217,
-      "headings_total": 28,
+      "lines": 191,
+      "headings_total": 26,
       "h1": 1,
       "h2": 10,
-      "h3": 14,
+      "h3": 12,
       "code_blocks": 0,
-      "links": 29,
+      "links": 24,
       "images": 2,
-      "chars": 14770,
-      "words": 2592
+      "chars": 12583,
+      "words": 2161
     },
-    "score": 9.67
+    "score": 9.49
   },
   {
     "rel": "concepts/datamodel/view.md",
@@ -1400,30 +1420,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 882,
-      "headings_total": 172,
+      "lines": 863,
+      "headings_total": 169,
       "h1": 1,
       "h2": 2,
-      "h3": 69,
+      "h3": 68,
       "code_blocks": 0,
-      "links": 384,
+      "links": 376,
       "images": 0,
-      "chars": 69589,
-      "words": 8540
+      "chars": 67560,
+      "words": 8281
     },
     "en_metrics": {
-      "lines": 825,
-      "headings_total": 163,
+      "lines": 816,
+      "headings_total": 162,
       "h1": 1,
       "h2": 2,
       "h3": 67,
       "code_blocks": 0,
-      "links": 370,
+      "links": 366,
       "images": 0,
-      "chars": 57902,
-      "words": 8946
+      "chars": 57262,
+      "words": 8864
     },
-    "score": 9.6
+    "score": 9.62
   },
   {
     "rel": "concepts/index.md",
@@ -1443,18 +1463,18 @@
       "words": 132
     },
     "en_metrics": {
-      "lines": 30,
+      "lines": 29,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
       "h3": 0,
       "code_blocks": 0,
-      "links": 22,
+      "links": 21,
       "images": 0,
-      "chars": 1281,
-      "words": 143
+      "chars": 1252,
+      "words": 140
     },
-    "score": 9.68
+    "score": 9.79
   },
   {
     "rel": "concepts/limits-ydb.md",
@@ -1544,8 +1564,8 @@
       "code_blocks": 3,
       "links": 12,
       "images": 0,
-      "chars": 6673,
-      "words": 869
+      "chars": 6685,
+      "words": 871
     },
     "score": 9.84
   },
@@ -1575,8 +1595,8 @@
       "code_blocks": 3,
       "links": 17,
       "images": 0,
-      "chars": 6281,
-      "words": 931
+      "chars": 6293,
+      "words": 933
     },
     "score": 9.52
   },
@@ -1668,8 +1688,8 @@
       "code_blocks": 3,
       "links": 10,
       "images": 0,
-      "chars": 5859,
-      "words": 826
+      "chars": 5871,
+      "words": 828
     },
     "score": 9.78
   },
@@ -1699,8 +1719,8 @@
       "code_blocks": 3,
       "links": 10,
       "images": 0,
-      "chars": 5904,
-      "words": 819
+      "chars": 5916,
+      "words": 821
     },
     "score": 9.77
   },
@@ -1730,8 +1750,8 @@
       "code_blocks": 3,
       "links": 15,
       "images": 0,
-      "chars": 6259,
-      "words": 947
+      "chars": 6271,
+      "words": 949
     },
     "score": 9.6
   },
@@ -1792,10 +1812,10 @@
       "code_blocks": 8,
       "links": 18,
       "images": 0,
-      "chars": 8111,
-      "words": 1151
+      "chars": 8175,
+      "words": 1165
     },
-    "score": 9.63
+    "score": 9.66
   },
   {
     "rel": "concepts/query_execution/federated_query/s3/external_table.md",
@@ -1834,30 +1854,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 442,
-      "headings_total": 12,
+      "lines": 396,
+      "headings_total": 11,
       "h1": 1,
       "h2": 3,
-      "h3": 8,
-      "code_blocks": 16,
-      "links": 41,
+      "h3": 7,
+      "code_blocks": 14,
+      "links": 35,
       "images": 0,
-      "chars": 11159,
-      "words": 1481
+      "chars": 10094,
+      "words": 1324
     },
     "en_metrics": {
-      "lines": 439,
-      "headings_total": 12,
+      "lines": 294,
+      "headings_total": 10,
       "h1": 1,
-      "h2": 3,
-      "h3": 8,
-      "code_blocks": 16,
-      "links": 39,
+      "h2": 2,
+      "h3": 7,
+      "code_blocks": 13,
+      "links": 23,
       "images": 0,
-      "chars": 10734,
-      "words": 1914
+      "chars": 5939,
+      "words": 827
     },
-    "score": 9.49
+    "score": 8.16
   },
   {
     "rel": "concepts/query_execution/federated_query/s3/partition_projection.md",
@@ -1978,41 +1998,10 @@
       "code_blocks": 4,
       "links": 9,
       "images": 0,
-      "chars": 5968,
-      "words": 894
+      "chars": 5984,
+      "words": 896
     },
     "score": 9.77
-  },
-  {
-    "rel": "concepts/query_execution/fulltext_search.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 31,
-      "headings_total": 3,
-      "h1": 1,
-      "h2": 2,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 8,
-      "images": 0,
-      "chars": 2142,
-      "words": 248
-    },
-    "en_metrics": {
-      "lines": 31,
-      "headings_total": 3,
-      "h1": 1,
-      "h2": 2,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 10,
-      "images": 0,
-      "chars": 2045,
-      "words": 280
-    },
-    "score": 9.48
   },
   {
     "rel": "concepts/query_execution/index.md",
@@ -2088,10 +2077,10 @@
       "h2": 2,
       "h3": 4,
       "code_blocks": 1,
-      "links": 8,
+      "links": 7,
       "images": 1,
-      "chars": 5381,
-      "words": 737
+      "chars": 5271,
+      "words": 728
     },
     "en_metrics": {
       "lines": 84,
@@ -2105,7 +2094,7 @@
       "chars": 5124,
       "words": 871
     },
-    "score": 9.53
+    "score": 9.38
   },
   {
     "rel": "concepts/query_execution/secondary_indexes.md",
@@ -2113,30 +2102,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 77,
-      "headings_total": 9,
+      "lines": 71,
+      "headings_total": 8,
       "h1": 1,
-      "h2": 8,
+      "h2": 7,
       "h3": 0,
       "code_blocks": 0,
-      "links": 17,
+      "links": 14,
       "images": 0,
-      "chars": 5698,
-      "words": 743
+      "chars": 5258,
+      "words": 697
     },
     "en_metrics": {
-      "lines": 79,
-      "headings_total": 9,
+      "lines": 73,
+      "headings_total": 8,
       "h1": 1,
-      "h2": 8,
+      "h2": 7,
       "h3": 0,
       "code_blocks": 0,
-      "links": 16,
+      "links": 14,
       "images": 0,
-      "chars": 5070,
-      "words": 808
+      "chars": 4746,
+      "words": 766
     },
-    "score": 9.68
+    "score": 9.75
   },
   {
     "rel": "concepts/query_execution/spilling.md",
@@ -2237,16 +2226,16 @@
     "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 76,
-      "headings_total": 9,
+      "lines": 71,
+      "headings_total": 8,
       "h1": 1,
-      "h2": 8,
+      "h2": 7,
       "h3": 0,
       "code_blocks": 0,
-      "links": 17,
+      "links": 14,
       "images": 0,
-      "chars": 5698,
-      "words": 743
+      "chars": 5258,
+      "words": 697
     },
     "en_metrics": null,
     "score": 1.0
@@ -2257,16 +2246,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 89,
+      "lines": 94,
       "headings_total": 10,
       "h1": 1,
       "h2": 7,
       "h3": 2,
       "code_blocks": 0,
-      "links": 41,
+      "links": 45,
       "images": 0,
-      "chars": 6812,
-      "words": 789
+      "chars": 7561,
+      "words": 884
     },
     "en_metrics": {
       "lines": 94,
@@ -2280,7 +2269,7 @@
       "chars": 6933,
       "words": 935
     },
-    "score": 9.58
+    "score": 9.83
   },
   {
     "rel": "concepts/topology.md",
@@ -2319,30 +2308,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 147,
-      "headings_total": 15,
-      "h1": 1,
-      "h2": 6,
-      "h3": 6,
-      "code_blocks": 1,
-      "links": 48,
-      "images": 0,
-      "chars": 12529,
-      "words": 1553
-    },
-    "en_metrics": {
-      "lines": 121,
+      "lines": 111,
       "headings_total": 10,
       "h1": 1,
       "h2": 6,
       "h3": 1,
       "code_blocks": 1,
-      "links": 42,
+      "links": 28,
       "images": 0,
-      "chars": 10287,
-      "words": 1483
+      "chars": 9794,
+      "words": 1268
     },
-    "score": 8.84
+    "en_metrics": {
+      "lines": 111,
+      "headings_total": 10,
+      "h1": 1,
+      "h2": 6,
+      "h3": 1,
+      "code_blocks": 1,
+      "links": 30,
+      "images": 0,
+      "chars": 9215,
+      "words": 1372
+    },
+    "score": 9.72
   },
   {
     "rel": "concepts/transfer.md",
@@ -2658,8 +2647,8 @@
       "code_blocks": 0,
       "links": 14,
       "images": 0,
-      "chars": 4988,
-      "words": 783
+      "chars": 4977,
+      "words": 782
     },
     "score": 9.87
   },
@@ -2759,8 +2748,8 @@
       "code_blocks": 0,
       "links": 40,
       "images": 0,
-      "chars": 6048,
-      "words": 722
+      "chars": 6038,
+      "words": 721
     },
     "en_metrics": {
       "lines": 34,
@@ -2771,8 +2760,8 @@
       "code_blocks": 0,
       "links": 40,
       "images": 0,
-      "chars": 5410,
-      "words": 740
+      "chars": 5399,
+      "words": 739
     },
     "score": 9.86
   },
@@ -3315,10 +3304,10 @@
       "h2": 6,
       "h3": 7,
       "code_blocks": 1,
-      "links": 8,
+      "links": 9,
       "images": 0,
-      "chars": 3792,
-      "words": 495
+      "chars": 3926,
+      "words": 503
     },
     "en_metrics": {
       "lines": 86,
@@ -3327,12 +3316,12 @@
       "h2": 6,
       "h3": 7,
       "code_blocks": 1,
-      "links": 6,
+      "links": 7,
       "images": 0,
-      "chars": 3265,
-      "words": 515
+      "chars": 3393,
+      "words": 525
     },
-    "score": 9.47
+    "score": 9.5
   },
   {
     "rel": "contributor/suggest-change.md",
@@ -3707,37 +3696,6 @@
     "score": 9.87
   },
   {
-    "rel": "dev/fulltext-indexes.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 177,
-      "headings_total": 10,
-      "h1": 1,
-      "h2": 6,
-      "h3": 3,
-      "code_blocks": 8,
-      "links": 22,
-      "images": 0,
-      "chars": 6868,
-      "words": 844
-    },
-    "en_metrics": {
-      "lines": 177,
-      "headings_total": 10,
-      "h1": 1,
-      "h2": 6,
-      "h3": 3,
-      "code_blocks": 8,
-      "links": 22,
-      "images": 0,
-      "chars": 6284,
-      "words": 883
-    },
-    "score": 9.84
-  },
-  {
     "rel": "dev/getting-started.md",
     "ru_exists": true,
     "en_exists": true,
@@ -3898,30 +3856,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 112,
-      "headings_total": 8,
+      "lines": 47,
+      "headings_total": 7,
       "h1": 1,
       "h2": 3,
       "h3": 3,
-      "code_blocks": 21,
+      "code_blocks": 16,
       "links": 1,
       "images": 0,
-      "chars": 7914,
-      "words": 1134
+      "chars": 5229,
+      "words": 748
     },
     "en_metrics": {
-      "lines": 112,
-      "headings_total": 8,
+      "lines": 47,
+      "headings_total": 7,
       "h1": 1,
       "h2": 3,
       "h3": 3,
-      "code_blocks": 3,
+      "code_blocks": 1,
       "links": 1,
       "images": 0,
-      "chars": 6818,
-      "words": 1270
+      "chars": 4405,
+      "words": 847
     },
-    "score": 8.14
+    "score": 7.96
   },
   {
     "rel": "dev/query-execution-optimization/index.md",
@@ -4022,30 +3980,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 308,
-      "headings_total": 20,
+      "lines": 247,
+      "headings_total": 16,
       "h1": 1,
-      "h2": 10,
-      "h3": 9,
-      "code_blocks": 12,
-      "links": 30,
+      "h2": 9,
+      "h3": 6,
+      "code_blocks": 10,
+      "links": 21,
       "images": 2,
-      "chars": 14759,
-      "words": 2000
+      "chars": 12118,
+      "words": 1654
     },
     "en_metrics": {
-      "lines": 331,
-      "headings_total": 20,
+      "lines": 246,
+      "headings_total": 16,
       "h1": 1,
-      "h2": 10,
-      "h3": 9,
-      "code_blocks": 12,
-      "links": 30,
+      "h2": 8,
+      "h3": 7,
+      "code_blocks": 10,
+      "links": 8,
       "images": 2,
-      "chars": 14390,
-      "words": 2273
+      "chars": 11000,
+      "words": 1865
     },
-    "score": 9.76
+    "score": 8.88
   },
   {
     "rel": "dev/secondary-indexes.md",
@@ -4053,30 +4011,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 195,
+      "lines": 190,
       "headings_total": 11,
       "h1": 1,
       "h2": 7,
       "h3": 1,
       "code_blocks": 7,
-      "links": 20,
+      "links": 18,
       "images": 0,
-      "chars": 12704,
-      "words": 1898
+      "chars": 12292,
+      "words": 1834
     },
     "en_metrics": {
-      "lines": 118,
+      "lines": 112,
       "headings_total": 8,
       "h1": 1,
       "h2": 7,
       "h3": 0,
       "code_blocks": 3,
-      "links": 17,
+      "links": 15,
       "images": 0,
-      "chars": 7309,
-      "words": 1312
+      "chars": 6940,
+      "words": 1240
     },
-    "score": 7.22
+    "score": 7.16
   },
   {
     "rel": "dev/streaming-query/checkpoints.md",
@@ -4092,7 +4050,7 @@
       "code_blocks": 3,
       "links": 12,
       "images": 0,
-      "chars": 3726,
+      "chars": 3748,
       "words": 492
     },
     "en_metrics": {
@@ -4115,19 +4073,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 152,
-      "headings_total": 4,
-      "h1": 1,
-      "h2": 1,
-      "h3": 2,
-      "code_blocks": 3,
-      "links": 18,
-      "images": 0,
-      "chars": 4020,
-      "words": 510
-    },
-    "en_metrics": {
-      "lines": 176,
+      "lines": 168,
       "headings_total": 5,
       "h1": 1,
       "h2": 2,
@@ -4135,10 +4081,22 @@
       "code_blocks": 4,
       "links": 18,
       "images": 0,
-      "chars": 4296,
-      "words": 611
+      "chars": 4333,
+      "words": 546
     },
-    "score": 8.74
+    "en_metrics": {
+      "lines": 168,
+      "headings_total": 5,
+      "h1": 1,
+      "h2": 2,
+      "h3": 2,
+      "code_blocks": 4,
+      "links": 15,
+      "images": 0,
+      "chars": 3845,
+      "words": 568
+    },
+    "score": 9.6
   },
   {
     "rel": "dev/streaming-query/guarantees.md",
@@ -4177,16 +4135,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 16,
+      "lines": 15,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
       "h3": 0,
       "code_blocks": 0,
-      "links": 10,
+      "links": 9,
       "images": 0,
-      "chars": 996,
-      "words": 114
+      "chars": 931,
+      "words": 109
     },
     "en_metrics": {
       "lines": 15,
@@ -4197,30 +4155,10 @@
       "code_blocks": 0,
       "links": 9,
       "images": 0,
-      "chars": 884,
-      "words": 119
+      "chars": 773,
+      "words": 95
     },
-    "score": 9.69
-  },
-  {
-    "rel": "dev/streaming-query/local-and-external-topics.md",
-    "ru_exists": true,
-    "en_exists": false,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 43,
-      "headings_total": 4,
-      "h1": 1,
-      "h2": 3,
-      "h3": 0,
-      "code_blocks": 3,
-      "links": 14,
-      "images": 0,
-      "chars": 2305,
-      "words": 291
-    },
-    "en_metrics": null,
-    "score": 1.0
+    "score": 9.62
   },
   {
     "rel": "dev/streaming-query/patterns.md",
@@ -4228,16 +4166,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 140,
+      "lines": 141,
       "headings_total": 6,
       "h1": 1,
       "h2": 5,
       "h3": 0,
       "code_blocks": 4,
-      "links": 15,
+      "links": 14,
       "images": 0,
-      "chars": 4103,
-      "words": 601
+      "chars": 4025,
+      "words": 592
     },
     "en_metrics": {
       "lines": 141,
@@ -4251,7 +4189,7 @@
       "chars": 3621,
       "words": 589
     },
-    "score": 9.77
+    "score": 9.9
   },
   {
     "rel": "dev/streaming-query/streaming-query-formats.md",
@@ -4265,10 +4203,10 @@
       "h2": 4,
       "h3": 11,
       "code_blocks": 22,
-      "links": 33,
+      "links": 32,
       "images": 0,
-      "chars": 9230,
-      "words": 1299
+      "chars": 9409,
+      "words": 1293
     },
     "en_metrics": {
       "lines": 463,
@@ -4282,7 +4220,7 @@
       "chars": 8279,
       "words": 1250
     },
-    "score": 9.76
+    "score": 9.79
   },
   {
     "rel": "dev/streaming-query/table-writing.md",
@@ -4298,7 +4236,7 @@
       "code_blocks": 1,
       "links": 5,
       "images": 0,
-      "chars": 1552,
+      "chars": 1563,
       "words": 237
     },
     "en_metrics": {
@@ -4313,7 +4251,7 @@
       "chars": 1358,
       "words": 228
     },
-    "score": 9.82
+    "score": 9.81
   },
   {
     "rel": "dev/system-views.md",
@@ -4321,16 +4259,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 742,
-      "headings_total": 28,
+      "lines": 667,
+      "headings_total": 26,
       "h1": 1,
-      "h2": 11,
-      "h3": 15,
-      "code_blocks": 22,
+      "h2": 10,
+      "h3": 14,
+      "code_blocks": 19,
       "links": 33,
       "images": 0,
-      "chars": 31125,
-      "words": 4193
+      "chars": 28795,
+      "words": 3853
     },
     "en_metrics": {
       "lines": 516,
@@ -4344,7 +4282,7 @@
       "chars": 21328,
       "words": 3448
     },
-    "score": 7.81
+    "score": 8.29
   },
   {
     "rel": "dev/terraform.md",
@@ -4414,28 +4352,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 139,
+      "lines": 137,
       "headings_total": 12,
       "h1": 1,
       "h2": 7,
       "h3": 4,
       "code_blocks": 0,
-      "links": 22,
+      "links": 21,
       "images": 8,
-      "chars": 12715,
-      "words": 1815
+      "chars": 12434,
+      "words": 1789
     },
     "en_metrics": {
-      "lines": 140,
+      "lines": 138,
       "headings_total": 12,
       "h1": 1,
       "h2": 7,
       "h3": 4,
       "code_blocks": 0,
-      "links": 22,
+      "links": 21,
       "images": 8,
-      "chars": 10687,
-      "words": 1838
+      "chars": 10435,
+      "words": 1812
     },
     "score": 9.83
   },
@@ -4445,30 +4383,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 242,
-      "headings_total": 16,
+      "lines": 182,
+      "headings_total": 13,
       "h1": 1,
-      "h2": 8,
-      "h3": 7,
-      "code_blocks": 10,
-      "links": 25,
+      "h2": 7,
+      "h3": 5,
+      "code_blocks": 7,
+      "links": 17,
       "images": 0,
-      "chars": 11017,
-      "words": 1384
+      "chars": 7502,
+      "words": 927
     },
     "en_metrics": {
-      "lines": 241,
-      "headings_total": 16,
+      "lines": 282,
+      "headings_total": 19,
       "h1": 1,
-      "h2": 8,
+      "h2": 11,
       "h3": 7,
-      "code_blocks": 10,
-      "links": 23,
+      "code_blocks": 12,
+      "links": 24,
       "images": 0,
-      "chars": 10225,
-      "words": 1593
+      "chars": 10984,
+      "words": 1613
     },
-    "score": 9.59
+    "score": 7.09
   },
   {
     "rel": "dev/yql-tutorial/alter_table.md",
@@ -5027,66 +4965,35 @@
     "score": 1.0
   },
   {
-    "rel": "devops/concepts/cpu-production-settings.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 82,
-      "headings_total": 14,
-      "h1": 7,
-      "h2": 4,
-      "h3": 3,
-      "code_blocks": 2,
-      "links": 1,
-      "images": 0,
-      "chars": 3321,
-      "words": 409
-    },
-    "en_metrics": {
-      "lines": 82,
-      "headings_total": 14,
-      "h1": 7,
-      "h2": 4,
-      "h3": 3,
-      "code_blocks": 2,
-      "links": 1,
-      "images": 0,
-      "chars": 2692,
-      "words": 388
-    },
-    "score": 9.74
-  },
-  {
     "rel": "devops/concepts/index.md",
     "ru_exists": true,
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 17,
+      "lines": 16,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 9,
+      "links": 8,
       "images": 0,
-      "chars": 484,
-      "words": 38
+      "chars": 447,
+      "words": 36
     },
     "en_metrics": {
-      "lines": 17,
+      "lines": 16,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 9,
+      "links": 8,
       "images": 0,
-      "chars": 464,
-      "words": 40
+      "chars": 427,
+      "words": 38
     },
-    "score": 9.87
+    "score": 9.86
   },
   {
     "rel": "devops/concepts/maintenance-without-downtime.md",
@@ -5094,30 +5001,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 114,
+      "lines": 101,
       "headings_total": 9,
       "h1": 1,
       "h2": 6,
       "h3": 2,
       "code_blocks": 0,
-      "links": 18,
+      "links": 16,
       "images": 0,
-      "chars": 7410,
-      "words": 1002
+      "chars": 6395,
+      "words": 878
     },
     "en_metrics": {
-      "lines": 129,
-      "headings_total": 10,
+      "lines": 125,
+      "headings_total": 9,
       "h1": 1,
-      "h2": 5,
+      "h2": 4,
       "h3": 4,
       "code_blocks": 4,
-      "links": 15,
+      "links": 13,
       "images": 0,
-      "chars": 6838,
-      "words": 1199
+      "chars": 6638,
+      "words": 1177
     },
-    "score": 7.38
+    "score": 7.46
   },
   {
     "rel": "devops/concepts/system-requirements.md",
@@ -5125,30 +5032,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 66,
+      "lines": 56,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 11,
+      "links": 9,
       "images": 0,
-      "chars": 5435,
-      "words": 753
+      "chars": 4955,
+      "words": 689
     },
     "en_metrics": {
-      "lines": 66,
+      "lines": 56,
       "headings_total": 6,
       "h1": 1,
       "h2": 2,
       "h3": 3,
       "code_blocks": 0,
-      "links": 11,
+      "links": 9,
       "images": 0,
-      "chars": 4845,
-      "words": 791
+      "chars": 4360,
+      "words": 715
     },
-    "score": 8.69
+    "score": 8.7
   },
   {
     "rel": "devops/concepts/versioning.md",
@@ -5288,7 +5195,7 @@
       "code_blocks": 4,
       "links": 8,
       "images": 0,
-      "chars": 7045,
+      "chars": 6989,
       "words": 922
     },
     "en_metrics": {
@@ -5443,7 +5350,7 @@
       "code_blocks": 5,
       "links": 22,
       "images": 0,
-      "chars": 9058,
+      "chars": 9036,
       "words": 1094
     },
     "en_metrics": {
@@ -5466,16 +5373,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 27,
+      "lines": 26,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 20,
+      "links": 19,
       "images": 0,
-      "chars": 1590,
-      "words": 152
+      "chars": 1549,
+      "words": 150
     },
     "en_metrics": {
       "lines": 28,
@@ -5489,7 +5396,7 @@
       "chars": 1862,
       "words": 215
     },
-    "score": 9.22
+    "score": 9.12
   },
   {
     "rel": "devops/configuration-management/configuration-v1/node-authorization.md",
@@ -5505,7 +5412,7 @@
       "code_blocks": 4,
       "links": 14,
       "images": 0,
-      "chars": 6693,
+      "chars": 6671,
       "words": 789
     },
     "en_metrics": {
@@ -5540,18 +5447,18 @@
       "words": 371
     },
     "en_metrics": {
-      "lines": 132,
+      "lines": 131,
       "headings_total": 23,
       "h1": 9,
       "h2": 5,
       "h3": 9,
       "code_blocks": 6,
-      "links": 2,
+      "links": 1,
       "images": 0,
-      "chars": 3020,
-      "words": 509
+      "chars": 2905,
+      "words": 501
     },
-    "score": 5.75
+    "score": 5.79
   },
   {
     "rel": "devops/configuration-management/configuration-v1/state-storage-move.md",
@@ -5559,50 +5466,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 58,
-      "headings_total": 1,
-      "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 2,
-      "links": 7,
-      "images": 0,
-      "chars": 1994,
-      "words": 273
-    },
-    "en_metrics": {
       "lines": 57,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 2,
-      "links": 7,
+      "links": 6,
       "images": 0,
-      "chars": 1896,
-      "words": 302
+      "chars": 1868,
+      "words": 264
     },
-    "score": 9.78
-  },
-  {
-    "rel": "devops/configuration-management/configuration-v1/state-storage-reconfiguration.md",
-    "ru_exists": true,
-    "en_exists": false,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 142,
-      "headings_total": 4,
+    "en_metrics": {
+      "lines": 56,
+      "headings_total": 1,
       "h1": 1,
-      "h2": 3,
+      "h2": 0,
       "h3": 0,
-      "code_blocks": 6,
-      "links": 19,
+      "code_blocks": 2,
+      "links": 6,
       "images": 0,
-      "chars": 6121,
-      "words": 714
+      "chars": 1781,
+      "words": 294
     },
-    "en_metrics": null,
-    "score": 1.0
+    "score": 9.77
   },
   {
     "rel": "devops/configuration-management/configuration-v1/static-config.md",
@@ -5610,16 +5497,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 56,
+      "lines": 55,
       "headings_total": 4,
       "h1": 1,
       "h2": 3,
       "h3": 0,
       "code_blocks": 0,
-      "links": 35,
+      "links": 34,
       "images": 0,
-      "chars": 3533,
-      "words": 443
+      "chars": 3466,
+      "words": 432
     },
     "en_metrics": {
       "lines": 54,
@@ -5628,12 +5515,12 @@
       "h2": 3,
       "h3": 0,
       "code_blocks": 0,
-      "links": 31,
+      "links": 30,
       "images": 0,
-      "chars": 3207,
-      "words": 451
+      "chars": 3141,
+      "words": 441
     },
-    "score": 9.73
+    "score": 9.72
   },
   {
     "rel": "devops/configuration-management/configuration-v1/static-group-move.md",
@@ -5641,30 +5528,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 79,
+      "lines": 78,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 2,
-      "links": 9,
+      "links": 8,
       "images": 0,
-      "chars": 2301,
-      "words": 285
+      "chars": 2175,
+      "words": 276
     },
     "en_metrics": {
-      "lines": 79,
+      "lines": 78,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 2,
-      "links": 9,
+      "links": 8,
       "images": 0,
-      "chars": 2181,
-      "words": 320
+      "chars": 2066,
+      "words": 312
     },
-    "score": 9.76
+    "score": 9.75
   },
   {
     "rel": "devops/configuration-management/configuration-v2/cluster-expansion.md",
@@ -5680,7 +5567,7 @@
       "code_blocks": 6,
       "links": 9,
       "images": 0,
-      "chars": 6967,
+      "chars": 6882,
       "words": 915
     },
     "en_metrics": {
@@ -5695,7 +5582,7 @@
       "chars": 6358,
       "words": 1009
     },
-    "score": 9.75
+    "score": 9.76
   },
   {
     "rel": "devops/configuration-management/configuration-v2/config-overview.md",
@@ -5723,7 +5610,7 @@
       "code_blocks": 2,
       "links": 33,
       "images": 2,
-      "chars": 6118,
+      "chars": 6112,
       "words": 828
     },
     "score": 9.66
@@ -5734,16 +5621,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 56,
+      "lines": 55,
       "headings_total": 4,
       "h1": 1,
       "h2": 3,
       "h3": 0,
       "code_blocks": 0,
-      "links": 35,
+      "links": 34,
       "images": 0,
-      "chars": 3533,
-      "words": 443
+      "chars": 3466,
+      "words": 432
     },
     "en_metrics": {
       "lines": 54,
@@ -5752,12 +5639,12 @@
       "h2": 3,
       "h3": 0,
       "code_blocks": 0,
-      "links": 31,
+      "links": 30,
       "images": 0,
-      "chars": 3207,
-      "words": 451
+      "chars": 3141,
+      "words": 441
     },
-    "score": 9.73
+    "score": 9.72
   },
   {
     "rel": "devops/configuration-management/configuration-v2/dynamic-config-selectors.md",
@@ -5796,16 +5683,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 22,
+      "lines": 21,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 12,
+      "links": 11,
       "images": 0,
-      "chars": 1056,
-      "words": 122
+      "chars": 1015,
+      "words": 120
     },
     "en_metrics": {
       "lines": 21,
@@ -5819,7 +5706,7 @@
       "chars": 879,
       "words": 115
     },
-    "score": 9.63
+    "score": 9.8
   },
   {
     "rel": "devops/configuration-management/configuration-v2/node-authorization.md",
@@ -5835,7 +5722,7 @@
       "code_blocks": 4,
       "links": 14,
       "images": 0,
-      "chars": 6652,
+      "chars": 6630,
       "words": 782
     },
     "en_metrics": {
@@ -5870,18 +5757,18 @@
       "words": 364
     },
     "en_metrics": {
-      "lines": 129,
+      "lines": 128,
       "headings_total": 22,
       "h1": 8,
       "h2": 5,
       "h3": 9,
       "code_blocks": 6,
-      "links": 2,
+      "links": 1,
       "images": 0,
-      "chars": 3002,
-      "words": 505
+      "chars": 2887,
+      "words": 497
     },
-    "score": 5.64
+    "score": 5.69
   },
   {
     "rel": "devops/configuration-management/configuration-v2/state-storage-move.md",
@@ -5889,50 +5776,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 64,
-      "headings_total": 1,
-      "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 2,
-      "links": 5,
-      "images": 0,
-      "chars": 2855,
-      "words": 409
-    },
-    "en_metrics": {
       "lines": 63,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 2,
-      "links": 5,
+      "links": 4,
       "images": 0,
-      "chars": 2674,
-      "words": 449
+      "chars": 2729,
+      "words": 400
+    },
+    "en_metrics": {
+      "lines": 62,
+      "headings_total": 1,
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "code_blocks": 2,
+      "links": 4,
+      "images": 0,
+      "chars": 2559,
+      "words": 441
     },
     "score": 9.78
-  },
-  {
-    "rel": "devops/configuration-management/configuration-v2/state-storage-reconfiguration.md",
-    "ru_exists": true,
-    "en_exists": false,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 155,
-      "headings_total": 4,
-      "h1": 1,
-      "h2": 3,
-      "h3": 0,
-      "code_blocks": 8,
-      "links": 18,
-      "images": 0,
-      "chars": 6482,
-      "words": 761
-    },
-    "en_metrics": null,
-    "score": 1.0
   },
   {
     "rel": "devops/configuration-management/configuration-v2/static-group-move.md",
@@ -5940,30 +5807,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 70,
-      "headings_total": 1,
-      "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 2,
-      "links": 5,
-      "images": 0,
-      "chars": 2753,
-      "words": 358
-    },
-    "en_metrics": {
       "lines": 69,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 2,
-      "links": 5,
+      "links": 4,
       "images": 0,
-      "chars": 2518,
-      "words": 399
+      "chars": 2627,
+      "words": 349
     },
-    "score": 9.74
+    "en_metrics": {
+      "lines": 68,
+      "headings_total": 1,
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "code_blocks": 2,
+      "links": 4,
+      "images": 0,
+      "chars": 2403,
+      "words": 391
+    },
+    "score": 9.73
   },
   {
     "rel": "devops/configuration-management/configuration-v2/update-config.md",
@@ -6095,7 +5962,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 194,
+      "lines": 181,
       "headings_total": 5,
       "h1": 1,
       "h2": 4,
@@ -6103,11 +5970,11 @@
       "code_blocks": 13,
       "links": 33,
       "images": 0,
-      "chars": 10189,
-      "words": 1232
+      "chars": 9143,
+      "words": 1085
     },
     "en_metrics": {
-      "lines": 194,
+      "lines": 181,
       "headings_total": 5,
       "h1": 1,
       "h2": 4,
@@ -6115,8 +5982,8 @@
       "code_blocks": 13,
       "links": 33,
       "images": 0,
-      "chars": 10143,
-      "words": 1423
+      "chars": 9162,
+      "words": 1256
     },
     "score": 9.75
   },
@@ -6146,7 +6013,7 @@
       "code_blocks": 0,
       "links": 6,
       "images": 0,
-      "chars": 612,
+      "chars": 606,
       "words": 81
     },
     "score": 9.8
@@ -6174,7 +6041,7 @@
   {
     "rel": "devops/deployment-options/ansible/initial-deployment/deployment-configuration-v1.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 1030,
@@ -6188,27 +6055,16 @@
       "chars": 31856,
       "words": 3481
     },
-    "en_metrics": {
-      "lines": 1028,
-      "headings_total": 12,
-      "h1": 1,
-      "h2": 9,
-      "h3": 2,
-      "code_blocks": 17,
-      "links": 44,
-      "images": 3,
-      "chars": 29988,
-      "words": 3563
-    },
-    "score": 9.88
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "devops/deployment-options/ansible/initial-deployment/deployment-configuration-v2.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 437,
+      "lines": 441,
       "headings_total": 12,
       "h1": 1,
       "h2": 9,
@@ -6216,27 +6072,16 @@
       "code_blocks": 14,
       "links": 43,
       "images": 3,
-      "chars": 20196,
+      "chars": 20216,
       "words": 2352
     },
-    "en_metrics": {
-      "lines": 435,
-      "headings_total": 12,
-      "h1": 1,
-      "h2": 9,
-      "h3": 2,
-      "code_blocks": 14,
-      "links": 42,
-      "images": 3,
-      "chars": 18325,
-      "words": 2420
-    },
-    "score": 9.83
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "devops/deployment-options/ansible/initial-deployment/deployment-preparation.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 114,
@@ -6250,24 +6095,13 @@
       "chars": 4793,
       "words": 661
     },
-    "en_metrics": {
-      "lines": 114,
-      "headings_total": 7,
-      "h1": 1,
-      "h2": 2,
-      "h3": 4,
-      "code_blocks": 2,
-      "links": 10,
-      "images": 0,
-      "chars": 4442,
-      "words": 716
-    },
-    "score": 9.8
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "devops/deployment-options/ansible/initial-deployment/index.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 9,
@@ -6281,19 +6115,8 @@
       "chars": 405,
       "words": 45
     },
-    "en_metrics": {
-      "lines": 9,
-      "headings_total": 1,
-      "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 4,
-      "images": 0,
-      "chars": 372,
-      "words": 48
-    },
-    "score": 9.81
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "devops/deployment-options/ansible/observability/index.md",
@@ -6321,10 +6144,10 @@
       "code_blocks": 0,
       "links": 3,
       "images": 0,
-      "chars": 404,
+      "chars": 398,
       "words": 51
     },
-    "score": 9.79
+    "score": 9.77
   },
   {
     "rel": "devops/deployment-options/ansible/observability/logging.md",
@@ -6352,7 +6175,7 @@
       "code_blocks": 6,
       "links": 3,
       "images": 0,
-      "chars": 3180,
+      "chars": 3174,
       "words": 521
     },
     "score": 9.83
@@ -6383,10 +6206,10 @@
       "code_blocks": 5,
       "links": 34,
       "images": 1,
-      "chars": 13524,
+      "chars": 13518,
       "words": 2155
     },
-    "score": 9.62
+    "score": 9.61
   },
   {
     "rel": "devops/deployment-options/ansible/restart.md",
@@ -6414,7 +6237,7 @@
       "code_blocks": 5,
       "links": 4,
       "images": 0,
-      "chars": 2539,
+      "chars": 2533,
       "words": 380
     },
     "score": 9.75
@@ -6445,10 +6268,10 @@
       "code_blocks": 4,
       "links": 7,
       "images": 0,
-      "chars": 1871,
+      "chars": 1859,
       "words": 251
     },
-    "score": 9.77
+    "score": 9.76
   },
   {
     "rel": "devops/deployment-options/ansible/update-executable.md",
@@ -6476,7 +6299,7 @@
       "code_blocks": 4,
       "links": 10,
       "images": 0,
-      "chars": 2300,
+      "chars": 2288,
       "words": 300
     },
     "score": 9.81
@@ -6650,7 +6473,7 @@
       "code_blocks": 17,
       "links": 19,
       "images": 0,
-      "chars": 10400,
+      "chars": 10366,
       "words": 1236
     },
     "en_metrics": {
@@ -6681,7 +6504,7 @@
       "code_blocks": 3,
       "links": 10,
       "images": 1,
-      "chars": 3458,
+      "chars": 3436,
       "words": 415
     },
     "en_metrics": {
@@ -6696,7 +6519,7 @@
       "chars": 3365,
       "words": 526
     },
-    "score": 8.59
+    "score": 8.6
   },
   {
     "rel": "devops/deployment-options/manual/index.md",
@@ -6730,21 +6553,52 @@
     "score": 8.45
   },
   {
+    "rel": "devops/deployment-options/manual/initial-deployment.md",
+    "ru_exists": true,
+    "en_exists": true,
+    "single_language_expected": false,
+    "ru_metrics": {
+      "lines": 761,
+      "headings_total": 20,
+      "h1": 1,
+      "h2": 15,
+      "h3": 4,
+      "code_blocks": 32,
+      "links": 17,
+      "images": 1,
+      "chars": 27071,
+      "words": 3536
+    },
+    "en_metrics": {
+      "lines": 652,
+      "headings_total": 18,
+      "h1": 1,
+      "h2": 15,
+      "h3": 2,
+      "code_blocks": 33,
+      "links": 23,
+      "images": 0,
+      "chars": 24064,
+      "words": 3755
+    },
+    "score": 8.26
+  },
+  {
     "rel": "devops/deployment-options/manual/initial-deployment/deployment-configuration-v1.md",
     "ru_exists": true,
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 1001,
+      "lines": 1027,
       "headings_total": 12,
       "h1": 1,
       "h2": 11,
       "h3": 0,
-      "code_blocks": 29,
-      "links": 23,
+      "code_blocks": 31,
+      "links": 22,
       "images": 1,
-      "chars": 27979,
-      "words": 3329
+      "chars": 28814,
+      "words": 3416
     },
     "en_metrics": {
       "lines": 901,
@@ -6758,7 +6612,7 @@
       "chars": 22751,
       "words": 2906
     },
-    "score": 8.46
+    "score": 8.34
   },
   {
     "rel": "devops/deployment-options/manual/initial-deployment/deployment-configuration-v2.md",
@@ -6766,16 +6620,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 539,
+      "lines": 564,
       "headings_total": 13,
       "h1": 1,
       "h2": 12,
       "h3": 0,
-      "code_blocks": 29,
-      "links": 24,
+      "code_blocks": 31,
+      "links": 23,
       "images": 1,
-      "chars": 19698,
-      "words": 2494
+      "chars": 20525,
+      "words": 2578
     },
     "en_metrics": {
       "lines": 476,
@@ -6789,7 +6643,7 @@
       "chars": 15047,
       "words": 2156
     },
-    "score": 8.32
+    "score": 8.18
   },
   {
     "rel": "devops/deployment-options/manual/initial-deployment/deployment-preparation.md",
@@ -6797,16 +6651,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 262,
-      "headings_total": 14,
+      "lines": 252,
+      "headings_total": 11,
       "h1": 1,
       "h2": 5,
-      "h3": 8,
-      "code_blocks": 14,
+      "h3": 5,
+      "code_blocks": 13,
       "links": 9,
       "images": 0,
-      "chars": 11064,
-      "words": 1633
+      "chars": 11069,
+      "words": 1619
     },
     "en_metrics": {
       "lines": 197,
@@ -6820,7 +6674,7 @@
       "chars": 8210,
       "words": 1454
     },
-    "score": 7.79
+    "score": 8.26
   },
   {
     "rel": "devops/deployment-options/manual/initial-deployment/index.md",
@@ -6898,7 +6752,7 @@
       "code_blocks": 4,
       "links": 13,
       "images": 0,
-      "chars": 6431,
+      "chars": 6409,
       "words": 759
     },
     "en_metrics": {
@@ -7032,12 +6886,12 @@
       "h2": 7,
       "h3": 10,
       "code_blocks": 24,
-      "links": 6,
+      "links": 4,
       "images": 0,
-      "chars": 10765,
-      "words": 1616
+      "chars": 10689,
+      "words": 1622
     },
-    "score": 9.79
+    "score": 9.33
   },
   {
     "rel": "devops/index.md",
@@ -7073,7 +6927,7 @@
   {
     "rel": "devops/observability/alerting.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 180,
@@ -7087,19 +6941,8 @@
       "chars": 7059,
       "words": 948
     },
-    "en_metrics": {
-      "lines": 180,
-      "headings_total": 11,
-      "h1": 1,
-      "h2": 5,
-      "h3": 3,
-      "code_blocks": 5,
-      "links": 13,
-      "images": 3,
-      "chars": 6528,
-      "words": 964
-    },
-    "score": 9.9
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "devops/observability/index.md",
@@ -7119,18 +6962,18 @@
       "words": 31
     },
     "en_metrics": {
-      "lines": 12,
+      "lines": 11,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 6,
+      "links": 5,
       "images": 0,
-      "chars": 288,
-      "words": 30
+      "chars": 268,
+      "words": 28
     },
-    "score": 9.94
+    "score": 9.54
   },
   {
     "rel": "devops/observability/logging.md",
@@ -7208,7 +7051,7 @@
       "code_blocks": 9,
       "links": 23,
       "images": 1,
-      "chars": 4862,
+      "chars": 4845,
       "words": 442
     },
     "en_metrics": {
@@ -7324,28 +7167,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 19,
+      "lines": 18,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 17,
+      "links": 16,
       "images": 0,
-      "chars": 2088,
-      "words": 167
+      "chars": 1941,
+      "words": 159
     },
     "en_metrics": {
-      "lines": 19,
+      "lines": 18,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 17,
+      "links": 16,
       "images": 0,
-      "chars": 2077,
-      "words": 173
+      "chars": 1930,
+      "words": 165
     },
     "score": 9.93
   },
@@ -7417,16 +7260,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 107,
+      "lines": 106,
       "headings_total": 4,
       "h1": 1,
       "h2": 3,
       "h3": 0,
       "code_blocks": 0,
-      "links": 85,
+      "links": 83,
       "images": 0,
-      "chars": 8695,
-      "words": 896
+      "chars": 8510,
+      "words": 886
     },
     "en_metrics": {
       "lines": 107,
@@ -7437,10 +7280,10 @@
       "code_blocks": 0,
       "links": 85,
       "images": 0,
-      "chars": 8553,
+      "chars": 8540,
       "words": 900
     },
-    "score": 9.98
+    "score": 9.94
   },
   {
     "rel": "downloads/ydb-ops.md",
@@ -7724,22 +7567,10 @@
   {
     "rel": "integrations/gui/dbeaver-plugin.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 309,
-      "headings_total": 23,
-      "h1": 1,
-      "h2": 8,
-      "h3": 14,
-      "code_blocks": 3,
-      "links": 52,
-      "images": 6,
-      "chars": 14854,
-      "words": 1887
-    },
-    "en_metrics": {
-      "lines": 258,
+      "lines": 259,
       "headings_total": 21,
       "h1": 1,
       "h2": 8,
@@ -7747,10 +7578,11 @@
       "code_blocks": 3,
       "links": 45,
       "images": 6,
-      "chars": 11798,
-      "words": 1737
+      "chars": 12058,
+      "words": 1510
     },
-    "score": 9.29
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "integrations/gui/dbeaver.md",
@@ -7789,16 +7621,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 13,
+      "lines": 12,
       "headings_total": 2,
       "h1": 2,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 15,
+      "links": 12,
       "images": 0,
-      "chars": 1029,
-      "words": 91
+      "chars": 870,
+      "words": 77
     },
     "en_metrics": {
       "lines": 12,
@@ -7812,7 +7644,7 @@
       "chars": 818,
       "words": 71
     },
-    "score": 9.15
+    "score": 9.81
   },
   {
     "rel": "integrations/gui/jupyter.md",
@@ -7846,66 +7678,35 @@
     "score": 9.83
   },
   {
-    "rel": "integrations/gui/vscode-plugin.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 371,
-      "headings_total": 36,
-      "h1": 1,
-      "h2": 10,
-      "h3": 25,
-      "code_blocks": 10,
-      "links": 69,
-      "images": 0,
-      "chars": 17625,
-      "words": 2235
-    },
-    "en_metrics": {
-      "lines": 310,
-      "headings_total": 36,
-      "h1": 1,
-      "h2": 10,
-      "h3": 25,
-      "code_blocks": 10,
-      "links": 67,
-      "images": 0,
-      "chars": 17306,
-      "words": 2628
-    },
-    "score": 9.68
-  },
-  {
     "rel": "integrations/index.md",
     "ru_exists": true,
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 111,
+      "lines": 109,
       "headings_total": 17,
       "h1": 8,
       "h2": 8,
       "h3": 1,
       "code_blocks": 0,
-      "links": 75,
+      "links": 70,
       "images": 0,
-      "chars": 4783,
-      "words": 473
+      "chars": 4541,
+      "words": 453
     },
     "en_metrics": {
-      "lines": 108,
+      "lines": 105,
       "headings_total": 18,
       "h1": 9,
       "h2": 8,
       "h3": 1,
       "code_blocks": 0,
-      "links": 70,
+      "links": 66,
       "images": 0,
-      "chars": 4276,
-      "words": 460
+      "chars": 4263,
+      "words": 446
     },
-    "score": 9.64
+    "score": 9.71
   },
   {
     "rel": "integrations/ingestion/fluent-bit.md",
@@ -7972,7 +7773,7 @@
   {
     "rel": "integrations/ingestion/import-mysql.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 264,
@@ -7986,19 +7787,8 @@
       "chars": 13879,
       "words": 2214
     },
-    "en_metrics": {
-      "lines": 290,
-      "headings_total": 17,
-      "h1": 1,
-      "h2": 9,
-      "h3": 7,
-      "code_blocks": 13,
-      "links": 12,
-      "images": 0,
-      "chars": 13442,
-      "words": 2423
-    },
-    "score": 9.82
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "integrations/ingestion/index.md",
@@ -8018,18 +7808,18 @@
       "words": 87
     },
     "en_metrics": {
-      "lines": 21,
+      "lines": 19,
       "headings_total": 4,
       "h1": 3,
       "h2": 1,
       "h3": 0,
       "code_blocks": 0,
-      "links": 14,
+      "links": 12,
       "images": 0,
-      "chars": 780,
-      "words": 81
+      "chars": 755,
+      "words": 76
     },
-    "score": 9.54
+    "score": 9.24
   },
   {
     "rel": "integrations/ingestion/logstash.md",
@@ -8404,37 +8194,6 @@
     "score": 9.9
   },
   {
-    "rel": "integrations/orm/exposed.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 669,
-      "headings_total": 22,
-      "h1": 1,
-      "h2": 10,
-      "h3": 10,
-      "code_blocks": 23,
-      "links": 13,
-      "images": 0,
-      "chars": 23011,
-      "words": 2627
-    },
-    "en_metrics": {
-      "lines": 704,
-      "headings_total": 22,
-      "h1": 1,
-      "h2": 10,
-      "h3": 10,
-      "code_blocks": 23,
-      "links": 13,
-      "images": 0,
-      "chars": 22616,
-      "words": 2929
-    },
-    "score": 9.8
-  },
-  {
     "rel": "integrations/orm/hibernate.md",
     "ru_exists": true,
     "en_exists": true,
@@ -8471,30 +8230,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 15,
+      "lines": 14,
       "headings_total": 2,
       "h1": 2,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 18,
+      "links": 16,
       "images": 0,
-      "chars": 886,
-      "words": 65
+      "chars": 803,
+      "words": 59
     },
     "en_metrics": {
-      "lines": 15,
+      "lines": 14,
       "headings_total": 2,
       "h1": 2,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 18,
+      "links": 16,
       "images": 0,
-      "chars": 789,
-      "words": 68
+      "chars": 801,
+      "words": 59
     },
-    "score": 9.82
+    "score": 10.0
   },
   {
     "rel": "integrations/orm/jooq.md",
@@ -8621,37 +8380,6 @@
     "score": 8.34
   },
   {
-    "rel": "integrations/sql-dialect-converter.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 67,
-      "headings_total": 6,
-      "h1": 1,
-      "h2": 5,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 9,
-      "images": 0,
-      "chars": 3678,
-      "words": 505
-    },
-    "en_metrics": {
-      "lines": 67,
-      "headings_total": 6,
-      "h1": 1,
-      "h2": 5,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 9,
-      "images": 0,
-      "chars": 3620,
-      "words": 593
-    },
-    "score": 9.72
-  },
-  {
     "rel": "integrations/vectorsearch/index.md",
     "ru_exists": true,
     "en_exists": true,
@@ -8700,18 +8428,18 @@
       "words": 1306
     },
     "en_metrics": {
-      "lines": 437,
+      "lines": 259,
       "headings_total": 12,
       "h1": 1,
       "h2": 4,
       "h3": 5,
-      "code_blocks": 22,
+      "code_blocks": 17,
       "links": 4,
       "images": 0,
-      "chars": 8929,
-      "words": 1337
+      "chars": 6406,
+      "words": 884
     },
-    "score": 9.94
+    "score": 8.74
   },
   {
     "rel": "integrations/visualization/datalens.md",
@@ -9157,7 +8885,7 @@
       "code_blocks": 5,
       "links": 21,
       "images": 0,
-      "chars": 9045,
+      "chars": 9023,
       "words": 1094
     },
     "en_metrics": {
@@ -9379,37 +9107,6 @@
       "words": 819
     },
     "score": 9.34
-  },
-  {
-    "rel": "maintenance/manual/selfheal_statestorage.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 56,
-      "headings_total": 3,
-      "h1": 1,
-      "h2": 2,
-      "h3": 0,
-      "code_blocks": 3,
-      "links": 19,
-      "images": 0,
-      "chars": 3273,
-      "words": 350
-    },
-    "en_metrics": {
-      "lines": 56,
-      "headings_total": 3,
-      "h1": 1,
-      "h2": 2,
-      "h3": 0,
-      "code_blocks": 3,
-      "links": 19,
-      "images": 0,
-      "chars": 3109,
-      "words": 376
-    },
-    "score": 9.83
   },
   {
     "rel": "maintenance/manual/virtual_storage_groups_decommit.md",
@@ -9838,16 +9535,16 @@
     "en_exists": true,
     "single_language_expected": true,
     "ru_metrics": {
-      "lines": 43,
+      "lines": 42,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 5,
+      "links": 4,
       "images": 0,
-      "chars": 748,
-      "words": 107
+      "chars": 719,
+      "words": 105
     },
     "en_metrics": {
       "lines": 40,
@@ -9861,7 +9558,7 @@
       "chars": 653,
       "words": 112
     },
-    "score": 9.0
+    "score": 9.13
   },
   {
     "rel": "public-materials/podcasts.md",
@@ -9981,26 +9678,6 @@
       "images": 9,
       "chars": 7453,
       "words": 936
-    },
-    "en_metrics": null,
-    "score": 1.0
-  },
-  {
-    "rel": "public-materials/publications/2026.md",
-    "ru_exists": true,
-    "en_exists": false,
-    "single_language_expected": true,
-    "ru_metrics": {
-      "lines": 11,
-      "headings_total": 2,
-      "h1": 1,
-      "h2": 1,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 2,
-      "images": 1,
-      "chars": 1160,
-      "words": 173
     },
     "en_metrics": null,
     "score": 1.0
@@ -10235,30 +9912,30 @@
     "en_exists": true,
     "single_language_expected": true,
     "ru_metrics": {
-      "lines": 330,
-      "headings_total": 23,
+      "lines": 275,
+      "headings_total": 20,
       "h1": 1,
-      "h2": 22,
+      "h2": 19,
       "h3": 0,
       "code_blocks": 0,
-      "links": 41,
+      "links": 32,
       "images": 0,
-      "chars": 18345,
-      "words": 2262
+      "chars": 15818,
+      "words": 1944
     },
     "en_metrics": {
-      "lines": 74,
-      "headings_total": 6,
+      "lines": 62,
+      "headings_total": 5,
       "h1": 1,
-      "h2": 5,
+      "h2": 4,
       "h3": 0,
       "code_blocks": 0,
-      "links": 16,
+      "links": 13,
       "images": 0,
-      "chars": 6164,
-      "words": 899
+      "chars": 5357,
+      "words": 784
     },
-    "score": 5.83
+    "score": 5.84
   },
   {
     "rel": "quickstart.md",
@@ -10540,68 +10217,6 @@
     "score": 9.82
   },
   {
-    "rel": "recipes/fulltext-search/fulltext-index-quickstart.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 67,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 4,
-      "h3": 0,
-      "code_blocks": 6,
-      "links": 3,
-      "images": 0,
-      "chars": 1290,
-      "words": 176
-    },
-    "en_metrics": {
-      "lines": 69,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 4,
-      "h3": 0,
-      "code_blocks": 6,
-      "links": 3,
-      "images": 0,
-      "chars": 1218,
-      "words": 190
-    },
-    "score": 9.82
-  },
-  {
-    "rel": "recipes/fulltext-search/index.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 5,
-      "headings_total": 1,
-      "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 2,
-      "images": 0,
-      "chars": 191,
-      "words": 18
-    },
-    "en_metrics": {
-      "lines": 5,
-      "headings_total": 1,
-      "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 2,
-      "images": 0,
-      "chars": 168,
-      "words": 18
-    },
-    "score": 9.89
-  },
-  {
     "rel": "recipes/import-export-column-tables.md",
     "ru_exists": true,
     "en_exists": true,
@@ -10627,10 +10242,10 @@
       "code_blocks": 7,
       "links": 13,
       "images": 0,
-      "chars": 10444,
-      "words": 1287
+      "chars": 10235,
+      "words": 1247
     },
-    "score": 9.35
+    "score": 9.39
   },
   {
     "rel": "recipes/index.md",
@@ -10669,16 +10284,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 66,
+      "lines": 63,
       "headings_total": 4,
       "h1": 1,
       "h2": 3,
       "h3": 0,
       "code_blocks": 2,
-      "links": 8,
+      "links": 7,
       "images": 0,
-      "chars": 1611,
-      "words": 231
+      "chars": 1464,
+      "words": 215
     },
     "en_metrics": {
       "lines": 63,
@@ -10692,7 +10307,7 @@
       "chars": 1292,
       "words": 199
     },
-    "score": 9.4
+    "score": 9.76
   },
   {
     "rel": "recipes/streaming_queries/index.md",
@@ -10731,19 +10346,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 186,
-      "headings_total": 10,
-      "h1": 1,
-      "h2": 9,
-      "h3": 0,
-      "code_blocks": 10,
-      "links": 28,
-      "images": 0,
-      "chars": 5140,
-      "words": 590
-    },
-    "en_metrics": {
-      "lines": 224,
+      "lines": 207,
       "headings_total": 11,
       "h1": 1,
       "h2": 10,
@@ -10751,10 +10354,22 @@
       "code_blocks": 11,
       "links": 31,
       "images": 0,
-      "chars": 5678,
-      "words": 712
+      "chars": 5781,
+      "words": 657
     },
-    "score": 9.11
+    "en_metrics": {
+      "lines": 202,
+      "headings_total": 11,
+      "h1": 1,
+      "h2": 10,
+      "h3": 0,
+      "code_blocks": 11,
+      "links": 29,
+      "images": 0,
+      "chars": 5135,
+      "words": 615
+    },
+    "score": 9.7
   },
   {
     "rel": "recipes/transfer/index.md",
@@ -10886,7 +10501,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 129,
+      "lines": 132,
       "headings_total": 7,
       "h1": 1,
       "h2": 6,
@@ -10894,22 +10509,22 @@
       "code_blocks": 7,
       "links": 14,
       "images": 0,
-      "chars": 4711,
-      "words": 611
+      "chars": 4586,
+      "words": 599
     },
     "en_metrics": {
-      "lines": 128,
+      "lines": 132,
       "headings_total": 7,
       "h1": 1,
       "h2": 6,
       "h3": 0,
       "code_blocks": 7,
-      "links": 15,
+      "links": 14,
       "images": 0,
-      "chars": 4680,
-      "words": 725
+      "chars": 4497,
+      "words": 697
     },
-    "score": 9.62
+    "score": 9.73
   },
   {
     "rel": "recipes/vector-search/vector-index-with-prepared-dataset.md",
@@ -10917,19 +10532,19 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 196,
+      "lines": 198,
       "headings_total": 11,
       "h1": 3,
       "h2": 8,
       "h3": 0,
       "code_blocks": 12,
-      "links": 26,
+      "links": 27,
       "images": 0,
-      "chars": 25206,
-      "words": 1070
+      "chars": 25350,
+      "words": 1084
     },
     "en_metrics": {
-      "lines": 175,
+      "lines": 179,
       "headings_total": 11,
       "h1": 3,
       "h2": 8,
@@ -10937,10 +10552,10 @@
       "code_blocks": 10,
       "links": 27,
       "images": 0,
-      "chars": 6270,
-      "words": 953
+      "chars": 6333,
+      "words": 957
     },
-    "score": 8.78
+    "score": 8.81
   },
   {
     "rel": "recipes/ydb-cli/benchmarks.md",
@@ -11301,18 +10916,18 @@
       "words": 507
     },
     "en_metrics": {
-      "lines": 201,
+      "lines": 171,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
-      "code_blocks": 7,
-      "links": 1,
+      "code_blocks": 6,
+      "links": 0,
       "images": 0,
-      "chars": 3419,
-      "words": 440
+      "chars": 2784,
+      "words": 363
     },
-    "score": 8.71
+    "score": 7.4
   },
   {
     "rel": "recipes/ydb-sdk/balancing-prefer-location.md",
@@ -11332,18 +10947,18 @@
       "words": 413
     },
     "en_metrics": {
-      "lines": 150,
+      "lines": 118,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
-      "code_blocks": 4,
-      "links": 1,
+      "code_blocks": 3,
+      "links": 0,
       "images": 0,
-      "chars": 2685,
-      "words": 363
+      "chars": 1911,
+      "words": 261
     },
-    "score": 9.65
+    "score": 7.18
   },
   {
     "rel": "recipes/ydb-sdk/balancing-prefer-pile.md",
@@ -11369,12 +10984,12 @@
       "h2": 0,
       "h3": 0,
       "code_blocks": 1,
-      "links": 4,
+      "links": 1,
       "images": 0,
-      "chars": 999,
-      "words": 131
+      "chars": 908,
+      "words": 134
     },
-    "score": 9.15
+    "score": 8.31
   },
   {
     "rel": "recipes/ydb-sdk/balancing-random-choice.md",
@@ -11394,18 +11009,18 @@
       "words": 551
     },
     "en_metrics": {
-      "lines": 199,
+      "lines": 167,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
-      "code_blocks": 7,
-      "links": 2,
+      "code_blocks": 6,
+      "links": 1,
       "images": 0,
-      "chars": 3645,
-      "words": 477
+      "chars": 2744,
+      "words": 355
     },
-    "score": 8.92
+    "score": 7.67
   },
   {
     "rel": "recipes/ydb-sdk/balancing.md",
@@ -11456,18 +11071,18 @@
       "words": 1450
     },
     "en_metrics": {
-      "lines": 483,
+      "lines": 409,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
-      "code_blocks": 10,
+      "code_blocks": 8,
       "links": 3,
-      "images": 1,
-      "chars": 9748,
-      "words": 1263
+      "images": 0,
+      "chars": 8622,
+      "words": 1102
     },
-    "score": 8.98
+    "score": 7.49
   },
   {
     "rel": "recipes/ydb-sdk/config-publication.md",
@@ -11518,7 +11133,7 @@
       "words": 305
     },
     "en_metrics": {
-      "lines": 176,
+      "lines": 159,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
@@ -11526,41 +11141,10 @@
       "code_blocks": 2,
       "links": 0,
       "images": 0,
-      "chars": 2563,
-      "words": 309
+      "chars": 2417,
+      "words": 281
     },
-    "score": 9.96
-  },
-  {
-    "rel": "recipes/ydb-sdk/debug-logs-otel.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 335,
-      "headings_total": 3,
-      "h1": 1,
-      "h2": 2,
-      "h3": 0,
-      "code_blocks": 10,
-      "links": 7,
-      "images": 0,
-      "chars": 11311,
-      "words": 1045
-    },
-    "en_metrics": {
-      "lines": 347,
-      "headings_total": 2,
-      "h1": 1,
-      "h2": 1,
-      "h3": 0,
-      "code_blocks": 10,
-      "links": 7,
-      "images": 0,
-      "chars": 11311,
-      "words": 1133
-    },
-    "score": 9.11
+    "score": 9.79
   },
   {
     "rel": "recipes/ydb-sdk/debug-logs.md",
@@ -11580,52 +11164,21 @@
       "words": 1282
     },
     "en_metrics": {
-      "lines": 411,
+      "lines": 406,
       "headings_total": 0,
       "h1": 0,
       "h2": 0,
       "h3": 0,
       "code_blocks": 11,
-      "links": 2,
+      "links": 1,
       "images": 0,
-      "chars": 8581,
-      "words": 1162
+      "chars": 8406,
+      "words": 1137
     },
-    "score": 6.22
+    "score": 5.9
   },
   {
-    "rel": "recipes/ydb-sdk/debug-otel-metrics.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 307,
-      "headings_total": 8,
-      "h1": 1,
-      "h2": 3,
-      "h3": 4,
-      "code_blocks": 9,
-      "links": 7,
-      "images": 0,
-      "chars": 11539,
-      "words": 1091
-    },
-    "en_metrics": {
-      "lines": 324,
-      "headings_total": 8,
-      "h1": 1,
-      "h2": 3,
-      "h3": 4,
-      "code_blocks": 9,
-      "links": 7,
-      "images": 0,
-      "chars": 10672,
-      "words": 1231
-    },
-    "score": 9.73
-  },
-  {
-    "rel": "recipes/ydb-sdk/debug-otel-tracing.md",
+    "rel": "recipes/ydb-sdk/debug-otel.md",
     "ru_exists": true,
     "en_exists": true,
     "single_language_expected": false,
@@ -11642,38 +11195,18 @@
       "words": 1161
     },
     "en_metrics": {
-      "lines": 371,
-      "headings_total": 7,
+      "lines": 134,
+      "headings_total": 1,
       "h1": 1,
-      "h2": 4,
-      "h3": 2,
-      "code_blocks": 14,
-      "links": 3,
+      "h2": 0,
+      "h3": 0,
+      "code_blocks": 2,
+      "links": 0,
       "images": 0,
-      "chars": 10843,
-      "words": 1317
+      "chars": 3069,
+      "words": 397
     },
-    "score": 9.77
-  },
-  {
-    "rel": "recipes/ydb-sdk/debug-otel.md",
-    "ru_exists": false,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": null,
-    "en_metrics": {
-      "lines": 348,
-      "headings_total": 7,
-      "h1": 1,
-      "h2": 4,
-      "h3": 2,
-      "code_blocks": 14,
-      "links": 2,
-      "images": 0,
-      "chars": 10845,
-      "words": 1318
-    },
-    "score": 1.0
+    "score": 3.34
   },
   {
     "rel": "recipes/ydb-sdk/debug-prometheus.md",
@@ -11693,7 +11226,7 @@
       "words": 201
     },
     "en_metrics": {
-      "lines": 101,
+      "lines": 105,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
@@ -11701,10 +11234,10 @@
       "code_blocks": 2,
       "links": 0,
       "images": 0,
-      "chars": 1444,
-      "words": 171
+      "chars": 1492,
+      "words": 179
     },
-    "score": 9.61
+    "score": 9.71
   },
   {
     "rel": "recipes/ydb-sdk/debug.md",
@@ -11712,16 +11245,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 13,
+      "lines": 12,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 5,
+      "links": 4,
       "images": 0,
-      "chars": 627,
-      "words": 79
+      "chars": 572,
+      "words": 75
     },
     "en_metrics": {
       "lines": 13,
@@ -11730,12 +11263,12 @@
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 5,
+      "links": 4,
       "images": 0,
-      "chars": 612,
-      "words": 89
+      "chars": 657,
+      "words": 101
     },
-    "score": 9.78
+    "score": 9.42
   },
   {
     "rel": "recipes/ydb-sdk/distributed-lock.md",
@@ -11774,19 +11307,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 47,
-      "headings_total": 1,
-      "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 31,
-      "images": 0,
-      "chars": 1554,
-      "words": 152
-    },
-    "en_metrics": {
-      "lines": 44,
+      "lines": 46,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
@@ -11794,10 +11315,22 @@
       "code_blocks": 0,
       "links": 30,
       "images": 0,
-      "chars": 1388,
-      "words": 140
+      "chars": 1497,
+      "words": 147
     },
-    "score": 9.72
+    "en_metrics": {
+      "lines": 47,
+      "headings_total": 1,
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 30,
+      "images": 0,
+      "chars": 1396,
+      "words": 154
+    },
+    "score": 9.86
   },
   {
     "rel": "recipes/ydb-sdk/init.md",
@@ -11879,18 +11412,18 @@
       "words": 3190
     },
     "en_metrics": {
-      "lines": 676,
+      "lines": 763,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
-      "code_blocks": 16,
+      "code_blocks": 20,
       "links": 9,
       "images": 0,
-      "chars": 19151,
-      "words": 2767
+      "chars": 21216,
+      "words": 3016
     },
-    "score": 8.81
+    "score": 9.36
   },
   {
     "rel": "recipes/ydb-sdk/service-discovery.md",
@@ -11941,18 +11474,18 @@
       "words": 747
     },
     "en_metrics": {
-      "lines": 154,
+      "lines": 198,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
-      "code_blocks": 6,
+      "code_blocks": 8,
       "links": 4,
       "images": 0,
-      "chars": 3561,
-      "words": 523
+      "chars": 4204,
+      "words": 600
     },
-    "score": 8.26
+    "score": 8.95
   },
   {
     "rel": "recipes/ydb-sdk/ttl.md",
@@ -12034,18 +11567,18 @@
       "words": 1704
     },
     "en_metrics": {
-      "lines": 360,
+      "lines": 517,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
-      "code_blocks": 8,
+      "code_blocks": 11,
       "links": 1,
       "images": 0,
-      "chars": 7951,
-      "words": 972
+      "chars": 11340,
+      "words": 1345
     },
-    "score": 6.57
+    "score": 7.6
   },
   {
     "rel": "recipes/ydb-sdk/vector-search.md",
@@ -12053,30 +11586,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 2209,
+      "lines": 2262,
       "headings_total": 7,
       "h1": 1,
       "h2": 6,
       "h3": 0,
       "code_blocks": 45,
-      "links": 28,
+      "links": 30,
       "images": 0,
-      "chars": 47118,
-      "words": 5315
+      "chars": 48640,
+      "words": 5454
     },
     "en_metrics": {
-      "lines": 2074,
+      "lines": 2335,
       "headings_total": 7,
       "h1": 1,
       "h2": 6,
       "h3": 0,
-      "code_blocks": 44,
+      "code_blocks": 48,
       "links": 28,
       "images": 0,
-      "chars": 44081,
-      "words": 5116
+      "chars": 49262,
+      "words": 5659
     },
-    "score": 9.83
+    "score": 9.72
   },
   {
     "rel": "reference/configuration/actor_system_config.md",
@@ -12141,37 +11674,6 @@
     "score": 9.53
   },
   {
-    "rel": "reference/configuration/aws_client_config.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 63,
-      "headings_total": 6,
-      "h1": 1,
-      "h2": 4,
-      "h3": 1,
-      "code_blocks": 1,
-      "links": 6,
-      "images": 0,
-      "chars": 3393,
-      "words": 537
-    },
-    "en_metrics": {
-      "lines": 63,
-      "headings_total": 6,
-      "h1": 1,
-      "h2": 4,
-      "h3": 1,
-      "code_blocks": 1,
-      "links": 6,
-      "images": 0,
-      "chars": 3345,
-      "words": 584
-    },
-    "score": 9.84
-  },
-  {
     "rel": "reference/configuration/blob_storage_config.md",
     "ru_exists": true,
     "en_exists": true,
@@ -12226,12 +11728,12 @@
       "h2": 1,
       "h3": 0,
       "code_blocks": 1,
-      "links": 3,
+      "links": 1,
       "images": 0,
-      "chars": 422,
-      "words": 59
+      "chars": 377,
+      "words": 65
     },
-    "score": 9.48
+    "score": 9.0
   },
   {
     "rel": "reference/configuration/client_certificate_authorization.md",
@@ -12247,8 +11749,8 @@
       "code_blocks": 3,
       "links": 3,
       "images": 0,
-      "chars": 4422,
-      "words": 525
+      "chars": 4424,
+      "words": 527
     },
     "en_metrics": {
       "lines": 71,
@@ -12259,8 +11761,8 @@
       "code_blocks": 3,
       "links": 3,
       "images": 0,
-      "chars": 4137,
-      "words": 590
+      "chars": 4139,
+      "words": 592
     },
     "score": 9.74
   },
@@ -12332,30 +11834,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 28,
-      "headings_total": 2,
-      "h1": 1,
-      "h2": 1,
-      "h3": 0,
-      "code_blocks": 1,
-      "links": 9,
-      "images": 0,
-      "chars": 2346,
-      "words": 236
-    },
-    "en_metrics": {
       "lines": 27,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
       "h3": 0,
       "code_blocks": 1,
-      "links": 8,
+      "links": 7,
       "images": 0,
-      "chars": 2082,
-      "words": 255
+      "chars": 2126,
+      "words": 218
     },
-    "score": 9.61
+    "en_metrics": {
+      "lines": 25,
+      "headings_total": 2,
+      "h1": 1,
+      "h2": 1,
+      "h3": 0,
+      "code_blocks": 1,
+      "links": 6,
+      "images": 0,
+      "chars": 1883,
+      "words": 235
+    },
+    "score": 9.57
   },
   {
     "rel": "reference/configuration/healthcheck_config.md",
@@ -12477,18 +11979,18 @@
       "words": 227
     },
     "en_metrics": {
-      "lines": 65,
+      "lines": 63,
       "headings_total": 5,
       "h1": 1,
-      "h2": 4,
-      "h3": 0,
+      "h2": 3,
+      "h3": 1,
       "code_blocks": 3,
-      "links": 4,
+      "links": 3,
       "images": 0,
-      "chars": 1445,
-      "words": 244
+      "chars": 1418,
+      "words": 246
     },
-    "score": 9.81
+    "score": 9.44
   },
   {
     "rel": "reference/configuration/index.md",
@@ -12496,16 +11998,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 55,
+      "lines": 54,
       "headings_total": 4,
       "h1": 1,
       "h2": 3,
       "h3": 0,
       "code_blocks": 0,
-      "links": 35,
+      "links": 34,
       "images": 0,
-      "chars": 3533,
-      "words": 443
+      "chars": 3466,
+      "words": 432
     },
     "en_metrics": {
       "lines": 54,
@@ -12514,12 +12016,12 @@
       "h2": 3,
       "h3": 0,
       "code_blocks": 0,
-      "links": 31,
+      "links": 30,
       "images": 0,
-      "chars": 3207,
-      "words": 451
+      "chars": 3141,
+      "words": 441
     },
-    "score": 9.73
+    "score": 9.72
   },
   {
     "rel": "reference/configuration/kafka.md",
@@ -12547,7 +12049,7 @@
     "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 35,
+      "lines": 31,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
@@ -12555,8 +12057,8 @@
       "code_blocks": 1,
       "links": 4,
       "images": 0,
-      "chars": 2136,
-      "words": 315
+      "chars": 1906,
+      "words": 273
     },
     "en_metrics": null,
     "score": 1.0
@@ -12698,12 +12200,12 @@
       "h2": 3,
       "h3": 2,
       "code_blocks": 2,
-      "links": 4,
+      "links": 2,
       "images": 0,
-      "chars": 2679,
+      "chars": 2543,
       "words": 358
     },
-    "score": 9.82
+    "score": 9.1
   },
   {
     "rel": "reference/configuration/resource_broker_config.md",
@@ -12742,30 +12244,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 319,
+      "lines": 295,
       "headings_total": 6,
       "h1": 1,
       "h2": 5,
       "h3": 0,
       "code_blocks": 5,
-      "links": 45,
+      "links": 46,
       "images": 0,
-      "chars": 14726,
-      "words": 1703
+      "chars": 12834,
+      "words": 1469
     },
     "en_metrics": {
-      "lines": 299,
+      "lines": 276,
       "headings_total": 5,
       "h1": 1,
       "h2": 4,
       "h3": 0,
       "code_blocks": 5,
-      "links": 45,
+      "links": 46,
       "images": 0,
-      "chars": 13607,
-      "words": 1883
+      "chars": 12238,
+      "words": 1690
     },
-    "score": 9.38
+    "score": 9.35
   },
   {
     "rel": "reference/configuration/system_tablet_backup_config.md",
@@ -12793,30 +12295,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 202,
-      "headings_total": 26,
+      "lines": 255,
+      "headings_total": 31,
       "h1": 1,
-      "h2": 3,
+      "h2": 2,
       "h3": 8,
-      "code_blocks": 7,
-      "links": 18,
+      "code_blocks": 8,
+      "links": 23,
       "images": 0,
-      "chars": 6931,
-      "words": 777
+      "chars": 8238,
+      "words": 912
     },
     "en_metrics": {
-      "lines": 202,
-      "headings_total": 26,
+      "lines": 255,
+      "headings_total": 31,
       "h1": 1,
-      "h2": 3,
+      "h2": 2,
       "h3": 8,
-      "code_blocks": 7,
-      "links": 18,
+      "code_blocks": 8,
+      "links": 23,
       "images": 0,
-      "chars": 6729,
-      "words": 858
+      "chars": 8017,
+      "words": 995
     },
-    "score": 9.8
+    "score": 9.83
   },
   {
     "rel": "reference/configuration/tli_config.md",
@@ -13351,30 +12853,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 211,
-      "headings_total": 10,
+      "lines": 49,
+      "headings_total": 3,
       "h1": 1,
       "h2": 2,
-      "h3": 2,
-      "code_blocks": 17,
-      "links": 12,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 10,
       "images": 0,
-      "chars": 6513,
-      "words": 715
+      "chars": 2017,
+      "words": 221
     },
     "en_metrics": {
-      "lines": 193,
-      "headings_total": 10,
+      "lines": 32,
+      "headings_total": 3,
       "h1": 1,
       "h2": 2,
-      "h3": 2,
-      "code_blocks": 17,
-      "links": 11,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 9,
       "images": 0,
-      "chars": 5784,
-      "words": 665
+      "chars": 1372,
+      "words": 161
     },
-    "score": 9.66
+    "score": 9.09
   },
   {
     "rel": "reference/kafka-api/connect/connect-examples.md",
@@ -13475,19 +12977,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 9,
-      "headings_total": 1,
-      "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 8,
-      "images": 0,
-      "chars": 833,
-      "words": 72
-    },
-    "en_metrics": {
-      "lines": 9,
+      "lines": 10,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
@@ -13495,10 +12985,22 @@
       "code_blocks": 0,
       "links": 9,
       "images": 0,
-      "chars": 868,
-      "words": 84
+      "chars": 961,
+      "words": 80
     },
-    "score": 9.56
+    "en_metrics": {
+      "lines": 10,
+      "headings_total": 1,
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 10,
+      "images": 0,
+      "chars": 967,
+      "words": 90
+    },
+    "score": 9.66
   },
   {
     "rel": "reference/kafka-api/examples.md",
@@ -13822,10 +13324,10 @@
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 5,
+      "links": 4,
       "images": 0,
-      "chars": 931,
-      "words": 121
+      "chars": 884,
+      "words": 119
     },
     "en_metrics": {
       "lines": 13,
@@ -13834,12 +13336,12 @@
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 5,
+      "links": 4,
       "images": 0,
-      "chars": 1005,
-      "words": 152
+      "chars": 962,
+      "words": 150
     },
-    "score": 9.57
+    "score": 9.56
   },
   {
     "rel": "reference/languages-and-apis/jdbc-driver/building.md",
@@ -13940,30 +13442,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 45,
-      "headings_total": 3,
+      "lines": 54,
+      "headings_total": 4,
       "h1": 2,
-      "h2": 1,
+      "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 1,
+      "links": 2,
       "images": 0,
-      "chars": 1756,
-      "words": 209
+      "chars": 2447,
+      "words": 304
     },
     "en_metrics": {
-      "lines": 45,
-      "headings_total": 3,
+      "lines": 52,
+      "headings_total": 4,
       "h1": 2,
-      "h2": 1,
+      "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 1,
+      "links": 2,
       "images": 0,
-      "chars": 1642,
-      "words": 224
+      "chars": 2301,
+      "words": 346
     },
-    "score": 9.82
+    "score": 9.73
   },
   {
     "rel": "reference/languages-and-apis/jdbc-driver/quickstart.md",
@@ -13979,7 +13481,7 @@
       "code_blocks": 0,
       "links": 2,
       "images": 0,
-      "chars": 1019,
+      "chars": 1027,
       "words": 88
     },
     "en_metrics": {
@@ -13991,7 +13493,7 @@
       "code_blocks": 0,
       "links": 2,
       "images": 0,
-      "chars": 925,
+      "chars": 933,
       "words": 87
     },
     "score": 9.9
@@ -14064,30 +13566,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 227,
-      "headings_total": 18,
+      "lines": 133,
+      "headings_total": 10,
       "h1": 1,
-      "h2": 12,
-      "h3": 5,
+      "h2": 9,
+      "h3": 0,
       "code_blocks": 0,
-      "links": 18,
+      "links": 12,
       "images": 0,
-      "chars": 12138,
-      "words": 1774
+      "chars": 5929,
+      "words": 808
     },
     "en_metrics": {
-      "lines": 228,
-      "headings_total": 18,
+      "lines": 134,
+      "headings_total": 10,
       "h1": 1,
-      "h2": 12,
-      "h3": 5,
+      "h2": 9,
+      "h3": 0,
       "code_blocks": 0,
-      "links": 17,
+      "links": 11,
       "images": 0,
-      "chars": 11519,
-      "words": 1876
+      "chars": 5772,
+      "words": 882
     },
-    "score": 9.78
+    "score": 9.71
   },
   {
     "rel": "reference/observability/metrics/index.md",
@@ -14101,10 +13603,10 @@
       "h2": 15,
       "h3": 0,
       "code_blocks": 0,
-      "links": 7,
+      "links": 6,
       "images": 0,
-      "chars": 26717,
-      "words": 2894
+      "chars": 26646,
+      "words": 2892
     },
     "en_metrics": {
       "lines": 211,
@@ -14113,12 +13615,12 @@
       "h2": 15,
       "h3": 0,
       "code_blocks": 0,
-      "links": 6,
+      "links": 5,
       "images": 0,
-      "chars": 26543,
-      "words": 3885
+      "chars": 26510,
+      "words": 3887
     },
-    "score": 9.34
+    "score": 9.31
   },
   {
     "rel": "reference/observability/tracing/external-traces.md",
@@ -14134,7 +13636,7 @@
       "code_blocks": 0,
       "links": 5,
       "images": 0,
-      "chars": 1391,
+      "chars": 1383,
       "words": 174
     },
     "en_metrics": {
@@ -14146,10 +13648,10 @@
       "code_blocks": 0,
       "links": 5,
       "images": 0,
-      "chars": 1296,
-      "words": 210
+      "chars": 1403,
+      "words": 229
     },
-    "score": 9.63
+    "score": 9.55
   },
   {
     "rel": "reference/observability/tracing/setup.md",
@@ -14208,28 +13710,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 187,
+      "lines": 180,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
       "h3": 0,
       "code_blocks": 1,
-      "links": 246,
+      "links": 236,
       "images": 0,
-      "chars": 20082,
-      "words": 1861
+      "chars": 19102,
+      "words": 1768
     },
     "en_metrics": {
-      "lines": 189,
+      "lines": 182,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
       "h3": 0,
       "code_blocks": 1,
-      "links": 246,
+      "links": 236,
       "images": 0,
-      "chars": 20444,
-      "words": 2385
+      "chars": 19458,
+      "words": 2269
     },
     "score": 9.59
   },
@@ -14735,30 +14237,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 78,
-      "headings_total": 6,
+      "lines": 26,
+      "headings_total": 2,
       "h1": 1,
       "h2": 1,
-      "h3": 4,
-      "code_blocks": 5,
-      "links": 3,
+      "h3": 0,
+      "code_blocks": 2,
+      "links": 1,
       "images": 0,
-      "chars": 2787,
-      "words": 384
+      "chars": 825,
+      "words": 129
     },
     "en_metrics": {
-      "lines": 79,
-      "headings_total": 6,
+      "lines": 27,
+      "headings_total": 2,
       "h1": 1,
       "h2": 1,
-      "h3": 4,
-      "code_blocks": 5,
-      "links": 3,
+      "h3": 0,
+      "code_blocks": 2,
+      "links": 1,
       "images": 0,
-      "chars": 2610,
-      "words": 411
+      "chars": 793,
+      "words": 138
     },
-    "score": 9.82
+    "score": 9.85
   },
   {
     "rel": "reference/ydb-cli/commands/explain-plan.md",
@@ -15107,30 +14609,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 50,
-      "headings_total": 3,
+      "lines": 33,
+      "headings_total": 2,
       "h1": 1,
-      "h2": 2,
+      "h2": 1,
       "h3": 0,
       "code_blocks": 2,
-      "links": 20,
+      "links": 15,
       "images": 0,
-      "chars": 2142,
-      "words": 249
+      "chars": 1117,
+      "words": 109
     },
     "en_metrics": {
-      "lines": 50,
-      "headings_total": 3,
+      "lines": 32,
+      "headings_total": 2,
       "h1": 1,
-      "h2": 2,
+      "h2": 1,
       "h3": 0,
       "code_blocks": 2,
-      "links": 20,
+      "links": 15,
       "images": 0,
-      "chars": 2042,
-      "words": 282
+      "chars": 1080,
+      "words": 114
     },
-    "score": 9.75
+    "score": 9.89
   },
   {
     "rel": "reference/ydb-cli/commands/workload/stock.md",
@@ -15138,28 +14640,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 407,
-      "headings_total": 18,
+      "lines": 421,
+      "headings_total": 19,
       "h1": 1,
       "h2": 10,
-      "h3": 7,
+      "h3": 8,
       "code_blocks": 23,
-      "links": 20,
+      "links": 23,
       "images": 0,
-      "chars": 11925,
-      "words": 1850
+      "chars": 12608,
+      "words": 1976
     },
     "en_metrics": {
-      "lines": 358,
-      "headings_total": 18,
+      "lines": 373,
+      "headings_total": 19,
       "h1": 1,
       "h2": 10,
-      "h3": 7,
+      "h3": 8,
       "code_blocks": 23,
-      "links": 18,
+      "links": 21,
       "images": 0,
-      "chars": 11297,
-      "words": 1947
+      "chars": 11930,
+      "words": 2102
     },
     "score": 9.73
   },
@@ -15262,30 +14764,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 245,
+      "lines": 239,
       "headings_total": 15,
       "h1": 1,
       "h2": 3,
       "h3": 11,
       "code_blocks": 16,
-      "links": 24,
+      "links": 18,
       "images": 0,
-      "chars": 10719,
-      "words": 1315
+      "chars": 10320,
+      "words": 1297
     },
     "en_metrics": {
-      "lines": 238,
+      "lines": 237,
       "headings_total": 15,
       "h1": 1,
       "h2": 3,
       "h3": 11,
       "code_blocks": 16,
-      "links": 17,
+      "links": 16,
       "images": 0,
-      "chars": 9657,
-      "words": 1420
+      "chars": 9592,
+      "words": 1417
     },
-    "score": 9.38
+    "score": 9.63
   },
   {
     "rel": "reference/ydb-cli/export-import/file-structure.md",
@@ -15293,16 +14795,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 304,
-      "headings_total": 19,
+      "lines": 269,
+      "headings_total": 14,
       "h1": 1,
-      "h2": 14,
+      "h2": 9,
       "h3": 4,
       "code_blocks": 11,
-      "links": 18,
+      "links": 13,
       "images": 0,
-      "chars": 9618,
-      "words": 1235
+      "chars": 7497,
+      "words": 1014
     },
     "en_metrics": {
       "lines": 260,
@@ -15316,7 +14818,7 @@
       "chars": 7098,
       "words": 1097
     },
-    "score": 8.43
+    "score": 9.65
   },
   {
     "rel": "reference/ydb-cli/export-import/import-file.md",
@@ -15429,18 +14931,18 @@
       "words": 997
     },
     "en_metrics": {
-      "lines": 177,
+      "lines": 149,
       "headings_total": 9,
       "h1": 1,
       "h2": 4,
       "h3": 4,
       "code_blocks": 10,
-      "links": 23,
+      "links": 13,
       "images": 0,
-      "chars": 6702,
-      "words": 1034
+      "chars": 5500,
+      "words": 908
     },
-    "score": 9.8
+    "score": 8.99
   },
   {
     "rel": "reference/ydb-cli/export-import/tools-restore.md",
@@ -15448,7 +14950,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 237,
+      "lines": 238,
       "headings_total": 17,
       "h1": 1,
       "h2": 4,
@@ -15460,18 +14962,18 @@
       "words": 1687
     },
     "en_metrics": {
-      "lines": 238,
+      "lines": 210,
       "headings_total": 17,
       "h1": 1,
       "h2": 4,
       "h3": 12,
       "code_blocks": 13,
-      "links": 24,
+      "links": 14,
       "images": 0,
-      "chars": 10742,
-      "words": 1845
+      "chars": 9416,
+      "words": 1685
     },
-    "score": 9.76
+    "score": 9.25
   },
   {
     "rel": "reference/ydb-cli/index.md",
@@ -15541,16 +15043,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 187,
+      "lines": 171,
       "headings_total": 11,
       "h1": 1,
       "h2": 6,
       "h3": 4,
-      "code_blocks": 3,
+      "code_blocks": 2,
       "links": 19,
       "images": 6,
-      "chars": 5318,
-      "words": 728
+      "chars": 5038,
+      "words": 681
     },
     "en_metrics": {
       "lines": 171,
@@ -15564,7 +15066,7 @@
       "chars": 5325,
       "words": 794
     },
-    "score": 9.18
+    "score": 9.63
   },
   {
     "rel": "reference/ydb-cli/operation-cancel.md",
@@ -15735,22 +15237,22 @@
       "code_blocks": 41,
       "links": 20,
       "images": 0,
-      "chars": 23796,
-      "words": 3281
+      "chars": 23727,
+      "words": 3269
     },
     "en_metrics": {
-      "lines": 595,
+      "lines": 599,
       "headings_total": 28,
       "h1": 3,
       "h2": 6,
       "h3": 8,
       "code_blocks": 41,
-      "links": 20,
+      "links": 15,
       "images": 0,
-      "chars": 22666,
-      "words": 3711
+      "chars": 21624,
+      "words": 3506
     },
-    "score": 9.75
+    "score": 9.46
   },
   {
     "rel": "reference/ydb-cli/profile/activate.md",
@@ -15975,30 +15477,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 111,
-      "headings_total": 7,
-      "h1": 4,
+      "lines": 95,
+      "headings_total": 4,
+      "h1": 1,
       "h2": 2,
       "h3": 1,
       "code_blocks": 6,
       "links": 13,
       "images": 0,
-      "chars": 4569,
-      "words": 642
+      "chars": 4457,
+      "words": 609
     },
     "en_metrics": {
-      "lines": 122,
-      "headings_total": 7,
-      "h1": 4,
+      "lines": 94,
+      "headings_total": 4,
+      "h1": 1,
       "h2": 2,
       "h3": 1,
       "code_blocks": 6,
       "links": 13,
       "images": 0,
-      "chars": 4328,
-      "words": 660
+      "chars": 4219,
+      "words": 634
     },
-    "score": 9.9
+    "score": 9.88
   },
   {
     "rel": "reference/ydb-cli/table-attribute-add.md",
@@ -16169,8 +15671,8 @@
       "code_blocks": 3,
       "links": 8,
       "images": 0,
-      "chars": 2453,
-      "words": 325
+      "chars": 1882,
+      "words": 244
     },
     "en_metrics": {
       "lines": 47,
@@ -16181,10 +15683,10 @@
       "code_blocks": 3,
       "links": 8,
       "images": 0,
-      "chars": 2868,
-      "words": 375
+      "chars": 2381,
+      "words": 294
     },
-    "score": 9.63
+    "score": 9.51
   },
   {
     "rel": "reference/ydb-cli/tools-copy.md",
@@ -16595,7 +16097,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 133,
+      "lines": 132,
       "headings_total": 12,
       "h1": 1,
       "h2": 5,
@@ -16603,11 +16105,11 @@
       "code_blocks": 7,
       "links": 5,
       "images": 0,
-      "chars": 7595,
-      "words": 1081
+      "chars": 7491,
+      "words": 1067
     },
     "en_metrics": {
-      "lines": 133,
+      "lines": 132,
       "headings_total": 12,
       "h1": 1,
       "h2": 5,
@@ -16615,41 +16117,10 @@
       "code_blocks": 7,
       "links": 5,
       "images": 0,
-      "chars": 6897,
-      "words": 1175
+      "chars": 6798,
+      "words": 1161
     },
     "score": 9.77
-  },
-  {
-    "rel": "reference/ydb-cli/workload-fulltext.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 453,
-      "headings_total": 25,
-      "h1": 1,
-      "h2": 8,
-      "h3": 12,
-      "code_blocks": 29,
-      "links": 7,
-      "images": 0,
-      "chars": 17966,
-      "words": 3064
-    },
-    "en_metrics": {
-      "lines": 435,
-      "headings_total": 25,
-      "h1": 1,
-      "h2": 8,
-      "h3": 12,
-      "code_blocks": 29,
-      "links": 4,
-      "images": 0,
-      "chars": 15664,
-      "words": 3087
-    },
-    "score": 9.29
   },
   {
     "rel": "reference/ydb-cli/workload-kv.md",
@@ -16688,7 +16159,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 293,
+      "lines": 292,
       "headings_total": 20,
       "h1": 1,
       "h2": 7,
@@ -16696,11 +16167,11 @@
       "code_blocks": 18,
       "links": 2,
       "images": 0,
-      "chars": 14227,
-      "words": 2001
+      "chars": 14123,
+      "words": 1987
     },
     "en_metrics": {
-      "lines": 293,
+      "lines": 292,
       "headings_total": 20,
       "h1": 1,
       "h2": 7,
@@ -16708,8 +16179,8 @@
       "code_blocks": 18,
       "links": 2,
       "images": 0,
-      "chars": 13582,
-      "words": 2243
+      "chars": 13483,
+      "words": 2229
     },
     "score": 9.76
   },
@@ -16750,6 +16221,18 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
+      "lines": 162,
+      "headings_total": 13,
+      "h1": 1,
+      "h2": 6,
+      "h3": 6,
+      "code_blocks": 11,
+      "links": 5,
+      "images": 2,
+      "chars": 6111,
+      "words": 883
+    },
+    "en_metrics": {
       "lines": 163,
       "headings_total": 13,
       "h1": 1,
@@ -16758,20 +16241,8 @@
       "code_blocks": 11,
       "links": 5,
       "images": 2,
-      "chars": 6167,
-      "words": 894
-    },
-    "en_metrics": {
-      "lines": 164,
-      "headings_total": 13,
-      "h1": 1,
-      "h2": 6,
-      "h3": 6,
-      "code_blocks": 11,
-      "links": 5,
-      "images": 2,
-      "chars": 6094,
-      "words": 1035
+      "chars": 6047,
+      "words": 1025
     },
     "score": 9.74
   },
@@ -16781,7 +16252,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 141,
+      "lines": 140,
       "headings_total": 12,
       "h1": 1,
       "h2": 5,
@@ -16789,11 +16260,11 @@
       "code_blocks": 8,
       "links": 4,
       "images": 0,
-      "chars": 8047,
-      "words": 1167
+      "chars": 7943,
+      "words": 1153
     },
     "en_metrics": {
-      "lines": 141,
+      "lines": 140,
       "headings_total": 12,
       "h1": 1,
       "h2": 5,
@@ -16801,8 +16272,8 @@
       "code_blocks": 8,
       "links": 4,
       "images": 0,
-      "chars": 7723,
-      "words": 1298
+      "chars": 7624,
+      "words": 1284
     },
     "score": 9.78
   },
@@ -16812,6 +16283,18 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
+      "lines": 140,
+      "headings_total": 12,
+      "h1": 1,
+      "h2": 5,
+      "h3": 6,
+      "code_blocks": 8,
+      "links": 4,
+      "images": 0,
+      "chars": 7577,
+      "words": 1141
+    },
+    "en_metrics": {
       "lines": 141,
       "headings_total": 12,
       "h1": 1,
@@ -16820,20 +16303,8 @@
       "code_blocks": 8,
       "links": 4,
       "images": 0,
-      "chars": 7681,
-      "words": 1155
-    },
-    "en_metrics": {
-      "lines": 142,
-      "headings_total": 12,
-      "h1": 1,
-      "h2": 5,
-      "h3": 6,
-      "code_blocks": 8,
-      "links": 4,
-      "images": 0,
-      "chars": 7741,
-      "words": 1308
+      "chars": 7642,
+      "words": 1294
     },
     "score": 9.78
   },
@@ -16867,37 +16338,6 @@
       "words": 1297
     },
     "score": 9.2
-  },
-  {
-    "rel": "reference/ydb-cli/workload-vector.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 439,
-      "headings_total": 29,
-      "h1": 1,
-      "h2": 10,
-      "h3": 14,
-      "code_blocks": 20,
-      "links": 16,
-      "images": 0,
-      "chars": 20552,
-      "words": 3155
-    },
-    "en_metrics": {
-      "lines": 439,
-      "headings_total": 29,
-      "h1": 1,
-      "h2": 10,
-      "h3": 14,
-      "code_blocks": 20,
-      "links": 16,
-      "images": 0,
-      "chars": 19276,
-      "words": 3520
-    },
-    "score": 9.76
   },
   {
     "rel": "reference/ydb-cli/yql-query-overview.md",
@@ -17150,7 +16590,7 @@
   {
     "rel": "reference/ydb-sdk/data-formats/format-arrow.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 226,
@@ -17164,24 +16604,13 @@
       "chars": 7933,
       "words": 1112
     },
-    "en_metrics": {
-      "lines": 184,
-      "headings_total": 11,
-      "h1": 1,
-      "h2": 4,
-      "h3": 6,
-      "code_blocks": 2,
-      "links": 7,
-      "images": 0,
-      "chars": 5809,
-      "words": 966
-    },
-    "score": 8.62
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "reference/ydb-sdk/data-formats/format-protobuf.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 80,
@@ -17195,24 +16624,13 @@
       "chars": 2803,
       "words": 326
     },
-    "en_metrics": {
-      "lines": 48,
-      "headings_total": 4,
-      "h1": 1,
-      "h2": 3,
-      "h3": 0,
-      "code_blocks": 1,
-      "links": 2,
-      "images": 0,
-      "chars": 1408,
-      "words": 236
-    },
-    "score": 7.71
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "reference/ydb-sdk/data-formats/index.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 19,
@@ -17226,19 +16644,8 @@
       "chars": 1429,
       "words": 192
     },
-    "en_metrics": {
-      "lines": 19,
-      "headings_total": 3,
-      "h1": 1,
-      "h2": 2,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 3,
-      "images": 0,
-      "chars": 1248,
-      "words": 213
-    },
-    "score": 9.71
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "reference/ydb-sdk/error_handling.md",
@@ -17246,16 +16653,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 70,
+      "lines": 69,
       "headings_total": 5,
       "h1": 1,
       "h2": 4,
       "h3": 0,
       "code_blocks": 0,
-      "links": 11,
+      "links": 10,
       "images": 0,
-      "chars": 4535,
-      "words": 574
+      "chars": 4468,
+      "words": 572
     },
     "en_metrics": {
       "lines": 69,
@@ -17269,7 +16676,7 @@
       "chars": 3838,
       "words": 654
     },
-    "score": 9.27
+    "score": 9.38
   },
   {
     "rel": "reference/ydb-sdk/feature-parity.md",
@@ -17277,28 +16684,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 261,
+      "lines": 260,
       "headings_total": 17,
       "h1": 1,
       "h2": 7,
       "h3": 9,
       "code_blocks": 0,
-      "links": 1278,
-      "images": 639,
-      "chars": 95543,
-      "words": 6096
+      "links": 1262,
+      "images": 631,
+      "chars": 94512,
+      "words": 6059
     },
     "en_metrics": {
-      "lines": 261,
+      "lines": 260,
       "headings_total": 17,
       "h1": 1,
       "h2": 7,
       "h3": 9,
       "code_blocks": 0,
-      "links": 1278,
-      "images": 639,
-      "chars": 95488,
-      "words": 6193
+      "links": 1262,
+      "images": 631,
+      "chars": 94462,
+      "words": 6156
     },
     "score": 9.97
   },
@@ -17382,18 +16789,18 @@
       "words": 2961
     },
     "en_metrics": {
-      "lines": 886,
+      "lines": 872,
       "headings_total": 62,
       "h1": 1,
       "h2": 4,
       "h3": 19,
-      "code_blocks": 10,
+      "code_blocks": 9,
       "links": 26,
       "images": 2,
-      "chars": 20203,
-      "words": 3341
+      "chars": 19922,
+      "words": 3303
     },
-    "score": 9.79
+    "score": 9.62
   },
   {
     "rel": "reference/ydb-sdk/index.md",
@@ -17413,18 +16820,18 @@
       "words": 139
     },
     "en_metrics": {
-      "lines": 35,
+      "lines": 34,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 19,
+      "links": 18,
       "images": 0,
-      "chars": 1577,
-      "words": 129
+      "chars": 1537,
+      "words": 126
     },
-    "score": 9.64
+    "score": 9.52
   },
   {
     "rel": "reference/ydb-sdk/install.md",
@@ -17494,30 +16901,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 36,
-      "headings_total": 2,
+      "lines": 31,
+      "headings_total": 1,
       "h1": 0,
-      "h2": 2,
+      "h2": 1,
       "h3": 0,
       "code_blocks": 2,
-      "links": 3,
+      "links": 2,
       "images": 0,
-      "chars": 1891,
-      "words": 259
+      "chars": 1578,
+      "words": 207
     },
     "en_metrics": {
-      "lines": 36,
-      "headings_total": 2,
+      "lines": 31,
+      "headings_total": 1,
       "h1": 0,
-      "h2": 2,
+      "h2": 1,
       "h3": 0,
       "code_blocks": 2,
-      "links": 3,
+      "links": 2,
       "images": 0,
-      "chars": 1734,
-      "words": 293
+      "chars": 1423,
+      "words": 236
     },
-    "score": 9.72
+    "score": 9.69
   },
   {
     "rel": "reference/ydb-sdk/topic.md",
@@ -17525,30 +16932,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 3720,
+      "lines": 3743,
       "headings_total": 33,
       "h1": 1,
       "h2": 5,
       "h3": 21,
       "code_blocks": 175,
-      "links": 76,
+      "links": 78,
       "images": 0,
-      "chars": 93506,
-      "words": 11394
+      "chars": 94197,
+      "words": 11454
     },
     "en_metrics": {
-      "lines": 3247,
+      "lines": 3174,
       "headings_total": 33,
       "h1": 1,
       "h2": 5,
       "h3": 21,
-      "code_blocks": 167,
+      "code_blocks": 163,
       "links": 73,
       "images": 0,
-      "chars": 80683,
-      "words": 10862
+      "chars": 79383,
+      "words": 10709
     },
-    "score": 9.66
+    "score": 9.53
   },
   {
     "rel": "reference/ydb-sdk/ydb-status-codes.md",
@@ -17762,30 +17169,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 502,
-      "headings_total": 30,
+      "lines": 131,
+      "headings_total": 4,
       "h1": 1,
-      "h2": 5,
-      "h3": 22,
-      "code_blocks": 10,
-      "links": 64,
+      "h2": 3,
+      "h3": 0,
+      "code_blocks": 6,
+      "links": 7,
       "images": 0,
-      "chars": 30715,
-      "words": 3155
+      "chars": 9796,
+      "words": 869
     },
     "en_metrics": {
-      "lines": 502,
-      "headings_total": 30,
+      "lines": 132,
+      "headings_total": 4,
       "h1": 1,
-      "h2": 5,
-      "h3": 22,
-      "code_blocks": 10,
-      "links": 63,
+      "h2": 3,
+      "h3": 0,
+      "code_blocks": 6,
+      "links": 7,
       "images": 0,
-      "chars": 29340,
-      "words": 3494
+      "chars": 9119,
+      "words": 995
     },
-    "score": 9.76
+    "score": 9.71
   },
   {
     "rel": "security/authentication.md",
@@ -17793,7 +17200,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 240,
+      "lines": 239,
       "headings_total": 16,
       "h1": 1,
       "h2": 4,
@@ -17813,7 +17220,7 @@
       "code_blocks": 1,
       "links": 33,
       "images": 0,
-      "chars": 17080,
+      "chars": 17079,
       "words": 2789
     },
     "score": 9.27
@@ -17824,30 +17231,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 160,
-      "headings_total": 10,
+      "lines": 125,
+      "headings_total": 7,
       "h1": 1,
-      "h2": 6,
-      "h3": 3,
+      "h2": 5,
+      "h3": 1,
       "code_blocks": 0,
-      "links": 60,
+      "links": 51,
       "images": 0,
-      "chars": 9639,
-      "words": 1018
+      "chars": 5902,
+      "words": 583
     },
     "en_metrics": {
-      "lines": 149,
-      "headings_total": 9,
+      "lines": 114,
+      "headings_total": 6,
       "h1": 1,
-      "h2": 6,
-      "h3": 2,
+      "h2": 5,
+      "h3": 0,
       "code_blocks": 0,
-      "links": 58,
+      "links": 49,
       "images": 0,
-      "chars": 8785,
-      "words": 1079
+      "chars": 5386,
+      "words": 633
     },
-    "score": 9.55
+    "score": 9.4
   },
   {
     "rel": "security/builtin-security.md",
@@ -17979,7 +17386,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 51,
+      "lines": 57,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
@@ -17987,11 +17394,11 @@
       "code_blocks": 0,
       "links": 19,
       "images": 1,
-      "chars": 4728,
-      "words": 590
+      "chars": 5118,
+      "words": 644
     },
     "en_metrics": {
-      "lines": 51,
+      "lines": 57,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
@@ -17999,10 +17406,10 @@
       "code_blocks": 0,
       "links": 21,
       "images": 1,
-      "chars": 4199,
-      "words": 639
+      "chars": 4518,
+      "words": 705
     },
-    "score": 9.63
+    "score": 9.61
   },
   {
     "rel": "security/short-access-control-notation.md",
@@ -18034,26 +17441,6 @@
       "words": 604
     },
     "score": 8.77
-  },
-  {
-    "rel": "troubleshooting/examples/schemas/overloaded-shard-insufficient-cpu.md",
-    "ru_exists": true,
-    "en_exists": false,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 359,
-      "headings_total": 13,
-      "h1": 1,
-      "h2": 4,
-      "h3": 8,
-      "code_blocks": 7,
-      "links": 49,
-      "images": 25,
-      "chars": 14191,
-      "words": 1812
-    },
-    "en_metrics": null,
-    "score": 1.0
   },
   {
     "rel": "troubleshooting/examples/schemas/overloaded-shard-simple-case.md",
@@ -18402,16 +17789,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 83,
+      "lines": 45,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 11,
+      "links": 8,
       "images": 1,
-      "chars": 4529,
-      "words": 660
+      "chars": 2054,
+      "words": 267
     },
     "en_metrics": {
       "lines": 45,
@@ -18422,41 +17809,10 @@
       "code_blocks": 0,
       "links": 8,
       "images": 1,
-      "chars": 1940,
+      "chars": 1941,
       "words": 310
     },
-    "score": 8.16
-  },
-  {
-    "rel": "troubleshooting/performance/queries/retry-cascade.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 29,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 4,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 5,
-      "images": 0,
-      "chars": 1926,
-      "words": 265
-    },
-    "en_metrics": {
-      "lines": 20,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 4,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 1,
-      "images": 0,
-      "chars": 1140,
-      "words": 187
-    },
-    "score": 8.02
+    "score": 9.7
   },
   {
     "rel": "troubleshooting/performance/queries/tli-logging.md",
@@ -18588,30 +17944,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 137,
-      "headings_total": 9,
-      "h1": 2,
-      "h2": 3,
-      "h3": 4,
-      "code_blocks": 3,
-      "links": 9,
+      "lines": 60,
+      "headings_total": 3,
+      "h1": 1,
+      "h2": 2,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 8,
       "images": 1,
-      "chars": 7043,
-      "words": 979
+      "chars": 3429,
+      "words": 456
     },
     "en_metrics": {
-      "lines": 137,
-      "headings_total": 9,
-      "h1": 2,
-      "h2": 3,
-      "h3": 4,
-      "code_blocks": 3,
-      "links": 9,
+      "lines": 62,
+      "headings_total": 3,
+      "h1": 1,
+      "h2": 2,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 8,
       "images": 1,
-      "chars": 6169,
-      "words": 1012
+      "chars": 2949,
+      "words": 475
     },
-    "score": 9.83
+    "score": 9.8
   },
   {
     "rel": "troubleshooting/performance/ydb/tablets-moved.md",
@@ -18676,35 +18032,66 @@
     "score": 9.84
   },
   {
+    "rel": "troubleshooting/spilling/can-not-run-operation.md",
+    "ru_exists": true,
+    "en_exists": true,
+    "single_language_expected": false,
+    "ru_metrics": {
+      "lines": 28,
+      "headings_total": 3,
+      "h1": 1,
+      "h2": 2,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 0,
+      "images": 0,
+      "chars": 936,
+      "words": 143
+    },
+    "en_metrics": {
+      "lines": 28,
+      "headings_total": 3,
+      "h1": 1,
+      "h2": 2,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 0,
+      "images": 0,
+      "chars": 804,
+      "words": 137
+    },
+    "score": 9.8
+  },
+  {
     "rel": "troubleshooting/spilling/index.md",
     "ru_exists": true,
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 17,
+      "lines": 18,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 8,
+      "links": 9,
       "images": 0,
-      "chars": 1113,
-      "words": 119
+      "chars": 1203,
+      "words": 132
     },
     "en_metrics": {
-      "lines": 17,
+      "lines": 18,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 8,
+      "links": 9,
       "images": 0,
-      "chars": 1025,
-      "words": 125
+      "chars": 1108,
+      "words": 137
     },
-    "score": 9.84
+    "score": 9.86
   },
   {
     "rel": "troubleshooting/spilling/permission-denied.md",
@@ -18743,30 +18130,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 23,
+      "lines": 21,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 4,
+      "links": 3,
       "images": 0,
-      "chars": 976,
-      "words": 91
+      "chars": 790,
+      "words": 68
     },
     "en_metrics": {
-      "lines": 23,
+      "lines": 21,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 4,
+      "links": 3,
       "images": 0,
-      "chars": 964,
-      "words": 100
+      "chars": 789,
+      "words": 80
     },
-    "score": 9.83
+    "score": 9.73
   },
   {
     "rel": "troubleshooting/spilling/total-size-limit-exceeded.md",
@@ -18953,37 +18340,6 @@
       "words": 1106
     },
     "score": 7.77
-  },
-  {
-    "rel": "yql/reference/builtins/fulltext.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 102,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 2,
-      "h3": 2,
-      "code_blocks": 5,
-      "links": 5,
-      "images": 0,
-      "chars": 4085,
-      "words": 569
-    },
-    "en_metrics": {
-      "lines": 103,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 2,
-      "h3": 2,
-      "code_blocks": 5,
-      "links": 5,
-      "images": 0,
-      "chars": 3819,
-      "words": 622
-    },
-    "score": 9.79
   },
   {
     "rel": "yql/reference/builtins/index.md",
@@ -19321,10 +18677,10 @@
       "code_blocks": 7,
       "links": 7,
       "images": 0,
-      "chars": 3480,
-      "words": 529
+      "chars": 3504,
+      "words": 533
     },
-    "score": 9.05
+    "score": 9.03
   },
   {
     "rel": "yql/reference/syntax/action.md",
@@ -19375,18 +18731,18 @@
       "words": 204
     },
     "en_metrics": {
-      "lines": 57,
+      "lines": 35,
       "headings_total": 5,
       "h1": 1,
       "h2": 3,
       "h3": 1,
-      "code_blocks": 3,
-      "links": 10,
+      "code_blocks": 2,
+      "links": 4,
       "images": 0,
-      "chars": 1887,
-      "words": 250
+      "chars": 1060,
+      "words": 159
     },
-    "score": 9.52
+    "score": 7.76
   },
   {
     "rel": "yql/reference/syntax/alter-group.md",
@@ -19394,16 +18750,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 49,
-      "headings_total": 6,
+      "lines": 22,
+      "headings_total": 3,
       "h1": 1,
-      "h2": 3,
-      "h3": 2,
-      "code_blocks": 3,
-      "links": 5,
+      "h2": 2,
+      "h3": 0,
+      "code_blocks": 1,
+      "links": 2,
       "images": 0,
-      "chars": 1115,
-      "words": 161
+      "chars": 590,
+      "words": 84
     },
     "en_metrics": {
       "lines": 35,
@@ -19417,7 +18773,7 @@
       "chars": 1354,
       "words": 208
     },
-    "score": 4.75
+    "score": 6.09
   },
   {
     "rel": "yql/reference/syntax/alter-resource-pool-classifier.md",
@@ -19456,7 +18812,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 70,
+      "lines": 61,
       "headings_total": 7,
       "h1": 1,
       "h2": 4,
@@ -19464,27 +18820,27 @@
       "code_blocks": 6,
       "links": 5,
       "images": 0,
-      "chars": 3230,
-      "words": 437
+      "chars": 2819,
+      "words": 383
     },
     "en_metrics": {
-      "lines": 81,
+      "lines": 61,
       "headings_total": 7,
       "h1": 1,
       "h2": 4,
       "h3": 2,
-      "code_blocks": 6,
+      "code_blocks": 5,
       "links": 5,
       "images": 0,
-      "chars": 3062,
-      "words": 523
+      "chars": 2369,
+      "words": 376
     },
-    "score": 9.66
+    "score": 9.52
   },
   {
     "rel": "yql/reference/syntax/alter-secret.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 31,
@@ -19498,19 +18854,8 @@
       "chars": 548,
       "words": 73
     },
-    "en_metrics": {
-      "lines": 31,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 4,
-      "h3": 0,
-      "code_blocks": 2,
-      "links": 4,
-      "images": 0,
-      "chars": 599,
-      "words": 88
-    },
-    "score": 9.17
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "yql/reference/syntax/alter-streaming-query.md",
@@ -19552,12 +18897,12 @@
       "lines": 206,
       "headings_total": 11,
       "h1": 1,
-      "h2": 3,
-      "h3": 7,
+      "h2": 2,
+      "h3": 8,
       "code_blocks": 18,
       "links": 12,
       "images": 0,
-      "chars": 7254,
+      "chars": 7256,
       "words": 974
     },
     "en_metrics": {
@@ -19580,7 +18925,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 180,
+      "lines": 179,
       "headings_total": 8,
       "h1": 1,
       "h2": 5,
@@ -19588,22 +18933,22 @@
       "code_blocks": 8,
       "links": 19,
       "images": 0,
-      "chars": 4953,
-      "words": 679
+      "chars": 4952,
+      "words": 678
     },
     "en_metrics": {
-      "lines": 177,
+      "lines": 153,
       "headings_total": 8,
       "h1": 1,
       "h2": 5,
       "h3": 2,
-      "code_blocks": 8,
-      "links": 19,
+      "code_blocks": 7,
+      "links": 13,
       "images": 0,
-      "chars": 4804,
-      "words": 743
+      "chars": 3989,
+      "words": 651
     },
-    "score": 9.82
+    "score": 9.1
   },
   {
     "rel": "yql/reference/syntax/alter-user.md",
@@ -19766,28 +19111,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 120,
+      "lines": 118,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
       "h3": 0,
       "code_blocks": 7,
-      "links": 17,
+      "links": 15,
       "images": 0,
-      "chars": 5903,
-      "words": 803
+      "chars": 5621,
+      "words": 782
     },
     "en_metrics": {
-      "lines": 113,
+      "lines": 111,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
       "h3": 0,
       "code_blocks": 7,
-      "links": 17,
+      "links": 15,
       "images": 0,
-      "chars": 4477,
-      "words": 619
+      "chars": 4244,
+      "words": 602
     },
     "score": 9.37
   },
@@ -19797,61 +19142,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 286,
-      "headings_total": 30,
+      "lines": 230,
+      "headings_total": 29,
       "h1": 1,
       "h2": 5,
-      "h3": 18,
-      "code_blocks": 10,
-      "links": 10,
+      "h3": 17,
+      "code_blocks": 8,
+      "links": 11,
       "images": 0,
-      "chars": 8452,
-      "words": 1237
+      "chars": 6300,
+      "words": 912
     },
     "en_metrics": {
-      "lines": 277,
-      "headings_total": 30,
+      "lines": 227,
+      "headings_total": 29,
       "h1": 1,
       "h2": 5,
-      "h3": 18,
-      "code_blocks": 9,
-      "links": 13,
+      "h3": 17,
+      "code_blocks": 8,
+      "links": 14,
       "images": 0,
-      "chars": 7856,
-      "words": 1320
+      "chars": 6062,
+      "words": 982
     },
-    "score": 9.33
-  },
-  {
-    "rel": "yql/reference/syntax/alter_table/compact.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 69,
-      "headings_total": 4,
-      "h1": 1,
-      "h2": 3,
-      "h3": 0,
-      "code_blocks": 5,
-      "links": 13,
-      "images": 0,
-      "chars": 3408,
-      "words": 454
-    },
-    "en_metrics": {
-      "lines": 76,
-      "headings_total": 4,
-      "h1": 1,
-      "h2": 3,
-      "h3": 0,
-      "code_blocks": 5,
-      "links": 13,
-      "images": 0,
-      "chars": 3350,
-      "words": 526
-    },
-    "score": 9.74
+    "score": 9.55
   },
   {
     "rel": "yql/reference/syntax/alter_table/family.md",
@@ -19890,30 +19204,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 20,
+      "lines": 19,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 1,
-      "links": 9,
+      "links": 8,
       "images": 0,
-      "chars": 868,
-      "words": 118
+      "chars": 821,
+      "words": 114
     },
     "en_metrics": {
-      "lines": 25,
+      "lines": 22,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 1,
-      "links": 9,
+      "links": 6,
       "images": 0,
-      "chars": 840,
-      "words": 131
+      "chars": 640,
+      "words": 110
     },
-    "score": 9.79
+    "score": 9.4
   },
   {
     "rel": "yql/reference/syntax/alter_table/indexes.md",
@@ -19921,28 +19235,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 211,
+      "lines": 174,
       "headings_total": 7,
       "h1": 1,
       "h2": 4,
       "h3": 2,
-      "code_blocks": 8,
-      "links": 30,
+      "code_blocks": 7,
+      "links": 21,
       "images": 0,
-      "chars": 9614,
-      "words": 1253
+      "chars": 6835,
+      "words": 909
     },
     "en_metrics": {
-      "lines": 212,
+      "lines": 176,
       "headings_total": 7,
       "h1": 1,
       "h2": 4,
       "h3": 2,
-      "code_blocks": 8,
-      "links": 30,
+      "code_blocks": 7,
+      "links": 21,
       "images": 0,
-      "chars": 8994,
-      "words": 1322
+      "chars": 6446,
+      "words": 959
     },
     "score": 9.85
   },
@@ -20010,21 +19324,10 @@
   },
   {
     "rel": "yql/reference/syntax/analyze.md",
-    "ru_exists": true,
+    "ru_exists": false,
     "en_exists": true,
     "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 16,
-      "headings_total": 2,
-      "h1": 1,
-      "h2": 1,
-      "h3": 0,
-      "code_blocks": 1,
-      "links": 2,
-      "images": 0,
-      "chars": 667,
-      "words": 85
-    },
+    "ru_metrics": null,
     "en_metrics": {
       "lines": 16,
       "headings_total": 2,
@@ -20037,7 +19340,7 @@
       "chars": 660,
       "words": 101
     },
-    "score": 9.71
+    "score": 1.0
   },
   {
     "rel": "yql/reference/syntax/backup.md",
@@ -20189,10 +19492,10 @@
       "code_blocks": 8,
       "links": 18,
       "images": 0,
-      "chars": 5276,
-      "words": 607
+      "chars": 5315,
+      "words": 616
     },
-    "score": 9.63
+    "score": 9.6
   },
   {
     "rel": "yql/reference/syntax/create-backup-collection.md",
@@ -20228,7 +19531,7 @@
   {
     "rel": "yql/reference/syntax/create-external-data-source.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 134,
@@ -20242,19 +19545,8 @@
       "chars": 5273,
       "words": 661
     },
-    "en_metrics": {
-      "lines": 134,
-      "headings_total": 8,
-      "h1": 1,
-      "h2": 4,
-      "h3": 3,
-      "code_blocks": 5,
-      "links": 9,
-      "images": 0,
-      "chars": 5246,
-      "words": 781
-    },
-    "score": 9.72
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "yql/reference/syntax/create-external-table.md",
@@ -20293,16 +19585,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 57,
-      "headings_total": 6,
+      "lines": 41,
+      "headings_total": 5,
       "h1": 1,
       "h2": 3,
-      "h3": 2,
+      "h3": 1,
       "code_blocks": 5,
-      "links": 6,
+      "links": 4,
       "images": 0,
-      "chars": 1348,
-      "words": 199
+      "chars": 983,
+      "words": 142
     },
     "en_metrics": {
       "lines": 32,
@@ -20316,7 +19608,7 @@
       "chars": 649,
       "words": 121
     },
-    "score": 7.18
+    "score": 8.3
   },
   {
     "rel": "yql/reference/syntax/create-object-type-secret-access.md",
@@ -20336,7 +19628,7 @@
       "words": 119
     },
     "en_metrics": {
-      "lines": 29,
+      "lines": 28,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
@@ -20367,18 +19659,18 @@
       "words": 82
     },
     "en_metrics": {
-      "lines": 27,
-      "headings_total": 2,
+      "lines": 28,
+      "headings_total": 4,
       "h1": 1,
-      "h2": 1,
-      "h3": 0,
+      "h2": 2,
+      "h3": 1,
       "code_blocks": 2,
-      "links": 2,
+      "links": 1,
       "images": 0,
-      "chars": 649,
-      "words": 100
+      "chars": 564,
+      "words": 89
     },
-    "score": 9.62
+    "score": 8.0
   },
   {
     "rel": "yql/reference/syntax/create-resource-pool-classifier.md",
@@ -20417,35 +19709,35 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 73,
-      "headings_total": 6,
+      "lines": 65,
+      "headings_total": 7,
       "h1": 1,
-      "h2": 4,
+      "h2": 5,
       "h3": 1,
       "code_blocks": 3,
       "links": 5,
       "images": 0,
-      "chars": 3865,
-      "words": 540
+      "chars": 3534,
+      "words": 499
     },
     "en_metrics": {
-      "lines": 79,
-      "headings_total": 6,
+      "lines": 65,
+      "headings_total": 7,
       "h1": 1,
-      "h2": 4,
+      "h2": 5,
       "h3": 1,
       "code_blocks": 3,
       "links": 5,
       "images": 0,
-      "chars": 3657,
-      "words": 643
+      "chars": 2997,
+      "words": 509
     },
-    "score": 9.66
+    "score": 9.83
   },
   {
     "rel": "yql/reference/syntax/create-secret.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 44,
@@ -20459,19 +19751,8 @@
       "chars": 1241,
       "words": 182
     },
-    "en_metrics": {
-      "lines": 44,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 4,
-      "h3": 0,
-      "code_blocks": 4,
-      "links": 6,
-      "images": 0,
-      "chars": 1281,
-      "words": 204
-    },
-    "score": 9.33
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "yql/reference/syntax/create-streaming-query.md",
@@ -20479,16 +19760,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 159,
+      "lines": 158,
       "headings_total": 9,
       "h1": 1,
       "h2": 4,
       "h3": 4,
       "code_blocks": 5,
-      "links": 22,
+      "links": 20,
       "images": 0,
-      "chars": 4930,
-      "words": 680
+      "chars": 4832,
+      "words": 687
     },
     "en_metrics": {
       "lines": 158,
@@ -20502,7 +19783,7 @@
       "chars": 4270,
       "words": 664
     },
-    "score": 9.71
+    "score": 9.84
   },
   {
     "rel": "yql/reference/syntax/create-topic.md",
@@ -20518,7 +19799,7 @@
       "code_blocks": 4,
       "links": 10,
       "images": 0,
-      "chars": 4945,
+      "chars": 4946,
       "words": 656
     },
     "en_metrics": {
@@ -20561,8 +19842,8 @@
       "code_blocks": 9,
       "links": 23,
       "images": 0,
-      "chars": 7682,
-      "words": 1166
+      "chars": 7721,
+      "words": 1175
     },
     "score": 9.8
   },
@@ -20640,10 +19921,10 @@
       "h2": 2,
       "h3": 0,
       "code_blocks": 2,
-      "links": 20,
+      "links": 19,
       "images": 0,
-      "chars": 3038,
-      "words": 398
+      "chars": 2994,
+      "words": 396
     },
     "en_metrics": {
       "lines": 68,
@@ -20652,10 +19933,10 @@
       "h2": 2,
       "h3": 0,
       "code_blocks": 2,
-      "links": 20,
+      "links": 19,
       "images": 0,
-      "chars": 2794,
-      "words": 425
+      "chars": 2757,
+      "words": 423
     },
     "score": 9.81
   },
@@ -20691,66 +19972,35 @@
     "score": 8.07
   },
   {
-    "rel": "yql/reference/syntax/create_table/fulltext_index.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 113,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 1,
-      "h3": 3,
-      "code_blocks": 4,
-      "links": 9,
-      "images": 0,
-      "chars": 4139,
-      "words": 531
-    },
-    "en_metrics": {
-      "lines": 112,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 1,
-      "h3": 3,
-      "code_blocks": 4,
-      "links": 9,
-      "images": 0,
-      "chars": 3788,
-      "words": 523
-    },
-    "score": 9.9
-  },
-  {
     "rel": "yql/reference/syntax/create_table/index.md",
     "ru_exists": true,
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 405,
+      "lines": 376,
+      "headings_total": 18,
+      "h1": 1,
+      "h2": 2,
+      "h3": 15,
+      "code_blocks": 9,
+      "links": 52,
+      "images": 0,
+      "chars": 11069,
+      "words": 1500
+    },
+    "en_metrics": {
+      "lines": 366,
       "headings_total": 19,
       "h1": 1,
       "h2": 2,
       "h3": 16,
       "code_blocks": 9,
-      "links": 54,
+      "links": 45,
       "images": 0,
-      "chars": 12134,
-      "words": 1650
+      "chars": 10456,
+      "words": 1675
     },
-    "en_metrics": {
-      "lines": 393,
-      "headings_total": 20,
-      "h1": 1,
-      "h2": 2,
-      "h3": 17,
-      "code_blocks": 9,
-      "links": 46,
-      "images": 0,
-      "chars": 11460,
-      "words": 1876
-    },
-    "score": 9.42
+    "score": 9.46
   },
   {
     "rel": "yql/reference/syntax/create_table/secondary_index.md",
@@ -20758,30 +20008,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 55,
+      "lines": 53,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
       "h3": 0,
       "code_blocks": 2,
-      "links": 8,
+      "links": 5,
       "images": 0,
-      "chars": 2455,
-      "words": 335
+      "chars": 2159,
+      "words": 309
     },
     "en_metrics": {
-      "lines": 65,
+      "lines": 63,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
       "h3": 0,
       "code_blocks": 2,
-      "links": 10,
+      "links": 7,
       "images": 0,
-      "chars": 2557,
-      "words": 389
+      "chars": 2281,
+      "words": 362
     },
-    "score": 9.44
+    "score": 9.3
   },
   {
     "rel": "yql/reference/syntax/create_table/vector_index.md",
@@ -20797,7 +20047,7 @@
       "code_blocks": 2,
       "links": 9,
       "images": 0,
-      "chars": 3006,
+      "chars": 3018,
       "words": 410
     },
     "en_metrics": {
@@ -20809,10 +20059,10 @@
       "code_blocks": 2,
       "links": 9,
       "images": 0,
-      "chars": 2788,
-      "words": 419
+      "chars": 2725,
+      "words": 401
     },
-    "score": 9.9
+    "score": 9.87
   },
   {
     "rel": "yql/reference/syntax/create_table/with.md",
@@ -21068,16 +20318,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 48,
-      "headings_total": 6,
+      "lines": 21,
+      "headings_total": 2,
       "h1": 1,
-      "h2": 3,
-      "h3": 2,
-      "code_blocks": 3,
-      "links": 5,
+      "h2": 1,
+      "h3": 0,
+      "code_blocks": 1,
+      "links": 2,
       "images": 0,
-      "chars": 1037,
-      "words": 150
+      "chars": 552,
+      "words": 80
     },
     "en_metrics": {
       "lines": 12,
@@ -21091,7 +20341,7 @@
       "chars": 220,
       "words": 48
     },
-    "score": 3.64
+    "score": 6.26
   },
   {
     "rel": "yql/reference/syntax/drop-object-type-secret-access.md",
@@ -21111,7 +20361,7 @@
       "words": 55
     },
     "en_metrics": {
-      "lines": 18,
+      "lines": 17,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
@@ -21142,7 +20392,7 @@
       "words": 52
     },
     "en_metrics": {
-      "lines": 18,
+      "lines": 17,
       "headings_total": 2,
       "h1": 1,
       "h2": 1,
@@ -21220,7 +20470,7 @@
   {
     "rel": "yql/reference/syntax/drop-secret.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 28,
@@ -21234,19 +20484,8 @@
       "chars": 424,
       "words": 54
     },
-    "en_metrics": {
-      "lines": 28,
-      "headings_total": 5,
-      "h1": 1,
-      "h2": 4,
-      "h3": 0,
-      "code_blocks": 2,
-      "links": 4,
-      "images": 0,
-      "chars": 479,
-      "words": 66
-    },
-    "score": 9.12
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "yql/reference/syntax/drop-streaming-query.md",
@@ -21471,28 +20710,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 630,
-      "headings_total": 38,
+      "lines": 619,
+      "headings_total": 37,
       "h1": 1,
       "h2": 15,
-      "h3": 18,
-      "code_blocks": 43,
-      "links": 37,
-      "images": 0,
-      "chars": 20101,
-      "words": 3278
-    },
-    "en_metrics": {
-      "lines": 620,
-      "headings_total": 38,
-      "h1": 1,
-      "h2": 15,
-      "h3": 18,
+      "h3": 17,
       "code_blocks": 42,
       "links": 36,
       "images": 0,
-      "chars": 18914,
-      "words": 3637
+      "chars": 19768,
+      "words": 3240
+    },
+    "en_metrics": {
+      "lines": 609,
+      "headings_total": 37,
+      "h1": 1,
+      "h2": 15,
+      "h3": 17,
+      "code_blocks": 41,
+      "links": 35,
+      "images": 0,
+      "chars": 18610,
+      "words": 3597
     },
     "score": 9.69
   },
@@ -21522,10 +20761,10 @@
       "code_blocks": 7,
       "links": 0,
       "images": 0,
-      "chars": 4884,
-      "words": 767
+      "chars": 4868,
+      "words": 764
     },
-    "score": 9.69
+    "score": 9.7
   },
   {
     "rel": "yql/reference/syntax/index.md",
@@ -21533,16 +20772,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 177,
+      "lines": 176,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 74,
+      "links": 73,
       "images": 0,
-      "chars": 3314,
-      "words": 385
+      "chars": 3297,
+      "words": 381
     },
     "en_metrics": {
       "lines": 182,
@@ -21556,7 +20795,7 @@
       "chars": 2603,
       "words": 342
     },
-    "score": 9.33
+    "score": 9.37
   },
   {
     "rel": "yql/reference/syntax/insert_into.md",
@@ -21708,7 +20947,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 551,
+      "lines": 550,
       "headings_total": 51,
       "h1": 1,
       "h2": 6,
@@ -21883,10 +21122,10 @@
       "code_blocks": 7,
       "links": 0,
       "images": 0,
-      "chars": 4793,
-      "words": 748
+      "chars": 4777,
+      "words": 745
     },
-    "score": 9.69
+    "score": 9.7
   },
   {
     "rel": "yql/reference/syntax/select/assume_order_by.md",
@@ -22137,37 +21376,6 @@
     "score": 9.66
   },
   {
-    "rel": "yql/reference/syntax/select/fulltext_index.md",
-    "ru_exists": true,
-    "en_exists": true,
-    "single_language_expected": false,
-    "ru_metrics": {
-      "lines": 109,
-      "headings_total": 6,
-      "h1": 1,
-      "h2": 2,
-      "h3": 3,
-      "code_blocks": 6,
-      "links": 11,
-      "images": 0,
-      "chars": 4577,
-      "words": 605
-    },
-    "en_metrics": {
-      "lines": 109,
-      "headings_total": 6,
-      "h1": 1,
-      "h2": 2,
-      "h3": 3,
-      "code_blocks": 6,
-      "links": 11,
-      "images": 0,
-      "chars": 4260,
-      "words": 647
-    },
-    "score": 9.82
-  },
-  {
     "rel": "yql/reference/syntax/select/group-by.md",
     "ru_exists": true,
     "en_exists": true,
@@ -22204,30 +21412,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 261,
+      "lines": 268,
       "headings_total": 8,
       "h1": 0,
       "h2": 6,
       "h3": 2,
       "code_blocks": 18,
-      "links": 59,
+      "links": 58,
       "images": 0,
-      "chars": 8563,
-      "words": 1203
+      "chars": 8651,
+      "words": 1216
     },
     "en_metrics": {
-      "lines": 167,
+      "lines": 166,
       "headings_total": 6,
       "h1": 1,
       "h2": 5,
       "h3": 0,
       "code_blocks": 5,
-      "links": 49,
+      "links": 48,
       "images": 0,
-      "chars": 4496,
-      "words": 741
+      "chars": 4456,
+      "words": 738
     },
-    "score": 6.79
+    "score": 6.76
   },
   {
     "rel": "yql/reference/syntax/select/join.md",
@@ -22421,16 +21629,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 43,
+      "lines": 38,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 1,
-      "links": 8,
+      "links": 7,
       "images": 0,
-      "chars": 1149,
-      "words": 147
+      "chars": 999,
+      "words": 132
     },
     "en_metrics": {
       "lines": 38,
@@ -22444,7 +21652,7 @@
       "chars": 923,
       "words": 131
     },
-    "score": 9.46
+    "score": 9.92
   },
   {
     "rel": "yql/reference/syntax/select/temporary_table.md",
@@ -22545,7 +21753,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 86,
+      "lines": 79,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
@@ -22553,22 +21761,22 @@
       "code_blocks": 5,
       "links": 6,
       "images": 0,
-      "chars": 3202,
-      "words": 400
+      "chars": 3192,
+      "words": 408
     },
     "en_metrics": {
-      "lines": 85,
+      "lines": 76,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 5,
-      "links": 6,
+      "links": 5,
       "images": 0,
-      "chars": 3022,
-      "words": 452
+      "chars": 2900,
+      "words": 455
     },
-    "score": 9.74
+    "score": 9.51
   },
   {
     "rel": "yql/reference/syntax/select/view.md",
@@ -23204,8 +22412,8 @@
       "code_blocks": 4,
       "links": 18,
       "images": 0,
-      "chars": 18587,
-      "words": 4222
+      "chars": 18555,
+      "words": 4219
     },
     "en_metrics": {
       "lines": 506,
@@ -23216,8 +22424,8 @@
       "code_blocks": 4,
       "links": 17,
       "images": 0,
-      "chars": 18143,
-      "words": 4376
+      "chars": 18111,
+      "words": 4373
     },
     "score": 9.84
   },

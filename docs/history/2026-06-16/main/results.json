@@ -3315,10 +3315,10 @@
       "h2": 6,
       "h3": 7,
       "code_blocks": 1,
-      "links": 8,
+      "links": 9,
       "images": 0,
-      "chars": 3792,
-      "words": 495
+      "chars": 3926,
+      "words": 503
     },
     "en_metrics": {
       "lines": 86,
@@ -3327,12 +3327,12 @@
       "h2": 6,
       "h3": 7,
       "code_blocks": 1,
-      "links": 6,
+      "links": 7,
       "images": 0,
-      "chars": 3265,
-      "words": 515
+      "chars": 3393,
+      "words": 525
     },
-    "score": 9.47
+    "score": 9.5
   },
   {
     "rel": "contributor/suggest-change.md",
@@ -7894,18 +7894,18 @@
       "words": 473
     },
     "en_metrics": {
-      "lines": 108,
+      "lines": 106,
       "headings_total": 18,
       "h1": 9,
       "h2": 8,
       "h3": 1,
       "code_blocks": 0,
-      "links": 70,
+      "links": 68,
       "images": 0,
-      "chars": 4276,
-      "words": 460
+      "chars": 4251,
+      "words": 455
     },
-    "score": 9.64
+    "score": 9.58
   },
   {
     "rel": "integrations/ingestion/fluent-bit.md",
@@ -7972,7 +7972,7 @@
   {
     "rel": "integrations/ingestion/import-mysql.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 264,
@@ -7986,19 +7986,8 @@
       "chars": 13879,
       "words": 2214
     },
-    "en_metrics": {
-      "lines": 290,
-      "headings_total": 17,
-      "h1": 1,
-      "h2": 9,
-      "h3": 7,
-      "code_blocks": 13,
-      "links": 12,
-      "images": 0,
-      "chars": 13442,
-      "words": 2423
-    },
-    "score": 9.82
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "integrations/ingestion/index.md",
@@ -8018,18 +8007,18 @@
       "words": 87
     },
     "en_metrics": {
-      "lines": 21,
+      "lines": 19,
       "headings_total": 4,
       "h1": 3,
       "h2": 1,
       "h3": 0,
       "code_blocks": 0,
-      "links": 14,
+      "links": 12,
       "images": 0,
-      "chars": 780,
-      "words": 81
+      "chars": 755,
+      "words": 76
     },
-    "score": 9.54
+    "score": 9.24
   },
   {
     "rel": "integrations/ingestion/logstash.md",
@@ -11596,7 +11585,7 @@
   {
     "rel": "recipes/ydb-sdk/debug-otel-metrics.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 307,
@@ -11610,24 +11599,13 @@
       "chars": 11539,
       "words": 1091
     },
-    "en_metrics": {
-      "lines": 324,
-      "headings_total": 8,
-      "h1": 1,
-      "h2": 3,
-      "h3": 4,
-      "code_blocks": 9,
-      "links": 7,
-      "images": 0,
-      "chars": 10672,
-      "words": 1231
-    },
-    "score": 9.73
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "recipes/ydb-sdk/debug-otel-tracing.md",
     "ru_exists": true,
-    "en_exists": true,
+    "en_exists": false,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 350,
@@ -11641,19 +11619,8 @@
       "chars": 11081,
       "words": 1161
     },
-    "en_metrics": {
-      "lines": 371,
-      "headings_total": 7,
-      "h1": 1,
-      "h2": 4,
-      "h3": 2,
-      "code_blocks": 14,
-      "links": 3,
-      "images": 0,
-      "chars": 10843,
-      "words": 1317
-    },
-    "score": 9.77
+    "en_metrics": null,
+    "score": 1.0
   },
   {
     "rel": "recipes/ydb-sdk/debug-otel.md",
@@ -11724,18 +11691,18 @@
       "words": 79
     },
     "en_metrics": {
-      "lines": 13,
+      "lines": 12,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 5,
+      "links": 4,
       "images": 0,
-      "chars": 612,
-      "words": 89
+      "chars": 572,
+      "words": 88
     },
-    "score": 9.78
+    "score": 9.47
   },
   {
     "rel": "recipes/ydb-sdk/distributed-lock.md",
@@ -11786,18 +11753,18 @@
       "words": 152
     },
     "en_metrics": {
-      "lines": 44,
+      "lines": 45,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 30,
+      "links": 31,
       "images": 0,
-      "chars": 1388,
-      "words": 140
+      "chars": 1398,
+      "words": 141
     },
-    "score": 9.72
+    "score": 9.78
   },
   {
     "rel": "recipes/ydb-sdk/init.md",
@@ -12793,30 +12760,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 202,
-      "headings_total": 26,
+      "lines": 284,
+      "headings_total": 35,
       "h1": 1,
       "h2": 3,
-      "h3": 8,
-      "code_blocks": 7,
-      "links": 18,
+      "h3": 9,
+      "code_blocks": 9,
+      "links": 24,
       "images": 0,
-      "chars": 6931,
-      "words": 777
+      "chars": 9530,
+      "words": 1064
     },
     "en_metrics": {
-      "lines": 202,
-      "headings_total": 26,
+      "lines": 284,
+      "headings_total": 35,
       "h1": 1,
       "h2": 3,
-      "h3": 8,
-      "code_blocks": 7,
-      "links": 18,
+      "h3": 9,
+      "code_blocks": 9,
+      "links": 24,
       "images": 0,
-      "chars": 6729,
-      "words": 858
+      "chars": 9241,
+      "words": 1161
     },
-    "score": 9.8
+    "score": 9.82
   },
   {
     "rel": "reference/configuration/tli_config.md",
@@ -14146,10 +14113,10 @@
       "code_blocks": 0,
       "links": 5,
       "images": 0,
-      "chars": 1296,
-      "words": 210
+      "chars": 1401,
+      "words": 229
     },
-    "score": 9.63
+    "score": 9.56
   },
   {
     "rel": "reference/observability/tracing/setup.md",
@@ -18676,35 +18643,66 @@
     "score": 9.84
   },
   {
+    "rel": "troubleshooting/spilling/can-not-run-operation.md",
+    "ru_exists": true,
+    "en_exists": true,
+    "single_language_expected": false,
+    "ru_metrics": {
+      "lines": 28,
+      "headings_total": 3,
+      "h1": 1,
+      "h2": 2,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 0,
+      "images": 0,
+      "chars": 936,
+      "words": 143
+    },
+    "en_metrics": {
+      "lines": 28,
+      "headings_total": 3,
+      "h1": 1,
+      "h2": 2,
+      "h3": 0,
+      "code_blocks": 0,
+      "links": 0,
+      "images": 0,
+      "chars": 804,
+      "words": 137
+    },
+    "score": 9.8
+  },
+  {
     "rel": "troubleshooting/spilling/index.md",
     "ru_exists": true,
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 17,
+      "lines": 18,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 8,
+      "links": 9,
       "images": 0,
-      "chars": 1113,
-      "words": 119
+      "chars": 1203,
+      "words": 132
     },
     "en_metrics": {
-      "lines": 17,
+      "lines": 18,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 8,
+      "links": 9,
       "images": 0,
-      "chars": 1025,
-      "words": 125
+      "chars": 1108,
+      "words": 137
     },
-    "score": 9.84
+    "score": 9.86
   },
   {
     "rel": "troubleshooting/spilling/permission-denied.md",
@@ -18743,30 +18741,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 23,
+      "lines": 21,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 4,
+      "links": 3,
       "images": 0,
-      "chars": 976,
-      "words": 91
+      "chars": 790,
+      "words": 68
     },
     "en_metrics": {
-      "lines": 23,
+      "lines": 21,
       "headings_total": 3,
       "h1": 1,
       "h2": 2,
       "h3": 0,
       "code_blocks": 0,
-      "links": 4,
+      "links": 3,
       "images": 0,
-      "chars": 964,
-      "words": 100
+      "chars": 789,
+      "words": 80
     },
-    "score": 9.83
+    "score": 9.73
   },
   {
     "rel": "troubleshooting/spilling/total-size-limit-exceeded.md",
