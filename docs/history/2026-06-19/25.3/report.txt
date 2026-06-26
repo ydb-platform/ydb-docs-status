@@ -1,6 +1,6 @@
 YDB ru/en docs comparison, version 25.3
 Source: ydb-platform/ydb @ stable-25-3
-Generated: 2026-06-26
+Generated: 2026-06-16
 Scale: 1 — page missing or content significantly differs; 10 — content is very close.
 Score is based on structural similarity (headings, length, code blocks, links, images)
 after include directives are expanded. This is a proxy for semantic match: with identical
@@ -20,6 +20,8 @@ structure, wording can still differ. See documentation/scoring.md for details.
      1  https://ydb.tech/docs/ru/contributor/documentation/cli-command-documentation?version=v25.3  [no EN page]
      1  https://ydb.tech/docs/ru/contributor/documentation/guide-to-public-material?version=v25.3  [no EN page]
      1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v25.3  [no RU page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v1?version=v25.3  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v2?version=v25.3  [no EN page]
      1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-preparation?version=v25.3  [no EN page]
      1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v25.3  [no EN page]
      1  https://ydb.tech/docs/ru/devops/deployment-options/manual/bridge-management?version=v25.3  [no EN page]
@@ -67,6 +69,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-resource-pool?version=v25.3  [no EN page]
      1  https://ydb.tech/docs/ru/yql/reference/syntax/join?version=v25.3  [no EN page]
      1  https://ydb.tech/docs/ru/yql/reference/udf/list/postgres?version=v25.3  [no EN page]
+     3  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-otel?version=v25.3
      4  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v1/static-config?version=v25.3
      4  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v2/config-settings?version=v25.3
      4  https://ydb.tech/docs/ru/public-materials/publications/2024?version=v25.3
@@ -93,6 +96,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      7  https://ydb.tech/docs/ru/recipes/ydb-sdk/bulk-upsert?version=v25.3
      7  https://ydb.tech/docs/ru/reference/ydb-cli/profile/delete?version=v25.3
      7  https://ydb.tech/docs/ru/reference/ydb-cli/topic-consumer-add?version=v25.3
+     7  https://ydb.tech/docs/ru/yql/reference/syntax/create_table?version=v25.3
      7  https://ydb.tech/docs/ru/yql/reference/syntax/drop-user?version=v25.3
      7  https://ydb.tech/docs/ru/yql/reference/syntax/select?version=v25.3
      7  https://ydb.tech/docs/ru/yql/reference/syntax/select/unique_distinct_hints?version=v25.3
@@ -166,6 +170,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/dev/custom-attributes?version=v25.3
      9  https://ydb.tech/docs/ru/dev/getting-started?version=v25.3
      9  https://ydb.tech/docs/ru/dev/resource-consumption-management?version=v25.3
+     9  https://ydb.tech/docs/ru/dev/system-views?version=v25.3
      9  https://ydb.tech/docs/ru/dev/vector-indexes?version=v25.3
      9  https://ydb.tech/docs/ru/devops/concepts/system-requirements?version=v25.3
      9  https://ydb.tech/docs/ru/devops/configuration-management/compare-configs?version=v25.3
@@ -177,6 +182,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/devops/deployment-options/manual/federated-queries?version=v25.3
      9  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-preparation?version=v25.3
      9  https://ydb.tech/docs/ru/downloads?version=v25.3
+     9  https://ydb.tech/docs/ru/downloads/yandex-enterprise-database?version=v25.3
      9  https://ydb.tech/docs/ru/integrations/ingestion?version=v25.3
      9  https://ydb.tech/docs/ru/integrations/migration/goose?version=v25.3
      9  https://ydb.tech/docs/ru/integrations/orchestration/airflow?version=v25.3
@@ -204,7 +210,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/auth-env?version=v25.3
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/auth-metadata?version=v25.3
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/balancing-prefer-pile?version=v25.3
-     9  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-otel?version=v25.3
+     9  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug?version=v25.3
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/init?version=v25.3
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/retry?version=v25.3
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/session-pool-limit?version=v25.3
@@ -249,7 +255,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table?version=v25.3
      9  https://ydb.tech/docs/ru/yql/reference/syntax/alter_table/set?version=v25.3
      9  https://ydb.tech/docs/ru/yql/reference/syntax/create_table/family?version=v25.3
-     9  https://ydb.tech/docs/ru/yql/reference/syntax/create_table?version=v25.3
      9  https://ydb.tech/docs/ru/yql/reference/syntax/drop-async-replication?version=v25.3
      9  https://ydb.tech/docs/ru/yql/reference/syntax?version=v25.3
      9  https://ydb.tech/docs/ru/yql/reference/syntax/insert_into?version=v25.3
@@ -354,7 +359,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/dev/primary-key?version=v25.3
     10  https://ydb.tech/docs/ru/dev/query-hints?version=v25.3
     10  https://ydb.tech/docs/ru/dev/query-plans-optimization?version=v25.3
-    10  https://ydb.tech/docs/ru/dev/system-views?version=v25.3
     10  https://ydb.tech/docs/ru/dev/terraform?version=v25.3
     10  https://ydb.tech/docs/ru/dev/vector-indexes-kmeans-tree-type?version=v25.3
     10  https://ydb.tech/docs/ru/dev/yql-tutorial/alter_table?version=v25.3
@@ -393,8 +397,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/devops/configuration-management/migration/migration-to-v1?version=v25.3
     10  https://ydb.tech/docs/ru/devops/configuration-management/migration/migration-to-v2?version=v25.3
     10  https://ydb.tech/docs/ru/devops/deployment-options/ansible?version=v25.3
-    10  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v1?version=v25.3
-    10  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v2?version=v25.3
     10  https://ydb.tech/docs/ru/devops/deployment-options/ansible/observability?version=v25.3
     10  https://ydb.tech/docs/ru/devops/deployment-options/ansible/observability/logging?version=v25.3
     10  https://ydb.tech/docs/ru/devops/deployment-options/ansible/preparing-vms-with-terraform?version=v25.3
@@ -415,7 +417,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/devops/observability/minidumps?version=v25.3
     10  https://ydb.tech/docs/ru/devops/observability/monitoring?version=v25.3
     10  https://ydb.tech/docs/ru/devops/observability/system-views?version=v25.3
-    10  https://ydb.tech/docs/ru/downloads/yandex-enterprise-database?version=v25.3
     10  https://ydb.tech/docs/ru/downloads/ydb-ansible?version=v25.3
     10  https://ydb.tech/docs/ru/downloads/ydb-cli?version=v25.3
     10  https://ydb.tech/docs/ru/downloads/ydb-dstool?version=v25.3
@@ -426,7 +427,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/faq/common?version=v25.3
     10  https://ydb.tech/docs/ru/faq/errors?version=v25.3
     10  https://ydb.tech/docs/ru/faq?version=v25.3
-    10  https://ydb.tech/docs/ru/faq/known-issues?version=v25.3
     10  https://ydb.tech/docs/ru/faq/sdk?version=v25.3
     10  https://ydb.tech/docs/ru/faq/yql?version=v25.3
     10  https://ydb.tech/docs/ru/integrations/gui/datagrip?version=v25.3
@@ -474,7 +474,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/config-publication?version=v25.3
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-jaeger?version=v25.3
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-prometheus?version=v25.3
-    10  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug?version=v25.3
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk?version=v25.3
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/leader-election?version=v25.3
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/service-discovery?version=v25.3
@@ -718,15 +717,16 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/url?version=v25.3
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/yson?version=v25.3
 
-Score distribution (pages: 709):
-   1: 59 pages
+Score distribution (pages: 708):
+   1: 61 pages
+   3: 1 pages
    4: 4 pages
    5: 3 pages
    6: 9 pages
-   7: 15 pages
+   7: 16 pages
    8: 50 pages
-   9: 115 pages
-  10: 454 pages
+   9: 116 pages
+  10: 448 pages
 
 By section (average score / page count):
   analyst                      avg= 7.19  n=16
@@ -735,21 +735,21 @@ By section (average score / page count):
   changelog-server.md          avg=10.00  n=1
   concepts                     avg= 9.18  n=56
   contributor                  avg= 8.97  n=32
-  dev                          avg= 9.45  n=42
-  devops                       avg= 8.41  n=70
-  downloads                    avg= 9.86  n=7
-  faq                          avg=10.00  n=8
+  dev                          avg= 9.43  n=42
+  devops                       avg= 8.16  n=70
+  downloads                    avg= 9.71  n=7
+  faq                          avg=10.00  n=7
   integrations                 avg= 9.47  n=34
   maintenance                  avg= 6.10  n=20
   postgresql                   avg= 6.36  n=14
   public-materials             avg= 6.50  n=8
   quickstart.md                avg=10.00  n=1
-  recipes                      avg= 9.05  n=42
+  recipes                      avg= 8.88  n=42
   reference                    avg= 9.19  n=177
   security                     avg= 9.67  n=9
   security-changelog.md        avg=10.00  n=1
   troubleshooting              avg= 9.91  n=23
-  yql                          avg= 8.34  n=146
+  yql                          avg= 8.32  n=146
 
 Expected single-language pages (per single_language_patterns, total: 8)
 Excluded from the main table. Edit the pattern list in config.json.

@@ -1,6 +1,6 @@
 YDB ru/en docs comparison, version 26.2
 Source: ydb-platform/ydb @ stable-26-2
-Generated: 2026-06-26
+Generated: 2026-06-16
 Scale: 1 — page missing or content significantly differs; 10 — content is very close.
 Score is based on structural similarity (headings, length, code blocks, links, images)
 after include directives are expanded. This is a proxy for semantic match: with identical
@@ -17,10 +17,13 @@ structure, wording can still differ. See documentation/scoring.md for details.
      1  https://ydb.tech/docs/ru/devops/backup-and-recovery?version=v26.2  [no EN page]
      1  https://ydb.tech/docs/ru/devops/backup-and-recovery/system-tablet-backup?version=v26.2  [no EN page]
      1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v26.2  [no RU page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v1?version=v26.2  [no EN page]
+     1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v2?version=v26.2  [no EN page]
      1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-preparation?version=v26.2  [no EN page]
      1  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment?version=v26.2  [no EN page]
      1  https://ydb.tech/docs/ru/devops/observability/alerting?version=v26.2  [no EN page]
      1  https://ydb.tech/docs/ru/integrations/gui/dbeaver-plugin?version=v26.2  [no EN page]
+     1  https://ydb.tech/docs/ru/integrations/ingestion/import-mysql?version=v26.2  [no EN page]
      1  https://ydb.tech/docs/ru/maintenance/manual/change_actorsystem_configs?version=v26.2  [no RU page]
      1  https://ydb.tech/docs/ru/maintenance/manual/cluster_expansion?version=v26.2  [no RU page]
      1  https://ydb.tech/docs/ru/maintenance/manual/cms?version=v26.2  [no RU page]
@@ -50,6 +53,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      1  https://ydb.tech/docs/ru/yql/reference/syntax/drop-secret?version=v26.2  [no EN page]
      1  https://ydb.tech/docs/ru/yql/reference/syntax/join?version=v26.2  [no EN page]
      1  https://ydb.tech/docs/ru/yql/reference/udf/list/postgres?version=v26.2  [no EN page]
+     3  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-otel?version=v26.2
      4  https://ydb.tech/docs/ru/public-materials/publications/2024?version=v26.2
      5  https://ydb.tech/docs/ru/public-materials/publications/2023?version=v26.2
      5  https://ydb.tech/docs/ru/public-materials/videos/2022?version=v26.2
@@ -89,6 +93,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      8  https://ydb.tech/docs/ru/contributor/manage-releases?version=v26.2
      8  https://ydb.tech/docs/ru/contributor/suggest-change?version=v26.2
      8  https://ydb.tech/docs/ru/dev/primary-key/row-oriented?version=v26.2
+     8  https://ydb.tech/docs/ru/dev/system-views?version=v26.2
      8  https://ydb.tech/docs/ru/dev/timeouts?version=v26.2
      8  https://ydb.tech/docs/ru/dev/yql-tutorial/insert_into?version=v26.2
      8  https://ydb.tech/docs/ru/dev/yql-tutorial/replace_into?version=v26.2
@@ -158,7 +163,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/dev/custom-attributes?version=v26.2
      9  https://ydb.tech/docs/ru/dev/getting-started?version=v26.2
      9  https://ydb.tech/docs/ru/dev/resource-consumption-management?version=v26.2
-     9  https://ydb.tech/docs/ru/dev/system-views?version=v26.2
      9  https://ydb.tech/docs/ru/devops/concepts/system-requirements?version=v26.2
      9  https://ydb.tech/docs/ru/devops/configuration-management/compare-configs?version=v26.2
      9  https://ydb.tech/docs/ru/devops/configuration-management/configuration-v1/change_actorsystem_configs?version=v26.2
@@ -169,6 +173,7 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/devops/deployment-options/manual/initial-deployment/deployment-configuration-v1?version=v26.2
      9  https://ydb.tech/docs/ru/devops/enterprise-manager/initial-deployment?version=v26.2
      9  https://ydb.tech/docs/ru/downloads?version=v26.2
+     9  https://ydb.tech/docs/ru/integrations/ingestion?version=v26.2
      9  https://ydb.tech/docs/ru/integrations/migration/goose?version=v26.2
      9  https://ydb.tech/docs/ru/integrations/orchestration/airflow?version=v26.2
      9  https://ydb.tech/docs/ru/integrations/orm/dapper?version=v26.2
@@ -194,10 +199,11 @@ structure, wording can still differ. See documentation/scoring.md for details.
      9  https://ydb.tech/docs/ru/recipes/ydb-cli/benchmarks?version=v26.2
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/auth-env?version=v26.2
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/auth-metadata?version=v26.2
-     9  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-otel?version=v26.2
+     9  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug?version=v26.2
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/init?version=v26.2
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/session-pool-limit?version=v26.2
      9  https://ydb.tech/docs/ru/recipes/ydb-sdk/tx-control?version=v26.2
+     9  https://ydb.tech/docs/ru/recipes/ydb-sdk/vector-search?version=v26.2
      9  https://ydb.tech/docs/ru/reference/configuration/blob_storage_config?version=v26.2
      9  https://ydb.tech/docs/ru/reference/configuration/bridge_config?version=v26.2
      9  https://ydb.tech/docs/ru/reference/configuration/hosts?version=v26.2
@@ -387,8 +393,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/devops/configuration-management/migration/migration-to-v1?version=v26.2
     10  https://ydb.tech/docs/ru/devops/configuration-management/migration/migration-to-v2?version=v26.2
     10  https://ydb.tech/docs/ru/devops/deployment-options/ansible?version=v26.2
-    10  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v1?version=v26.2
-    10  https://ydb.tech/docs/ru/devops/deployment-options/ansible/initial-deployment/deployment-configuration-v2?version=v26.2
     10  https://ydb.tech/docs/ru/devops/deployment-options/ansible/observability?version=v26.2
     10  https://ydb.tech/docs/ru/devops/deployment-options/ansible/observability/logging?version=v26.2
     10  https://ydb.tech/docs/ru/devops/deployment-options/ansible/preparing-vms-with-terraform?version=v26.2
@@ -423,7 +427,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/faq/common?version=v26.2
     10  https://ydb.tech/docs/ru/faq/errors?version=v26.2
     10  https://ydb.tech/docs/ru/faq?version=v26.2
-    10  https://ydb.tech/docs/ru/faq/known-issues?version=v26.2
     10  https://ydb.tech/docs/ru/faq/sdk?version=v26.2
     10  https://ydb.tech/docs/ru/faq/yql?version=v26.2
     10  https://ydb.tech/docs/ru/integrations/gui/datagrip?version=v26.2
@@ -433,8 +436,6 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/integrations?version=v26.2
     10  https://ydb.tech/docs/ru/integrations/ingestion/fluent-bit?version=v26.2
     10  https://ydb.tech/docs/ru/integrations/ingestion/import-jdbc?version=v26.2
-    10  https://ydb.tech/docs/ru/integrations/ingestion/import-mysql?version=v26.2
-    10  https://ydb.tech/docs/ru/integrations/ingestion?version=v26.2
     10  https://ydb.tech/docs/ru/integrations/ingestion/logstash?version=v26.2
     10  https://ydb.tech/docs/ru/integrations/ingestion/spark?version=v26.2
     10  https://ydb.tech/docs/ru/integrations/migration/dbt?version=v26.2
@@ -485,13 +486,11 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/config-publication?version=v26.2
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-jaeger?version=v26.2
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug-prometheus?version=v26.2
-    10  https://ydb.tech/docs/ru/recipes/ydb-sdk/debug?version=v26.2
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk?version=v26.2
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/leader-election?version=v26.2
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/retry?version=v26.2
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/service-discovery?version=v26.2
     10  https://ydb.tech/docs/ru/recipes/ydb-sdk/ttl?version=v26.2
-    10  https://ydb.tech/docs/ru/recipes/ydb-sdk/vector-search?version=v26.2
     10  https://ydb.tech/docs/ru/reference/configuration/actor_system_config?version=v26.2
     10  https://ydb.tech/docs/ru/reference/configuration/auth_config?version=v26.2
     10  https://ydb.tech/docs/ru/reference/configuration/client_certificate_authorization?version=v26.2
@@ -765,15 +764,16 @@ structure, wording can still differ. See documentation/scoring.md for details.
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/url?version=v26.2
     10  https://ydb.tech/docs/ru/yql/reference/udf/list/yson?version=v26.2
 
-Score distribution (pages: 756):
-   1: 42 pages
+Score distribution (pages: 755):
+   1: 45 pages
+   3: 1 pages
    4: 1 pages
    5: 3 pages
    6: 10 pages
    7: 16 pages
-   8: 51 pages
-   9: 121 pages
-  10: 512 pages
+   8: 52 pages
+   9: 122 pages
+  10: 505 pages
 
 By section (average score / page count):
   analyst                      avg=10.00  n=16
@@ -782,16 +782,16 @@ By section (average score / page count):
   changelog-server.md          avg=10.00  n=1
   concepts                     avg= 9.34  n=59
   contributor                  avg= 8.47  n=32
-  dev                          avg= 9.48  n=50
-  devops                       avg= 8.73  n=74
+  dev                          avg= 9.46  n=50
+  devops                       avg= 8.49  n=74
   downloads                    avg= 9.86  n=7
-  faq                          avg=10.00  n=8
-  integrations                 avg= 9.51  n=35
+  faq                          avg=10.00  n=7
+  integrations                 avg= 9.23  n=35
   maintenance                  avg= 6.55  n=20
   postgresql                   avg= 6.36  n=14
   public-materials             avg= 6.50  n=8
   quickstart.md                avg=10.00  n=1
-  recipes                      avg= 9.25  n=53
+  recipes                      avg= 9.09  n=53
   reference                    avg= 9.23  n=182
   security                     avg= 9.67  n=9
   security-changelog.md        avg=10.00  n=1

@@ -532,30 +532,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 561,
-      "headings_total": 53,
+      "lines": 609,
+      "headings_total": 60,
       "h1": 1,
-      "h2": 8,
-      "h3": 25,
+      "h2": 9,
+      "h3": 27,
       "code_blocks": 0,
-      "links": 391,
+      "links": 415,
       "images": 0,
-      "chars": 62191,
-      "words": 6165
+      "chars": 66381,
+      "words": 6613
     },
     "en_metrics": {
-      "lines": 561,
-      "headings_total": 53,
+      "lines": 609,
+      "headings_total": 60,
       "h1": 1,
-      "h2": 8,
-      "h3": 25,
+      "h2": 9,
+      "h3": 27,
       "code_blocks": 0,
-      "links": 367,
+      "links": 389,
       "images": 0,
-      "chars": 56878,
-      "words": 7056
+      "chars": 60609,
+      "words": 7529
     },
-    "score": 9.61
+    "score": 9.62
   },
   {
     "rel": "changelog-server.md",
@@ -563,15 +563,15 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 770,
+      "lines": 769,
       "headings_total": 77,
-      "h1": 2,
+      "h1": 1,
       "h2": 14,
       "h3": 34,
       "code_blocks": 0,
       "links": 449,
       "images": 0,
-      "chars": 76730,
+      "chars": 76733,
       "words": 7994
     },
     "en_metrics": {
@@ -1866,7 +1866,7 @@
       "words": 1324
     },
     "en_metrics": {
-      "lines": 294,
+      "lines": 298,
       "headings_total": 10,
       "h1": 1,
       "h2": 2,
@@ -1874,10 +1874,10 @@
       "code_blocks": 13,
       "links": 23,
       "images": 0,
-      "chars": 5939,
-      "words": 827
+      "chars": 5993,
+      "words": 844
     },
-    "score": 8.16
+    "score": 8.19
   },
   {
     "rel": "concepts/query_execution/federated_query/s3/partition_projection.md",
@@ -4271,18 +4271,18 @@
       "words": 3853
     },
     "en_metrics": {
-      "lines": 516,
-      "headings_total": 20,
+      "lines": 586,
+      "headings_total": 24,
       "h1": 1,
-      "h2": 7,
-      "h3": 11,
-      "code_blocks": 13,
-      "links": 28,
+      "h2": 9,
+      "h3": 13,
+      "code_blocks": 15,
+      "links": 33,
       "images": 0,
-      "chars": 21328,
-      "words": 3448
+      "chars": 23783,
+      "words": 3772
     },
-    "score": 8.29
+    "score": 9.25
   },
   {
     "rel": "dev/terraform.md",
@@ -6041,7 +6041,7 @@
   {
     "rel": "devops/deployment-options/ansible/initial-deployment/deployment-configuration-v1.md",
     "ru_exists": true,
-    "en_exists": false,
+    "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 1030,
@@ -6052,19 +6052,30 @@
       "code_blocks": 17,
       "links": 45,
       "images": 3,
-      "chars": 31856,
+      "chars": 31916,
       "words": 3481
     },
-    "en_metrics": null,
-    "score": 1.0
+    "en_metrics": {
+      "lines": 1018,
+      "headings_total": 12,
+      "h1": 1,
+      "h2": 9,
+      "h3": 2,
+      "code_blocks": 17,
+      "links": 40,
+      "images": 3,
+      "chars": 28736,
+      "words": 3377
+    },
+    "score": 9.71
   },
   {
     "rel": "devops/deployment-options/ansible/initial-deployment/deployment-configuration-v2.md",
     "ru_exists": true,
-    "en_exists": false,
+    "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 441,
+      "lines": 446,
       "headings_total": 12,
       "h1": 1,
       "h2": 9,
@@ -6072,11 +6083,22 @@
       "code_blocks": 14,
       "links": 43,
       "images": 3,
-      "chars": 20216,
-      "words": 2352
+      "chars": 20394,
+      "words": 2365
     },
-    "en_metrics": null,
-    "score": 1.0
+    "en_metrics": {
+      "lines": 431,
+      "headings_total": 12,
+      "h1": 1,
+      "h2": 9,
+      "h3": 2,
+      "code_blocks": 14,
+      "links": 40,
+      "images": 3,
+      "chars": 17926,
+      "words": 2355
+    },
+    "score": 9.79
   },
   {
     "rel": "devops/deployment-options/ansible/initial-deployment/deployment-preparation.md",
@@ -6287,7 +6309,7 @@
       "code_blocks": 4,
       "links": 10,
       "images": 0,
-      "chars": 2505,
+      "chars": 2511,
       "words": 281
     },
     "en_metrics": {
@@ -6589,16 +6611,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 1027,
+      "lines": 999,
       "headings_total": 12,
       "h1": 1,
       "h2": 11,
       "h3": 0,
-      "code_blocks": 31,
+      "code_blocks": 29,
       "links": 22,
       "images": 1,
-      "chars": 28814,
-      "words": 3416
+      "chars": 27753,
+      "words": 3304
     },
     "en_metrics": {
       "lines": 901,
@@ -6612,7 +6634,7 @@
       "chars": 22751,
       "words": 2906
     },
-    "score": 8.34
+    "score": 8.51
   },
   {
     "rel": "devops/deployment-options/manual/initial-deployment/deployment-configuration-v2.md",
@@ -6620,16 +6642,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 564,
+      "lines": 536,
       "headings_total": 13,
       "h1": 1,
       "h2": 12,
       "h3": 0,
-      "code_blocks": 31,
+      "code_blocks": 29,
       "links": 23,
       "images": 1,
-      "chars": 20525,
-      "words": 2578
+      "chars": 19466,
+      "words": 2468
     },
     "en_metrics": {
       "lines": 476,
@@ -6643,7 +6665,7 @@
       "chars": 15047,
       "words": 2156
     },
-    "score": 8.18
+    "score": 8.37
   },
   {
     "rel": "devops/deployment-options/manual/initial-deployment/deployment-preparation.md",
@@ -6651,16 +6673,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 252,
-      "headings_total": 11,
+      "lines": 261,
+      "headings_total": 14,
       "h1": 1,
       "h2": 5,
-      "h3": 5,
-      "code_blocks": 13,
+      "h3": 8,
+      "code_blocks": 14,
       "links": 9,
       "images": 0,
-      "chars": 11069,
-      "words": 1619
+      "chars": 11019,
+      "words": 1622
     },
     "en_metrics": {
       "lines": 197,
@@ -6674,7 +6696,7 @@
       "chars": 8210,
       "words": 1454
     },
-    "score": 8.26
+    "score": 7.81
   },
   {
     "rel": "devops/deployment-options/manual/initial-deployment/index.md",
@@ -6814,7 +6836,7 @@
       "code_blocks": 0,
       "links": 7,
       "images": 1,
-      "chars": 1457,
+      "chars": 1463,
       "words": 165
     },
     "en_metrics": {
@@ -7136,28 +7158,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 182,
+      "lines": 208,
       "headings_total": 8,
       "h1": 1,
       "h2": 3,
       "h3": 4,
       "code_blocks": 0,
-      "links": 73,
+      "links": 85,
       "images": 0,
-      "chars": 9055,
-      "words": 628
+      "chars": 10592,
+      "words": 698
     },
     "en_metrics": {
-      "lines": 178,
+      "lines": 204,
       "headings_total": 7,
       "h1": 1,
       "h2": 2,
       "h3": 4,
       "code_blocks": 0,
-      "links": 72,
+      "links": 84,
       "images": 0,
-      "chars": 8655,
-      "words": 627
+      "chars": 10172,
+      "words": 697
     },
     "score": 9.66
   },
@@ -7260,16 +7282,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 106,
+      "lines": 107,
       "headings_total": 4,
       "h1": 1,
       "h2": 3,
       "h3": 0,
       "code_blocks": 0,
-      "links": 83,
+      "links": 85,
       "images": 0,
-      "chars": 8510,
-      "words": 886
+      "chars": 8696,
+      "words": 896
     },
     "en_metrics": {
       "lines": 107,
@@ -7283,7 +7305,7 @@
       "chars": 8540,
       "words": 900
     },
-    "score": 9.94
+    "score": 9.98
   },
   {
     "rel": "downloads/ydb-ops.md",
@@ -7322,28 +7344,28 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 300,
-      "headings_total": 49,
-      "h1": 6,
-      "h2": 31,
+      "lines": 322,
+      "headings_total": 52,
+      "h1": 7,
+      "h2": 33,
       "h3": 12,
-      "code_blocks": 7,
-      "links": 15,
+      "code_blocks": 8,
+      "links": 16,
       "images": 0,
-      "chars": 15265,
-      "words": 2221
+      "chars": 16179,
+      "words": 2332
     },
     "en_metrics": {
-      "lines": 302,
-      "headings_total": 49,
-      "h1": 6,
-      "h2": 31,
+      "lines": 322,
+      "headings_total": 52,
+      "h1": 7,
+      "h2": 33,
       "h3": 12,
-      "code_blocks": 7,
-      "links": 15,
+      "code_blocks": 8,
+      "links": 16,
       "images": 0,
-      "chars": 13757,
-      "words": 2531
+      "chars": 14585,
+      "words": 2657
     },
     "score": 9.69
   },
@@ -7446,16 +7468,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 10,
+      "lines": 11,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 5,
+      "links": 6,
       "images": 0,
-      "chars": 162,
-      "words": 25
+      "chars": 202,
+      "words": 28
     },
     "en_metrics": {
       "lines": 11,
@@ -7464,12 +7486,43 @@
       "h2": 0,
       "h3": 0,
       "code_blocks": 0,
-      "links": 5,
+      "links": 6,
       "images": 0,
-      "chars": 171,
-      "words": 25
+      "chars": 205,
+      "words": 28
     },
-    "score": 9.95
+    "score": 9.99
+  },
+  {
+    "rel": "faq/known-issues.md",
+    "ru_exists": true,
+    "en_exists": true,
+    "single_language_expected": false,
+    "ru_metrics": {
+      "lines": 17,
+      "headings_total": 2,
+      "h1": 1,
+      "h2": 1,
+      "h3": 0,
+      "code_blocks": 1,
+      "links": 1,
+      "images": 0,
+      "chars": 880,
+      "words": 107
+    },
+    "en_metrics": {
+      "lines": 16,
+      "headings_total": 2,
+      "h1": 1,
+      "h2": 1,
+      "h3": 0,
+      "code_blocks": 1,
+      "links": 1,
+      "images": 0,
+      "chars": 800,
+      "words": 122
+    },
+    "score": 9.7
   },
   {
     "rel": "faq/sdk.md",
@@ -7695,18 +7748,18 @@
       "words": 453
     },
     "en_metrics": {
-      "lines": 105,
+      "lines": 107,
       "headings_total": 18,
       "h1": 9,
       "h2": 8,
       "h3": 1,
       "code_blocks": 0,
-      "links": 66,
+      "links": 68,
       "images": 0,
-      "chars": 4263,
-      "words": 446
+      "chars": 4288,
+      "words": 451
     },
-    "score": 9.71
+    "score": 9.78
   },
   {
     "rel": "integrations/ingestion/fluent-bit.md",
@@ -7773,7 +7826,7 @@
   {
     "rel": "integrations/ingestion/import-mysql.md",
     "ru_exists": true,
-    "en_exists": false,
+    "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
       "lines": 264,
@@ -7787,8 +7840,19 @@
       "chars": 13879,
       "words": 2214
     },
-    "en_metrics": null,
-    "score": 1.0
+    "en_metrics": {
+      "lines": 290,
+      "headings_total": 17,
+      "h1": 1,
+      "h2": 9,
+      "h3": 7,
+      "code_blocks": 13,
+      "links": 12,
+      "images": 0,
+      "chars": 13442,
+      "words": 2423
+    },
+    "score": 9.82
   },
   {
     "rel": "integrations/ingestion/index.md",
@@ -7808,18 +7872,18 @@
       "words": 87
     },
     "en_metrics": {
-      "lines": 19,
+      "lines": 21,
       "headings_total": 4,
       "h1": 3,
       "h2": 1,
       "h3": 0,
       "code_blocks": 0,
-      "links": 12,
+      "links": 14,
       "images": 0,
-      "chars": 755,
-      "words": 76
+      "chars": 780,
+      "words": 81
     },
-    "score": 9.24
+    "score": 9.54
   },
   {
     "rel": "integrations/ingestion/logstash.md",
@@ -9083,7 +9147,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 85,
+      "lines": 83,
       "headings_total": 4,
       "h1": 1,
       "h2": 3,
@@ -9091,11 +9155,11 @@
       "code_blocks": 4,
       "links": 3,
       "images": 1,
-      "chars": 5105,
-      "words": 749
+      "chars": 5094,
+      "words": 746
     },
     "en_metrics": {
-      "lines": 83,
+      "lines": 81,
       "headings_total": 4,
       "h1": 1,
       "h2": 3,
@@ -9103,8 +9167,8 @@
       "code_blocks": 4,
       "links": 2,
       "images": 1,
-      "chars": 4776,
-      "words": 819
+      "chars": 4765,
+      "words": 816
     },
     "score": 9.34
   },
@@ -11133,7 +11197,7 @@
       "words": 305
     },
     "en_metrics": {
-      "lines": 159,
+      "lines": 174,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
@@ -11141,10 +11205,10 @@
       "code_blocks": 2,
       "links": 0,
       "images": 0,
-      "chars": 2417,
-      "words": 281
+      "chars": 2479,
+      "words": 299
     },
-    "score": 9.79
+    "score": 9.92
   },
   {
     "rel": "recipes/ydb-sdk/debug-logs.md",
@@ -11195,18 +11259,18 @@
       "words": 1161
     },
     "en_metrics": {
-      "lines": 134,
-      "headings_total": 1,
+      "lines": 348,
+      "headings_total": 7,
       "h1": 1,
-      "h2": 0,
-      "h3": 0,
-      "code_blocks": 2,
-      "links": 0,
+      "h2": 4,
+      "h3": 2,
+      "code_blocks": 14,
+      "links": 2,
       "images": 0,
-      "chars": 3069,
-      "words": 397
+      "chars": 10845,
+      "words": 1318
     },
-    "score": 3.34
+    "score": 9.32
   },
   {
     "rel": "recipes/ydb-sdk/debug-prometheus.md",
@@ -11257,7 +11321,7 @@
       "words": 75
     },
     "en_metrics": {
-      "lines": 13,
+      "lines": 12,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
@@ -11265,10 +11329,10 @@
       "code_blocks": 0,
       "links": 4,
       "images": 0,
-      "chars": 657,
-      "words": 101
+      "chars": 572,
+      "words": 88
     },
-    "score": 9.42
+    "score": 9.73
   },
   {
     "rel": "recipes/ydb-sdk/distributed-lock.md",
@@ -11319,7 +11383,7 @@
       "words": 147
     },
     "en_metrics": {
-      "lines": 47,
+      "lines": 46,
       "headings_total": 1,
       "h1": 1,
       "h2": 0,
@@ -11327,10 +11391,10 @@
       "code_blocks": 0,
       "links": 30,
       "images": 0,
-      "chars": 1396,
-      "words": 154
+      "chars": 1386,
+      "words": 142
     },
-    "score": 9.86
+    "score": 9.87
   },
   {
     "rel": "recipes/ydb-sdk/init.md",
@@ -11493,7 +11557,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 371,
+      "lines": 369,
       "headings_total": 6,
       "h1": 1,
       "h2": 5,
@@ -11501,8 +11565,8 @@
       "code_blocks": 21,
       "links": 4,
       "images": 0,
-      "chars": 6373,
-      "words": 695
+      "chars": 6362,
+      "words": 692
     },
     "en_metrics": {
       "lines": 337,
@@ -11516,7 +11580,7 @@
       "chars": 5829,
       "words": 671
     },
-    "score": 9.86
+    "score": 9.87
   },
   {
     "rel": "recipes/ydb-sdk/tx-control.md",
@@ -11594,11 +11658,11 @@
       "code_blocks": 45,
       "links": 30,
       "images": 0,
-      "chars": 48640,
-      "words": 5454
+      "chars": 48424,
+      "words": 5448
     },
     "en_metrics": {
-      "lines": 2335,
+      "lines": 2337,
       "headings_total": 7,
       "h1": 1,
       "h2": 6,
@@ -11606,8 +11670,8 @@
       "code_blocks": 48,
       "links": 28,
       "images": 0,
-      "chars": 49262,
-      "words": 5659
+      "chars": 49066,
+      "words": 5657
     },
     "score": 9.72
   },
@@ -13512,8 +13576,8 @@
       "code_blocks": 7,
       "links": 14,
       "images": 1,
-      "chars": 5556,
-      "words": 727
+      "chars": 5553,
+      "words": 726
     },
     "en_metrics": {
       "lines": 200,
@@ -13524,8 +13588,8 @@
       "code_blocks": 7,
       "links": 14,
       "images": 1,
-      "chars": 5185,
-      "words": 745
+      "chars": 5182,
+      "words": 744
     },
     "score": 9.67
   },
@@ -13648,10 +13712,10 @@
       "code_blocks": 0,
       "links": 5,
       "images": 0,
-      "chars": 1403,
+      "chars": 1401,
       "words": 229
     },
-    "score": 9.55
+    "score": 9.56
   },
   {
     "rel": "reference/observability/tracing/setup.md",
@@ -16932,16 +16996,16 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 3743,
+      "lines": 3732,
       "headings_total": 33,
       "h1": 1,
       "h2": 5,
       "h3": 21,
       "code_blocks": 175,
-      "links": 78,
+      "links": 76,
       "images": 0,
-      "chars": 94197,
-      "words": 11454
+      "chars": 93721,
+      "words": 11414
     },
     "en_metrics": {
       "lines": 3174,
@@ -16955,7 +17019,7 @@
       "chars": 79383,
       "words": 10709
     },
-    "score": 9.53
+    "score": 9.57
   },
   {
     "rel": "reference/ydb-sdk/ydb-status-codes.md",
@@ -17200,7 +17264,7 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 239,
+      "lines": 240,
       "headings_total": 16,
       "h1": 1,
       "h2": 4,
@@ -17944,30 +18008,30 @@
     "en_exists": true,
     "single_language_expected": false,
     "ru_metrics": {
-      "lines": 60,
-      "headings_total": 3,
-      "h1": 1,
-      "h2": 2,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 8,
+      "lines": 137,
+      "headings_total": 9,
+      "h1": 2,
+      "h2": 3,
+      "h3": 4,
+      "code_blocks": 3,
+      "links": 9,
       "images": 1,
-      "chars": 3429,
-      "words": 456
+      "chars": 7043,
+      "words": 979
     },
     "en_metrics": {
-      "lines": 62,
-      "headings_total": 3,
-      "h1": 1,
-      "h2": 2,
-      "h3": 0,
-      "code_blocks": 0,
-      "links": 8,
+      "lines": 137,
+      "headings_total": 9,
+      "h1": 2,
+      "h2": 3,
+      "h3": 4,
+      "code_blocks": 3,
+      "links": 9,
       "images": 1,
-      "chars": 2949,
-      "words": 475
+      "chars": 6169,
+      "words": 1012
     },
-    "score": 9.8
+    "score": 9.83
   },
   {
     "rel": "troubleshooting/performance/ydb/tablets-moved.md",
@@ -19986,7 +20050,7 @@
       "links": 52,
       "images": 0,
       "chars": 11069,
-      "words": 1500
+      "words": 1498
     },
     "en_metrics": {
       "lines": 366,
@@ -19998,7 +20062,7 @@
       "links": 45,
       "images": 0,
       "chars": 10456,
-      "words": 1675
+      "words": 1673
     },
     "score": 9.46
   },
@@ -22424,8 +22488,8 @@
       "code_blocks": 4,
       "links": 17,
       "images": 0,
-      "chars": 18111,
-      "words": 4373
+      "chars": 18143,
+      "words": 4376
     },
     "score": 9.84
   },
